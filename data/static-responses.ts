@@ -60,189 +60,233 @@ export const staticResponses = {
   en: {
     "islam-clcp": {
       title: "Islam and CLCP",
-      content: STATIC_RESPONSES_EN["islam-clcp"],
+      content: `<p>${STATIC_RESPONSES_EN["islam-clcp"]}</p>
+      <p>Islamic principles of community service (khidma), compassion (rahma), and human dignity (karama) align closely with CLCP's emphasis on community ownership and strength-based approaches.</p>`,
     },
     "christianity-clcp": {
       title: "Christianity and CLCP",
-      content: STATIC_RESPONSES_EN["christianity-clcp"],
+      content: `<p>${STATIC_RESPONSES_EN["christianity-clcp"]}</p>
+      <p>Christian values of love (agape), service to others, and community support reflect CLCP's focus on community empowerment and collective action for positive change.</p>`,
     },
     "buddhism-clcp": {
       title: "Buddhism and CLCP",
-      content: STATIC_RESPONSES_EN["buddhism-clcp"],
+      content: `<p>${STATIC_RESPONSES_EN["buddhism-clcp"]}</p>
+      <p>Buddhist practices of mindfulness, compassion (karuna), and interdependence (pratityasamutpada) complement CLCP's approach to community awareness and interconnected solutions.</p>`,
     },
     "hinduism-clcp": {
       title: "Hinduism and CLCP",
-      content: STATIC_RESPONSES_EN["hinduism-clcp"],
+      content: `<p>${STATIC_RESPONSES_EN["hinduism-clcp"]}</p>
+      <p>Hindu concepts of dharma (duty), seva (selfless service), and community responsibility resonate with CLCP's emphasis on community ownership and collective action.</p>`,
     },
     "sikhism-clcp": {
       title: "Sikhism and CLCP",
-      content: STATIC_RESPONSES_EN["sikhism-clcp"],
+      content: `<p>${STATIC_RESPONSES_EN["sikhism-clcp"]}</p>
+      <p>Sikh principles of equality (sarbat da bhala), service (seva), and community action (langar) align with CLCP's focus on inclusive community development and shared responsibility.</p>`,
     },
     "atheism-clcp": {
       title: "Atheism and CLCP",
-      content: STATIC_RESPONSES_EN["atheism-clcp"],
+      content: `<p>${STATIC_RESPONSES_EN["atheism-clcp"]}</p>
+      <p>Atheist perspectives on human agency, evidence-based approaches, and community empowerment complement CLCP's focus on local solutions and measurable outcomes without requiring religious frameworks.</p>`,
     },
     "spirituality-clcp": {
       title: "Spirituality and CLCP",
-      content: STATIC_RESPONSES_EN["spirituality-clcp"],
+      content: `<p>${STATIC_RESPONSES_EN["spirituality-clcp"]}</p>
+      <p>Non-religious spiritual approaches to holistic well-being, connection, and mindfulness enhance CLCP's methods for community engagement and sustainable development.</p>`,
     },
     "being-humane": {
       title: "Being Humane",
-      content: STATIC_RESPONSES_EN["being-humane"],
+      content: `<p>${STATIC_RESPONSES_EN["being-humane"]}</p>
+      <p>The concept of being humane—showing compassion, dignity, and respect for all—is a foundational value shared across religious and non-religious traditions, as well as CLCP's approach to community development.</p>`,
     },
     "clcp-religions": {
       title: "CLCP and Religions",
-      content: STATIC_RESPONSES_EN["clcp-religions"],
+      content: `<p>${STATIC_RESPONSES_EN["clcp-religions"]}</p>
+      <p>CLCP shares common values with many religious traditions, including community service, human dignity, compassion, and collective responsibility for well-being.</p>`,
     },
     clcp: {
       title: "CLCP",
-      content: STATIC_RESPONSES_EN.clcp,
+      content: `<p>${STATIC_RESPONSES_EN.clcp}</p>
+      <p>The Community Life Competence Process (CLCP) empowers communities to identify their strengths and address their challenges through ownership, shared learning, and collective action.</p>`,
     },
     salt: {
       title: "SALT Approach",
-      content: STATIC_RESPONSES_EN.salt,
+      content: `<p>${STATIC_RESPONSES_EN.salt}</p>
+      <p>SALT (Stimulate, Appreciate, Learn, Transfer) is a facilitation approach used in CLCP that focuses on appreciative inquiry, community strengths, and shared learning between communities.</p>`,
     },
     islam: {
       title: "Islam",
-      content: STATIC_RESPONSES_EN.islam,
+      content: `<p>${STATIC_RESPONSES_EN.islam}</p>
+      <p>Islam is a monotheistic religion founded on the teachings of Prophet Muhammad and the Quran, emphasizing submission to Allah (God), compassion, justice, and community welfare.</p>`,
     },
     christianity: {
       title: "Christianity",
-      content: STATIC_RESPONSES_EN.christianity,
+      content: `<p>${STATIC_RESPONSES_EN.christianity}</p>
+      <p>Christianity is based on the life and teachings of Jesus Christ, focusing on love, forgiveness, redemption through Christ, and service to others as expressions of faith.</p>`,
     },
     buddhism: {
       title: "Buddhism",
-      content: STATIC_RESPONSES_EN.buddhism,
+      content: `<p>${STATIC_RESPONSES_EN.buddhism}</p>
+      <p>Buddhism follows the teachings of Buddha, emphasizing mindfulness, compassion, the Four Noble Truths, and the Eightfold Path as ways to overcome suffering and achieve enlightenment.</p>`,
     },
     hinduism: {
       title: "Hinduism",
-      content: STATIC_RESPONSES_EN.hinduism,
+      content: `<p>${STATIC_RESPONSES_EN.hinduism}</p>
+      <p>Hinduism encompasses diverse traditions centered on concepts like dharma (duty/ethics), karma (action and consequence), and reincarnation, with various paths to spiritual liberation.</p>`,
     },
     judaism: {
       title: "Judaism",
-      content: STATIC_RESPONSES_EN.judaism,
+      content: `<p>${STATIC_RESPONSES_EN.judaism}</p>
+      <p>Judaism is centered on the covenant between God and the Jewish people, emphasizing justice, righteousness, community responsibility, and ethical monotheism.</p>`,
     },
     sikhism: {
       title: "Sikhism",
-      content: STATIC_RESPONSES_EN.sikhism,
+      content: `<p>${STATIC_RESPONSES_EN.sikhism}</p>
+      <p>Sikhism was founded by Guru Nanak and promotes equality, service to humanity, devotion to one God, and the importance of living an honest, compassionate life.</p>`,
     },
     atheism: {
       title: "Atheism",
-      content: STATIC_RESPONSES_EN.atheism,
+      content: `<p>${STATIC_RESPONSES_EN.atheism}</p>
+      <p>Atheism is the absence of belief in deities, often emphasizing human agency, evidence-based reasoning, and ethical frameworks based on human well-being rather than divine command.</p>`,
     },
     spirituality: {
       title: "Spirituality Without Religion",
-      content: STATIC_RESPONSES_EN.spirituality,
+      content: `<p>${STATIC_RESPONSES_EN.spirituality}</p>
+      <p>Non-religious spirituality focuses on personal meaning, connection, transcendence, and well-being outside of organized religious frameworks, often incorporating mindfulness, nature connection, and contemplative practices.</p>`,
     },
     comparison: {
       title: "Comparative Religion",
-      content: STATIC_RESPONSES_EN.comparison,
+      content: `<p>${STATIC_RESPONSES_EN.comparison}</p>
+      <p>Comparative religion studies the similarities and differences between religious traditions, examining shared themes like ethics, rituals, concepts of divinity, and approaches to human purpose and meaning.</p>`,
     },
     salvation: {
       title: "Salvation",
-      content: STATIC_RESPONSES_EN.salvation,
+      content: `<p>${STATIC_RESPONSES_EN.salvation}</p>
+      <p>Salvation refers to concepts of spiritual liberation, redemption, or deliverance from suffering or sin, with different religious traditions offering various paths and understandings of this concept.</p>`,
     },
     afterlife: {
       title: "Afterlife",
-      content: STATIC_RESPONSES_EN.afterlife,
+      content: `<p>${STATIC_RESPONSES_EN.afterlife}</p>
+      <p>Beliefs about what happens after death vary widely across religions, from reincarnation to heaven and hell, judgment, or spiritual union with the divine, while some traditions focus more on this-worldly concerns.</p>`,
     },
     default: {
       title: "Noor",
-      content: STATIC_RESPONSES_EN.default,
+      content: `<p>${STATIC_RESPONSES_EN.default}</p>`,
     },
   },
   fr: {
     "islam-clcp": {
       title: "Islam et CLCP",
-      content: STATIC_RESPONSES_FR["islam-clcp"],
+      content: `<p>${STATIC_RESPONSES_FR["islam-clcp"]}</p>
+      <p>Les principes islamiques de service communautaire (khidma), de compassion (rahma) et de dignité humaine (karama) s'alignent étroitement sur l'accent mis par le CLCP sur l'appropriation communautaire et les approches basées sur les forces.</p>`,
     },
     "christianity-clcp": {
       title: "Christianisme et CLCP",
-      content: STATIC_RESPONSES_FR["christianity-clcp"],
+      content: `<p>${STATIC_RESPONSES_FR["christianity-clcp"]}</p>
+      <p>Les valeurs chrétiennes d'amour (agape), de service aux autres et de soutien communautaire reflètent l'accent mis par le CLCP sur l'autonomisation communautaire et l'action collective pour un changement positif.</p>`,
     },
     "buddhism-clcp": {
       title: "Bouddhisme et CLCP",
-      content: STATIC_RESPONSES_FR["buddhism-clcp"],
+      content: `<p>${STATIC_RESPONSES_FR["buddhism-clcp"]}</p>
+      <p>Les pratiques bouddhistes de pleine conscience, de compassion (karuna) et d'interdépendance (pratityasamutpada) complètent l'approche du CLCP en matière de sensibilisation communautaire et de solutions interconnectées.</p>`,
     },
     "hinduism-clcp": {
       title: "Hindouisme et CLCP",
-      content: STATIC_RESPONSES_FR["hinduism-clcp"],
+      content: `<p>${STATIC_RESPONSES_FR["hinduism-clcp"]}</p>
+      <p>Les concepts hindous de dharma (devoir), seva (service désintéressé) et de responsabilité communautaire résonnent avec l'accent mis par le CLCP sur l'appropriation communautaire et l'action collective.</p>`,
     },
     "sikhism-clcp": {
       title: "Sikhisme et CLCP",
-      content: STATIC_RESPONSES_FR["sikhism-clcp"],
+      content: `<p>${STATIC_RESPONSES_FR["sikhism-clcp"]}</p>
+      <p>Les principes sikhs d'égalité (sarbat da bhala), de service (seva) et d'action communautaire (langar) s'alignent sur l'accent mis par le CLCP sur le développement communautaire inclusif et la responsabilité partagée.</p>`,
     },
     "atheism-clcp": {
       title: "Athéisme et CLCP",
-      content: STATIC_RESPONSES_FR["atheism-clcp"],
+      content: `<p>${STATIC_RESPONSES_FR["atheism-clcp"]}</p>
+      <p>Les perspectives athées sur l'agence humaine, les approches fondées sur des preuves et l'autonomisation communautaire complètent l'accent mis par le CLCP sur les solutions locales et les résultats mesurables sans nécessiter de cadres religieux.</p>`,
     },
     "spirituality-clcp": {
       title: "Spiritualité et CLCP",
-      content: STATIC_RESPONSES_FR["spirituality-clcp"],
+      content: `<p>${STATIC_RESPONSES_FR["spirituality-clcp"]}</p>
+      <p>Les approches spirituelles non religieuses du bien-être holistique, de la connexion et de la pleine conscience améliorent les méthodes du CLCP pour l'engagement communautaire et le développement durable.</p>`,
     },
     "being-humane": {
       title: "Être Humain",
-      content: STATIC_RESPONSES_FR["being-humane"],
+      content: `<p>${STATIC_RESPONSES_FR["being-humane"]}</p>
+      <p>Le concept d'être humain - montrer de la compassion, de la dignité et du respect pour tous - est une valeur fondamentale partagée par les traditions religieuses et non religieuses, ainsi que par l'approche du CLCP en matière de développement communautaire.</p>`,
     },
     "clcp-religions": {
       title: "CLCP et Religions",
-      content: STATIC_RESPONSES_FR["clcp-religions"],
+      content: `<p>${STATIC_RESPONSES_FR["clcp-religions"]}</p>
+      <p>Le CLCP partage des valeurs communes avec de nombreuses traditions religieuses, notamment le service communautaire, la dignité humaine, la compassion et la responsabilité collective pour le bien-être.</p>`,
     },
     clcp: {
       title: "CLCP",
-      content: STATIC_RESPONSES_FR.clcp,
+      content: `<p>${STATIC_RESPONSES_FR.clcp}</p>
+      <p>Le Processus de Compétence de Vie Communautaire (CLCP) permet aux communautés d'identifier leurs forces et de relever leurs défis grâce à l'appropriation, l'apprentissage partagé et l'action collective.</p>`,
     },
     salt: {
       title: "Approche SALT",
-      content: STATIC_RESPONSES_FR.salt,
+      content: `<p>${STATIC_RESPONSES_FR.salt}</p>
+      <p>SALT (Stimuler, Apprécier, Apprendre, Transférer) est une approche de facilitation utilisée dans le CLCP qui se concentre sur l'enquête appréciative, les forces communautaires et l'apprentissage partagé entre les communautés.</p>`,
     },
     islam: {
       title: "Islam",
-      content: STATIC_RESPONSES_FR.islam,
+      content: `<p>${STATIC_RESPONSES_FR.islam}</p>
+      <p>L'Islam est une religion monothéiste fondée sur les enseignements du Prophète Muhammad et le Coran, mettant l'accent sur la soumission à Allah (Dieu), la compassion, la justice et le bien-être communautaire.</p>`,
     },
     christianity: {
       title: "Christianisme",
-      content: STATIC_RESPONSES_FR.christianity,
+      content: `<p>${STATIC_RESPONSES_FR.christianity}</p>
+      <p>Le christianisme est basé sur la vie et les enseignements de Jésus-Christ, mettant l'accent sur l'amour, le pardon, la rédemption par le Christ et le service aux autres comme expressions de la foi.</p>`,
     },
     buddhism: {
       title: "Bouddhisme",
-      content: STATIC_RESPONSES_FR.buddhism,
+      content: `<p>${STATIC_RESPONSES_FR.buddhism}</p>
+      <p>Le bouddhisme suit les enseignements de Bouddha, mettant l'accent sur la pleine conscience, la compassion, les Quatre Nobles Vérités et le Noble Chemin Octuple comme moyens de surmonter la souffrance et d'atteindre l'illumination.</p>`,
     },
     hinduism: {
       title: "Hindouisme",
-      content: STATIC_RESPONSES_FR.hinduism,
+      content: `<p>${STATIC_RESPONSES_FR.hinduism}</p>
+      <p>L'hindouisme englobe diverses traditions centrées sur des concepts comme le dharma (devoir/éthique), le karma (action et conséquence) et la réincarnation, avec diverses voies vers la libération spirituelle.</p>`,
     },
     judaism: {
       title: "Judaïsme",
-      content: STATIC_RESPONSES_FR.judaism,
+      content: `<p>${STATIC_RESPONSES_FR.judaism}</p>
+      <p>Le judaïsme est centré sur l'alliance entre Dieu et le peuple juif, mettant l'accent sur la justice, la droiture, la responsabilité communautaire et le monothéisme éthique.</p>`,
     },
     sikhism: {
       title: "Sikhisme",
-      content: STATIC_RESPONSES_FR.sikhism,
+      content: `<p>${STATIC_RESPONSES_FR.sikhism}</p>
+      <p>Le sikhisme a été fondé par Guru Nanak et promeut l'égalité, le service à l'humanité, la dévotion à un seul Dieu et l'importance de vivre une vie honnête et compatissante.</p>`,
     },
     atheism: {
       title: "Athéisme",
-      content: STATIC_RESPONSES_FR.atheism,
+      content: `<p>${STATIC_RESPONSES_FR.atheism}</p>
+      <p>L'athéisme est l'absence de croyance en des divinités, mettant souvent l'accent sur l'agence humaine, le raisonnement fondé sur des preuves et des cadres éthiques basés sur le bien-être humain plutôt que sur le commandement divin.</p>`,
     },
     spirituality: {
       title: "Spiritualité Sans Religion",
-      content: STATIC_RESPONSES_FR.spirituality,
+      content: `<p>${STATIC_RESPONSES_FR.spirituality}</p>
+      <p>La spiritualité non religieuse se concentre sur le sens personnel, la connexion, la transcendance et le bien-être en dehors des cadres religieux organisés, incorporant souvent la pleine conscience, la connexion avec la nature et les pratiques contemplatives.</p>`,
     },
     comparison: {
       title: "Religion Comparée",
-      content: STATIC_RESPONSES_FR.comparison,
+      content: `<p>${STATIC_RESPONSES_FR.comparison}</p>
+      <p>La religion comparée étudie les similitudes et les différences entre les traditions religieuses, examinant des thèmes communs comme l'éthique, les rituels, les concepts de divinité et les approches du but et du sens humains.</p>`,
     },
     salvation: {
       title: "Salut",
-      content: STATIC_RESPONSES_FR.salvation,
+      content: `<p>${STATIC_RESPONSES_FR.salvation}</p>
+      <p>Le salut fait référence aux concepts de libération spirituelle, de rédemption ou de délivrance de la souffrance ou du péché, avec différentes traditions religieuses offrant diverses voies et compréhensions de ce concept.</p>`,
     },
     afterlife: {
       title: "Vie Après la Mort",
-      content: STATIC_RESPONSES_FR.afterlife,
+      content: `<p>${STATIC_RESPONSES_FR.afterlife}</p>
+      <p>Les croyances sur ce qui se passe après la mort varient considérablement selon les religions, de la réincarnation au paradis et à l'enfer, au jugement ou à l'union spirituelle avec le divin, tandis que certaines traditions se concentrent davantage sur les préoccupations de ce monde.</p>`,
     },
     default: {
       title: "Noor",
-      content: STATIC_RESPONSES_FR.default,
+      content: `<p>${STATIC_RESPONSES_FR.default}</p>`,
     },
   },
 }

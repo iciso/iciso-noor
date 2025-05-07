@@ -10,7 +10,7 @@ import { useLanguage } from "@/contexts/language-context"
 
 export default function TopicPage() {
   const { id } = useParams()
-  const { language } = useLanguage()
+  const { language, t } = useLanguage()
 
   // Ensure id is a string
   const topicId = Array.isArray(id) ? id[0] : id
@@ -37,12 +37,10 @@ export default function TopicPage() {
       <Card className="w-full">
         <CardHeader>
           <CardTitle className="text-2xl">{topic.title}</CardTitle>
-          <CardDescription>
-            {language === "en" ? "Comparative religious topic" : "Sujet religieux comparatif"}
-          </CardDescription>
+          <CardDescription>{language === "en" ? "Comparative topic" : "Sujet comparatif"}</CardDescription>
         </CardHeader>
         <CardContent>
-          <div dangerouslySetInnerHTML={{ __html: topic.content }} />
+          <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: topic.content }} />
         </CardContent>
       </Card>
     </div>
