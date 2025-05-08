@@ -5,6 +5,7 @@ import { Inter } from "next/font/google"
 import { Footer } from "@/components/footer"
 import { LanguageProvider } from "@/contexts/language-context"
 import { ApiStatusBanner } from "@/components/api-status-banner"
+import { ServiceWorkerHandler } from "@/components/service-worker-handler"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -32,6 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <ServiceWorkerHandler />
         <LanguageProvider>
           <div className="flex flex-col min-h-screen">
             <ApiStatusBanner />

@@ -1,9 +1,8 @@
 import { NextResponse } from "next/server"
-import { OpenAIStream, StreamingTextResponse } from "ai"
 import OpenAI from "openai"
 
-// Remove the runtime directive to avoid edge runtime issues
-// export const runtime = 'edge'
+// Explicitly set Node.js runtime
+export const runtime = "nodejs"
 
 export async function POST(req: Request) {
   console.log("[CHAT API] Request received")
@@ -20,8 +19,10 @@ export async function POST(req: Request) {
     console.log("[CHAT API] Creating OpenAI client")
 
     // Create OpenAI client with explicit configuration
+    // Add dangerouslyAllowBrowser: true to address the browser environment detection issue
     const openai = new OpenAI({
       apiKey: apiKey,
+      dangerouslyAllowBrowser: true, // Add this to address the browser environment detection
     })
 
     // Parse request body
@@ -36,6 +37,26 @@ export async function POST(req: Request) {
 
     console.log(`[CHAT API] Processing ${messages.length} messages`)
 
+    // Add system message if not present
+    const systemMessage = {
+      role: "system",
+      content: `You are Noor (Neutral Open Objective Resource), an assistant specializing in comparative religion and the Community Life Competence Process (CLCP).
+      
+Provide factual, non-biased information on:
+1. Major world religions (Islam, Christianity, Buddhism, Hinduism, Judaism, Sikhism)
+2. Non-faith perspectives (atheism, humanism, secular spirituality)
+3. The Community Life Competence Process (CLCP) and its principles
+4. The SALT approach (Stimulate, Appreciate, Learn, Transfer)
+5. Relationships between faith/non-faith traditions and CLCP
+
+Answer in a balanced, informative style, citing primary sources when possible. When asked about connections between religions and CLCP, highlight shared values like community ownership, strength-based approaches, and human dignity.
+
+If you don't know something, admit it rather than speculating. Your purpose is to foster understanding, not to proselytize any particular viewpoint.`,
+    }
+
+    // Ensure system message is included
+    const messagesWithSystem = messages.some((m) => m.role === "system") ? messages : [systemMessage, ...messages]
+
     // Log the model we're using
     console.log("[CHAT API] Using model: gpt-3.5-turbo")
 
@@ -44,17 +65,18 @@ export async function POST(req: Request) {
     try {
       const response = await openai.chat.completions.create({
         model: "gpt-3.5-turbo",
-        messages: messages,
-        stream: true,
+        messages: messagesWithSystem,
+        stream: false, // Change to non-streaming for simplicity
       })
 
       console.log("[CHAT API] Chat completion created successfully")
 
-      // Create stream
-      const stream = OpenAIStream(response)
-
-      // Return streaming response
-      return new StreamingTextResponse(stream)
+      // Return the response
+      return NextResponse.json({
+        role: "assistant",
+        content: response.choices[0].message.content,
+        id: Date.now().toString(),
+      })
     } catch (openaiError) {
       console.error("[CHAT API] OpenAI API error:", openaiError)
 

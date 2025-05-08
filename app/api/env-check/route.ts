@@ -1,41 +1,35 @@
 import { NextResponse } from "next/server"
 
+// Explicitly set Node.js runtime
+export const runtime = "nodejs"
+
 export async function GET() {
   try {
-    // Get all environment variables
-    const envVars = process.env
+    console.log("[ENV CHECK] Starting environment check")
 
-    // Create a safe version without actual values
-    const safeEnvVars = Object.keys(envVars).reduce(
-      (acc, key) => {
-        // Skip sensitive variables
-        if (key.includes("KEY") || key.includes("SECRET") || key.includes("TOKEN") || key.includes("PASSWORD")) {
-          acc[key] = "[REDACTED]"
-        } else {
-          // For non-sensitive variables, just indicate they exist
-          acc[key] = "EXISTS"
-        }
-        return acc
-      },
-      {} as Record<string, string>,
-    )
+    // Create a simple response with minimal environment information
+    // to avoid any potential issues with accessing environment variables
+    const response = {
+      message: "Environment check",
+      nodeEnv: process.env.NODE_ENV || "not set",
+      hasOpenAIKey: typeof process.env.OPENAI_API_KEY === "string",
+      openAIKeyValid: typeof process.env.OPENAI_API_KEY === "string" && process.env.OPENAI_API_KEY.startsWith("sk-"),
+      // Add a timestamp to ensure the response is fresh
+      timestamp: new Date().toISOString(),
+    }
 
-    return NextResponse.json({
-      message: "Environment variables check",
-      variables: safeEnvVars,
-      nodeEnv: process.env.NODE_ENV,
-      hasOpenAIKey: !!process.env.OPENAI_API_KEY,
-      openAIKeyFormat: process.env.OPENAI_API_KEY
-        ? process.env.OPENAI_API_KEY.startsWith("sk-")
-          ? "Valid format"
-          : "Invalid format"
-        : "Not set",
-    })
+    console.log("[ENV CHECK] Environment check completed successfully")
+
+    return NextResponse.json(response)
   } catch (error) {
+    console.error("[ENV CHECK] Error during environment check:", error)
+
+    // Create a safe error response
     return NextResponse.json(
       {
-        error: "Failed to check environment variables",
-        details: error instanceof Error ? error.message : String(error),
+        error: "Failed to check environment",
+        message: error instanceof Error ? error.message : "Unknown error",
+        timestamp: new Date().toISOString(),
       },
       { status: 500 },
     )
