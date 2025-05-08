@@ -6,34 +6,36 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowLeft, CheckCircle, XCircle, Loader2 } from "lucide-react"
 
-export default function EnvTestPage() {
+export default function TestOpenAIPage() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
   const [message, setMessage] = useState("")
-  const [details, setDetails] = useState<Record<string, any>>({})
+  const [response, setResponse] = useState("")
 
-  const testEnv = async () => {
+  const testConnection = async () => {
     setStatus("loading")
     try {
-      const res = await fetch("/api/env-test")
+      // Call the server-side API route
+      const res = await fetch("/api/test-openai")
+
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`)
+      }
+
       const data = await res.json()
 
       if (data.status === "success") {
         setStatus("success")
         setMessage(data.message)
-        // Remove the message from details
-        const { message, ...rest } = data
-        setDetails(rest)
+        setResponse(data.response)
       } else {
         setStatus("error")
         setMessage(data.message)
-        // Remove the message and status from details
-        const { message, status, ...rest } = data
-        setDetails(rest)
+        setResponse(data.error || "Unknown error")
       }
     } catch (error) {
       setStatus("error")
-      setMessage("Failed to test environment")
-      setDetails({ error: error instanceof Error ? error.message : String(error) })
+      setMessage("Failed to test OpenAI connection")
+      setResponse(error instanceof Error ? error.message : String(error))
     }
   }
 
@@ -46,20 +48,23 @@ export default function EnvTestPage() {
 
       <Card className="max-w-2xl mx-auto">
         <CardHeader>
-          <CardTitle>Environment Variables Test</CardTitle>
+          <CardTitle>OpenAI API Connection Test</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
-          <p>This page tests if your environment variables are correctly configured without making any API calls.</p>
+          <p>
+            This page tests if your OpenAI API key is correctly configured and if the application can successfully
+            connect to the OpenAI API.
+          </p>
 
           <div className="flex justify-center">
-            <Button onClick={testEnv} disabled={status === "loading"} size="lg">
+            <Button onClick={testConnection} disabled={status === "loading"} size="lg">
               {status === "loading" ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                  Testing Environment...
+                  Testing Connection...
                 </>
               ) : (
-                "Test Environment Variables"
+                "Test OpenAI Connection"
               )}
             </Button>
           </div>
@@ -78,10 +83,10 @@ export default function EnvTestPage() {
                 ) : null}
                 <p className="font-medium">{message}</p>
               </div>
-              {Object.keys(details).length > 0 && (
+              {response && (
                 <div className="mt-2 text-sm">
-                  <p className="font-semibold">Details:</p>
-                  <pre className="mt-1 p-2 bg-gray-100 rounded overflow-x-auto">{JSON.stringify(details, null, 2)}</pre>
+                  <p className="font-semibold">Response:</p>
+                  <p className="mt-1">{response}</p>
                 </div>
               )}
             </div>
@@ -92,8 +97,8 @@ export default function EnvTestPage() {
             <ul className="list-disc pl-5 mt-2 space-y-1">
               <li>Verify that your OPENAI_API_KEY environment variable is set correctly in Vercel</li>
               <li>Check that your OpenAI API key is valid and has not expired</li>
-              <li>Make sure the API key starts with 'sk-'</li>
-              <li>Try redeploying your application after updating environment variables</li>
+              <li>Ensure your OpenAI account has sufficient credits</li>
+              <li>If using a free tier, check if you've exceeded the rate limits</li>
             </ul>
           </div>
         </CardContent>

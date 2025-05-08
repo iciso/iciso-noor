@@ -5,9 +5,28 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { useLanguage } from "@/contexts/language-context"
+import { AlertCircle, BookOpen, MessageSquare, Info } from "lucide-react"
+import { useState, useEffect } from "react"
 
 export default function Home() {
   const { t } = useLanguage()
+  const [apiStatus, setApiStatus] = useState<"loading" | "available" | "unavailable">("loading")
+
+  // Check API status on component mount
+  useEffect(() => {
+    const checkApiStatus = async () => {
+      try {
+        // Use the status API endpoint instead of directly checking environment variables
+        const response = await fetch("/api/status")
+        const data = await response.json()
+        setApiStatus(data.status === "available" ? "available" : "unavailable")
+      } catch (error) {
+        setApiStatus("unavailable")
+      }
+    }
+
+    checkApiStatus()
+  }, [])
 
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-emerald-50 to-teal-100">
@@ -27,6 +46,19 @@ export default function Home() {
       </header>
 
       <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-4xl mx-auto w-full">
+        {apiStatus === "unavailable" && (
+          <div className="mb-6 p-4 border border-yellow-300 bg-yellow-50 rounded-lg flex items-start">
+            <AlertCircle className="h-5 w-5 text-yellow-600 mr-3 mt-0.5 flex-shrink-0" />
+            <div>
+              <h3 className="font-medium text-yellow-800">OpenAI API Unavailable</h3>
+              <p className="text-sm text-yellow-700 mt-1">
+                The OpenAI API is currently unavailable or has exceeded its quota. You can still use the static chat or
+                browse topics.
+              </p>
+            </div>
+          </div>
+        )}
+
         <Card className="w-full mb-8">
           <CardHeader>
             <CardTitle>{t("home.welcome")}</CardTitle>
@@ -37,23 +69,18 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
               <Link href="/chat" className="w-full">
-                <Button className="w-full h-full py-6" variant="default">
+                <Button
+                  className={`w-full h-full py-6 ${
+                    apiStatus === "unavailable" ? "bg-gray-400 hover:bg-gray-400 cursor-not-allowed" : ""
+                  }`}
+                  variant="default"
+                  disabled={apiStatus === "unavailable"}
+                >
                   <div className="flex flex-col items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="mb-2"
-                    >
-                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                    </svg>
+                    <MessageSquare className="mb-2 h-6 w-6" />
                     <span className="text-lg font-medium">{t("home.chat")}</span>
+                    {apiStatus === "loading" && <span className="text-xs mt-1">Checking availability...</span>}
+                    {apiStatus === "unavailable" && <span className="text-xs mt-1">Currently unavailable</span>}
                   </div>
                 </Button>
               </Link>
@@ -61,20 +88,7 @@ export default function Home() {
               <Link href="/browse" className="w-full">
                 <Button className="w-full h-full py-6" variant="outline">
                   <div className="flex flex-col items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="mb-2"
-                    >
-                      <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
-                    </svg>
+                    <BookOpen className="mb-2 h-6 w-6" />
                     <span className="text-lg font-medium">{t("home.browse")}</span>
                   </div>
                 </Button>
@@ -83,27 +97,25 @@ export default function Home() {
               <Link href="/clcp" className="w-full">
                 <Button className="w-full h-full py-6" variant="outline">
                   <div className="flex flex-col items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="mb-2"
-                    >
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <path d="M12 16v-4"></path>
-                      <path d="M12 8h.01"></path>
-                    </svg>
+                    <Info className="mb-2 h-6 w-6" />
                     <span className="text-lg font-medium">{t("home.about.clcp")}</span>
                   </div>
                 </Button>
               </Link>
             </div>
+
+            {apiStatus === "unavailable" && (
+              <div className="mt-4">
+                <Link href="/static-chat-basic">
+                  <Button className="w-full py-4" variant="default">
+                    <div className="flex flex-col items-center">
+                      <MessageSquare className="mb-2 h-6 w-6" />
+                      <span className="text-lg font-medium">Try Static Chat (No API Required)</span>
+                    </div>
+                  </Button>
+                </Link>
+              </div>
+            )}
           </CardContent>
         </Card>
 

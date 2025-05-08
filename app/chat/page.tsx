@@ -3,222 +3,325 @@
 import type React from "react"
 
 import { useState, useRef, useEffect } from "react"
-import Link from "next/link"
+import { useRouter } from "next/navigation"
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { ArrowLeft } from "lucide-react"
-import { LanguageSwitcher } from "@/components/language-switcher"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Loader2, Send, AlertCircle, Bot } from "lucide-react"
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import Link from "next/link"
 import { useLanguage } from "@/contexts/language-context"
 
-// Import static responses from a shared file
-import { STATIC_RESPONSES_EN, STATIC_RESPONSES_FR } from "@/data/static-responses"
-
+// Define message type
 type Message = {
-  role: "user" | "assistant"
+  role: "user" | "assistant" | "system"
   content: string
-  id: string
+  id?: string
+  fallback?: boolean
 }
 
-export default function StaticChat() {
-  const { t, language } = useLanguage()
+export default function ChatPage() {
+  // Get language context
+  const { language, translations } = useLanguage()
+
+  // State for messages, input, and loading
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState("")
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+  const [usingFallback, setUsingFallback] = useState(false)
+
+  // Ref for message container to auto-scroll
   const messagesEndRef = useRef<HTMLDivElement>(null)
 
-  // Auto-scroll to bottom when new messages arrive
+  // Router for navigation
+  const router = useRouter()
+
+  // Auto-scroll to bottom of messages
   useEffect(() => {
-    if (messagesEndRef.current) {
-      messagesEndRef.current.scrollIntoView({ behavior: "smooth" })
-    }
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
   }, [messages])
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setInput(e.target.value)
+  // Function to handle fallback chat when main API fails
+  const handleRetryWithFallback = async (userMessage: Message, formattedMessages: Message[]) => {
+    console.log("Trying fallback chat API")
+    try {
+      setUsingFallback(true)
+
+      const fallbackResponse = await fetch("/api/chat-fallback", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          messages: formattedMessages,
+        }),
+      })
+
+      if (!fallbackResponse.ok) {
+        throw new Error(`Fallback API error: ${fallbackResponse.status}`)
+      }
+
+      const fallbackData = await fallbackResponse.json()
+
+      // Add fallback response to messages
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        {
+          role: "assistant",
+          content: fallbackData.content,
+          id: fallbackData.id || Date.now().toString(),
+          fallback: true,
+        },
+      ])
+
+      setLoading(false)
+      setError(null)
+    } catch (fallbackError) {
+      console.error("Fallback chat error:", fallbackError)
+      setError("Both main and fallback chat systems are unavailable. Please try again later.")
+      setLoading(false)
+    }
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // Function to handle form submission
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-    if (!input.trim()) return
+    if (!input.trim() || loading) return
 
-    // Add user message
+    // Create user message
     const userMessage: Message = {
       role: "user",
       content: input,
       id: Date.now().toString(),
     }
 
-    setMessages((prev) => [...prev, userMessage])
+    // Add user message to state
+    setMessages((prevMessages) => [...prevMessages, userMessage])
+
+    // Clear input and set loading
     setInput("")
+    setLoading(true)
+    setError(null)
+    setUsingFallback(false)
 
-    // Generate static response
-    setTimeout(() => {
-      const query = input.toLowerCase()
-      const STATIC_RESPONSES = language === "en" ? STATIC_RESPONSES_EN : STATIC_RESPONSES_FR
-      let responseContent = STATIC_RESPONSES.default
+    // Format messages for API
+    const formattedMessages = [...messages, userMessage].map(({ role, content }) => ({
+      role,
+      content,
+    }))
 
-      // Check for keywords in the query
-      if (query.includes("islam") && query.includes("clcp")) {
-        responseContent = STATIC_RESPONSES["islam-clcp"]
-      } else if (query.includes("christian") && query.includes("clcp")) {
-        responseContent = STATIC_RESPONSES["christianity-clcp"]
-      } else if (query.includes("buddhis") && query.includes("clcp")) {
-        responseContent = STATIC_RESPONSES["buddhism-clcp"]
-      } else if (query.includes("hindu") && query.includes("clcp")) {
-        responseContent = STATIC_RESPONSES["hinduism-clcp"]
-      } else if (query.includes("sikh") && query.includes("clcp")) {
-        responseContent = STATIC_RESPONSES["sikhism-clcp"]
-      } else if (query.includes("atheis") && query.includes("clcp")) {
-        responseContent = STATIC_RESPONSES["atheism-clcp"]
-      } else if ((query.includes("spiritual") || query.includes("non-religious")) && query.includes("clcp")) {
-        responseContent = STATIC_RESPONSES["spirituality-clcp"]
-      } else if (query.includes("being human") || query.includes("humane")) {
-        responseContent = STATIC_RESPONSES["being-humane"]
-      } else if ((query.includes("religion") || query.includes("faith")) && query.includes("clcp")) {
-        responseContent = STATIC_RESPONSES["clcp-religions"]
-      } else if (query.includes("clcp")) {
-        responseContent = STATIC_RESPONSES.clcp
-      } else if (query.includes("salt")) {
-        responseContent = STATIC_RESPONSES.salt
-      } else if (query.includes("islam")) {
-        responseContent = STATIC_RESPONSES.islam
-      } else if (query.includes("christian")) {
-        responseContent = STATIC_RESPONSES.christianity
-      } else if (query.includes("buddhis")) {
-        responseContent = STATIC_RESPONSES.buddhism
-      } else if (query.includes("hindu")) {
-        responseContent = STATIC_RESPONSES.hinduism
-      } else if (query.includes("judai") || query.includes("jewish")) {
-        responseContent = STATIC_RESPONSES.judaism
-      } else if (query.includes("sikh")) {
-        responseContent = STATIC_RESPONSES.sikhism
-      } else if (query.includes("atheis")) {
-        responseContent = STATIC_RESPONSES.atheism
-      } else if (query.includes("spiritual") || query.includes("non-religious")) {
-        responseContent = STATIC_RESPONSES.spirituality
-      } else if (query.includes("compar") || query.includes("difference") || query.includes("similar")) {
-        responseContent = STATIC_RESPONSES.comparison
-      } else if (query.includes("salvation") || query.includes("saved")) {
-        responseContent = STATIC_RESPONSES.salvation
-      } else if (
-        query.includes("afterlife") ||
-        query.includes("heaven") ||
-        query.includes("hell") ||
-        query.includes("death")
-      ) {
-        responseContent = STATIC_RESPONSES.afterlife
+    try {
+      // Call chat API
+      console.log("Calling main chat API")
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          messages: formattedMessages,
+        }),
+      })
+
+      // Check if response is ok
+      if (!response.ok) {
+        // Clone response before reading
+        const clonedResponse = response.clone()
+
+        // Try to get error details
+        try {
+          const errorData = await response.json()
+          throw new Error(errorData.error || `HTTP error! status: ${response.status}`)
+        } catch (jsonError) {
+          // If JSON parsing fails, try to get text
+          const errorText = await clonedResponse.text()
+          throw new Error(errorText || `HTTP error! status: ${response.status}`)
+        }
       }
 
-      const assistantMessage: Message = {
-        role: "assistant",
-        content: responseContent,
-        id: (Date.now() + 1).toString(),
+      // Create reader for streaming response
+      const reader = response.body?.getReader()
+      const decoder = new TextDecoder()
+      let done = false
+      let text = ""
+
+      // Process stream
+      while (!done && reader) {
+        const { value, done: doneReading } = await reader.read()
+        done = doneReading
+        const chunk = decoder.decode(value)
+        text += chunk
+
+        // Update message with current text
+        setMessages((prevMessages) => {
+          const newMessages = [...prevMessages]
+          const assistantMessageIndex = newMessages.findIndex(
+            (message) => message.role === "assistant" && message.id === "streaming",
+          )
+
+          if (assistantMessageIndex === -1) {
+            newMessages.push({
+              role: "assistant",
+              content: text,
+              id: "streaming",
+            })
+          } else {
+            newMessages[assistantMessageIndex].content = text
+          }
+
+          return newMessages
+        })
       }
 
-      setMessages((prev) => [...prev, assistantMessage])
-    }, 500)
+      // Finalize message when stream is complete
+      setMessages((prevMessages) => {
+        const newMessages = [...prevMessages]
+        const streamingIndex = newMessages.findIndex((message) => message.id === "streaming")
+
+        if (streamingIndex !== -1) {
+          newMessages[streamingIndex] = {
+            ...newMessages[streamingIndex],
+            id: Date.now().toString(),
+          }
+        }
+
+        return newMessages
+      })
+
+      setLoading(false)
+    } catch (error) {
+      console.error("Chat error:", error)
+
+      // Set error message
+      setError(`${error instanceof Error ? error.message : String(error)}`)
+
+      // Try fallback chat
+      handleRetryWithFallback(userMessage, formattedMessages)
+    }
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-b from-emerald-50 to-teal-100">
-      <header className="py-6 px-4 sm:px-6 lg:px-8 border-b bg-white">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center space-x-2">
-            <Link href="/" className="flex items-center space-x-2">
-              <ArrowLeft className="h-5 w-5" />
-              <span>{t("nav.back")}</span>
-            </Link>
-          </div>
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center text-white font-bold text-xl">
-              ن
-            </div>
-            <div>
-              <h1 className="text-2xl font-bold text-emerald-700">Noor</h1>
-              <p className="text-sm text-gray-500">Neutral Open Objective Resource</p>
-            </div>
-          </div>
-          <LanguageSwitcher />
-        </div>
-      </header>
-
-      <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-4xl mx-auto w-full">
-        <Card className="w-full h-[calc(100vh-12rem)]">
+    <div className="container mx-auto py-8 px-4">
+      <div className="max-w-4xl mx-auto">
+        <Card className="h-[80vh] flex flex-col">
           <CardHeader>
-            <CardTitle>{t("chat.title")}</CardTitle>
-            <CardDescription>{t("chat.subtitle")}</CardDescription>
+            <div className="flex items-center justify-between">
+              <CardTitle>{language === "en" ? "Chat with Noor" : "Discuter avec Noor"}</CardTitle>
+              <Link href="/">
+                <Button variant="outline" size="sm">
+                  {language === "en" ? "Back to Home" : "Retour à l'accueil"}
+                </Button>
+              </Link>
+            </div>
           </CardHeader>
-          <CardContent className="overflow-y-auto h-[calc(100%-10rem)]">
+
+          <CardContent className="flex-grow overflow-y-auto p-4 space-y-4">
             {messages.length === 0 ? (
-              <div className="flex flex-col items-center justify-center h-full text-center space-y-4">
-                <div className="w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="text-emerald-600"
-                  >
-                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                  </svg>
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-lg font-medium">{t("chat.start")}</h3>
-                  <p className="text-sm text-gray-500 max-w-md">{t("chat.placeholder")}</p>
-                </div>
+              <div className="flex flex-col items-center justify-center h-full text-center text-gray-500">
+                <Bot className="h-12 w-12 mb-4" />
+                <p className="text-lg font-medium">
+                  {language === "en"
+                    ? "Ask me anything about religions and belief systems"
+                    : "Posez-moi des questions sur les religions et les systèmes de croyance"}
+                </p>
+                <p className="text-sm max-w-md mt-2">
+                  {language === "en"
+                    ? "I can provide comparative information about different faiths, practices, and the Community Life Competence Process (CLCP)."
+                    : "Je peux fournir des informations comparatives sur différentes religions, pratiques et le Processus de Compétence de Vie Communautaire (CLCP)."}
+                </p>
               </div>
             ) : (
-              <div className="space-y-4">
-                {messages.map((m) => (
-                  <div key={m.id} className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}>
+              messages.map((message, index) => (
+                <div
+                  key={message.id || index}
+                  className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}
+                >
+                  <div className="flex items-start max-w-[80%]">
+                    {message.role === "assistant" && (
+                      <Avatar className="mr-2 mt-0.5">
+                        <AvatarFallback>AI</AvatarFallback>
+                        <AvatarImage src="/favicon.png" alt="AI" />
+                      </Avatar>
+                    )}
+
                     <div
-                      className={`max-w-[80%] rounded-lg p-4 ${
-                        m.role === "user" ? "bg-emerald-600 text-white" : "bg-gray-100 text-gray-900"
+                      className={`rounded-lg px-4 py-2 ${
+                        message.role === "user"
+                          ? "bg-primary text-primary-foreground"
+                          : message.fallback
+                            ? "bg-yellow-100 text-yellow-800 border border-yellow-200"
+                            : "bg-muted"
                       }`}
                     >
-                      <div className="whitespace-pre-wrap">{m.content}</div>
+                      {message.content}
+                      {message.fallback && (
+                        <div className="text-xs mt-1 text-yellow-600 italic">
+                          {language === "en"
+                            ? "Note: This is a fallback response. AI service is currently unavailable."
+                            : "Note : Ceci est une réponse de secours. Le service d'IA est actuellement indisponible."}
+                        </div>
+                      )}
                     </div>
+
+                    {message.role === "user" && (
+                      <Avatar className="ml-2 mt-0.5">
+                        <AvatarFallback>You</AvatarFallback>
+                      </Avatar>
+                    )}
                   </div>
-                ))}
-                <div ref={messagesEndRef} />
+                </div>
+              ))
+            )}
+
+            {loading && (
+              <div className="flex justify-start">
+                <div className="flex items-center rounded-lg px-4 py-2 bg-muted">
+                  <Loader2 className="h-4 w-4 animate-spin mr-2" />
+                  {language === "en" ? "Thinking..." : "Réflexion en cours..."}
+                </div>
               </div>
             )}
+
+            {error && (
+              <Alert variant="destructive">
+                <AlertCircle className="h-4 w-4" />
+                <AlertTitle>{language === "en" ? "Error" : "Erreur"}</AlertTitle>
+                <AlertDescription>
+                  {error}
+                  {usingFallback && (
+                    <div className="mt-2">
+                      {language === "en"
+                        ? "Using fallback chat system. Responses may be limited."
+                        : "Utilisation du système de chat de secours. Les réponses peuvent être limitées."}
+                    </div>
+                  )}
+                </AlertDescription>
+              </Alert>
+            )}
+
+            <div ref={messagesEndRef} />
           </CardContent>
+
           <CardFooter className="border-t p-4">
             <form onSubmit={handleSubmit} className="flex w-full space-x-2">
               <Input
                 value={input}
-                onChange={handleInputChange}
-                placeholder={t("chat.input.placeholder")}
+                onChange={(e) => setInput(e.target.value)}
+                placeholder={language === "en" ? "Type your message here..." : "Tapez votre message ici..."}
                 className="flex-grow"
+                disabled={loading}
               />
-              <Button type="submit" disabled={!input.trim()}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="ml-1"
-                >
-                  <path d="M22 2L11 13"></path>
-                  <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
-                </svg>
+              <Button type="submit" disabled={loading || !input.trim()}>
+                {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
+                <span className="sr-only">{language === "en" ? "Send" : "Envoyer"}</span>
               </Button>
             </form>
           </CardFooter>
         </Card>
-      </main>
+      </div>
     </div>
   )
 }

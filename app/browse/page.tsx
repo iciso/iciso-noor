@@ -12,19 +12,23 @@ export default function BrowsePage() {
   // Get responses for the current language
   const responses = staticResponses[language as keyof typeof staticResponses]
 
-  // Create categories
+  // Create categories in order of global religious demographics
   const categories = {
+    christianity: {
+      title: language === "en" ? "Christianity" : "Christianisme",
+      topics: Object.keys(responses).filter(
+        (key) => key.includes("christian") && !key.includes("islam") && key !== "christianity-clcp",
+      ),
+    },
     islam: {
       title: language === "en" ? "Islam" : "Islam",
       topics: Object.keys(responses).filter(
         (key) => key.includes("islam") && !key.includes("christianity") && key !== "islam-clcp",
       ),
     },
-    christianity: {
-      title: language === "en" ? "Christianity" : "Christianisme",
-      topics: Object.keys(responses).filter(
-        (key) => key.includes("christian") && !key.includes("islam") && key !== "christianity-clcp",
-      ),
+    hinduism: {
+      title: language === "en" ? "Hinduism" : "Hindouisme",
+      topics: Object.keys(responses).filter((key) => key.includes("hindu") && key !== "hinduism-clcp"),
     },
     comparative: {
       title: language === "en" ? "Comparative Topics" : "Sujets Comparatifs",
@@ -32,17 +36,10 @@ export default function BrowsePage() {
         (key) => key.includes("comparison") || key.includes("salvation") || key.includes("afterlife"),
       ),
     },
-    nonfaith: {
-      title: language === "en" ? "Non-Faith Perspectives" : "Perspectives Non-Religieuses",
-      topics: Object.keys(responses).filter(
-        (key) => key === "atheism" || key === "spirituality" || key === "atheism-clcp" || key === "spirituality-clcp",
-      ),
-    },
     clcp: {
       title: language === "en" ? "CLCP Topics" : "Sujets CLCP",
       topics: Object.keys(responses).filter(
         (key) =>
-          key === "clcp" ||
           key === "salt" ||
           key === "being-humane" ||
           key === "islam-clcp" ||
@@ -53,14 +50,54 @@ export default function BrowsePage() {
           key === "clcp-religions",
       ),
     },
+    nonfaith: {
+      title: language === "en" ? "Non-Faith Perspectives" : "Perspectives Non-Religieuses",
+      topics: Object.keys(responses).filter(
+        (key) => key === "atheism" || key === "spirituality" || key === "atheism-clcp" || key === "spirituality-clcp",
+      ),
+    },
   }
 
-  // Debug: Log all available topic keys
-  console.log("Available topic keys:", Object.keys(responses))
+  // Special case for CLCP main topic
+  const clcpMainTopic = {
+    title:
+      language === "en"
+        ? "Community Life Competence Process (CLCP)"
+        : "Processus de Compétence de Vie Communautaire (CLCP)",
+    description:
+      language === "en"
+        ? "A comprehensive overview of the CLCP methodology"
+        : "Un aperçu complet de la méthodologie CLCP",
+  }
 
   return (
     <div className="container mx-auto py-8 px-4">
       <h1 className="text-3xl font-bold mb-8">{t("browse.title")}</h1>
+
+      {/* Special card for CLCP main topic that links to /app/clcp */}
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">{language === "en" ? "Featured Topic" : "Sujet Vedette"}</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <Card className="flex flex-col h-full">
+            <CardHeader>
+              <CardTitle>{clcpMainTopic.title}</CardTitle>
+              <CardDescription>{language === "en" ? "Core methodology" : "Méthodologie principale"}</CardDescription>
+            </CardHeader>
+            <CardContent className="flex-grow">
+              <p>
+                {language === "en"
+                  ? "Explore the comprehensive overview of the Community Life Competence Process."
+                  : "Explorez l'aperçu complet du Processus de Compétence de Vie Communautaire."}
+              </p>
+            </CardContent>
+            <CardFooter>
+              <Link href="/clcp" className="w-full">
+                <Button className="w-full">{language === "en" ? "Read More" : "Lire Plus"}</Button>
+              </Link>
+            </CardFooter>
+          </Card>
+        </div>
+      </div>
 
       {Object.entries(categories).map(([categoryKey, category]) => (
         <div key={categoryKey} className="mb-8">

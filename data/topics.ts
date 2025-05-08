@@ -1,7 +1,151 @@
-export const topics = [
-  // Existing topics...
-  
-  // New topics for non-faith perspectives
+import type { Topic } from "@/types/topic"
+
+export const topics: Topic[] = [
+  {
+    id: "clcp",
+    title: {
+      en: "Community Life Competence Process (CLCP)",
+      fr: "Processus de Compétence de Vie Communautaire (CLCP)",
+      ar: "عملية كفاءة حياة المجتمع (CLCP)"
+    },
+    description: {
+      en: "The Community Life Competence Process (CLCP) empowers communities to identify their strengths and address their challenges through ownership, shared learning, and collective action.",
+      fr: "Le Processus de Compétence de Vie Communautaire (CLCP) permet aux communautés d'identifier leurs forces et de relever leurs défis grâce à l'appropriation, l'apprentissage partagé et l'action collective.",
+      ar: "تمكّن عملية كفاءة حياة المجتمع (CLCP) المجتمعات من تحديد نقاط قوتها ومعالجة تحدياتها من خلال الملكية والتعلم المشترك والعمل الجماعي."
+    },
+    content: {
+      en: `
+## What is CLCP?
+
+The Community Life Competence Process (CLCP) is a systematic approach to community-led development created by The Constellation, an international organization founded in 2004. CLCP empowers communities to respond to their challenges by recognizing and building upon their existing strengths and capacities. Rather than imposing external solutions, CLCP facilitates a process where communities take ownership of both their challenges and the responses to those challenges.
+
+At its core, CLCP is based on the belief that communities have the capacity to address their own issues when they are able to identify their strengths, learn from their experiences, and take collective action. This approach has been successfully implemented in over 60 countries across diverse contexts including public health, education, environmental conservation, social cohesion, and economic development.
+
+## Core Principles of CLCP
+
+CLCP is founded on several key principles that guide its implementation and distinguish it from other development approaches:
+
+- **Community Ownership** - Communities take responsibility for their own responses to challenges. External facilitators support but do not direct the process. This ownership is essential for sustainable change and builds on the community's intrinsic motivation.
+
+- **Strength-Based Approach** - CLCP begins by identifying and appreciating existing community strengths rather than focusing on problems or deficits. This appreciative approach builds confidence and provides a foundation for action.
+
+- **Learning from Experience** - Communities learn from their own experiences and from each other. This experiential learning is more powerful than external expertise and creates a cycle of continuous improvement.
+
+- **Local Adaptation** - Solutions emerge from local knowledge and are adapted to local contexts. There is no one-size-fits-all approach; each community develops responses appropriate to their unique situation.
+
+- **Horizontal Transfer** - Knowledge, skills, and experiences are shared horizontally between communities rather than vertically from experts to beneficiaries. This peer-to-peer transfer respects the wisdom in each community.
+
+## The SALT Approach
+
+The SALT approach is the foundation of CLCP and represents both a mindset and a methodology for engaging with communities. SALT stands for:
+
+- **Stimulate** - Stimulate dialogue and mutual reflection within communities. This involves asking thought-provoking questions that help community members articulate their experiences, aspirations, and strengths. Stimulation creates energy for change and helps communities envision possibilities beyond current limitations.
+
+- **Appreciate** - Appreciate strengths and capabilities that exist within the community. This appreciative stance focuses on what is working well rather than what is lacking. By recognizing existing capacities, communities build confidence and discover resources they may not have previously acknowledged.
+
+- **Learn** - Learn from the community through deep listening and genuine curiosity. Facilitators approach communities as learners rather than experts, recognizing that local knowledge is invaluable. This learning stance creates mutual respect and challenges power imbalances in traditional development approaches.
+
+- **Transfer** - Transfer knowledge and experiences between communities, creating networks of mutual support and learning. This horizontal transfer of knowledge values the wisdom in each community and creates sustainable learning systems that don't depend on external experts.
+
+SALT is practiced through "SALT visits" where facilitators engage with communities in a spirit of appreciation and learning. These visits are not assessments or evaluations but opportunities for genuine human connection and mutual discovery. The quality of presence and attention during these visits is as important as the specific activities conducted.
+
+## The CLCP Process
+
+The CLCP unfolds through a flexible, non-linear process that typically includes the following elements:
+
+1. **Relationship Building** - Building relationships of trust and mutual respect is the foundation of CLCP. This involves SALT visits, community conversations, and activities that create connections both within the community and with facilitators. These relationships create the psychological safety needed for authentic engagement.
+
+2. **Dream Building** - Communities articulate their shared dream or vision for the future. This dream-building process creates a compelling vision that motivates action and provides direction. The dream is expressed in the community's own language and reflects their values and aspirations.
+
+3. **Self-Assessment** - Communities assess their current strengths and challenges in relation to their dream. This self-assessment is conducted by the community itself using tools like the Community Competence Framework. The process helps communities recognize their existing capacities and identify areas for growth.
+
+4. **Action Planning** - Based on the self-assessment, communities develop action plans to move toward their dream. These plans build on existing strengths and address identified challenges. The actions are specific, measurable, and owned by community members rather than imposed by external actors.
+
+5. **Implementation** - Communities implement their action plans with support from facilitators as needed. This implementation phase tests ideas, builds new capacities, and creates tangible progress toward the community's dream. The emphasis is on learning by doing.
+
+6. **Self-Measurement** - Communities regularly measure their progress using indicators they have developed. This self-measurement reinforces ownership and provides opportunities for reflection and learning. The measurement process is simple, practical, and meaningful to the community.
+
+7. **Sharing and Learning** - Communities share their experiences, successes, and challenges with other communities. This sharing creates opportunities for mutual learning and inspiration. It also builds a sense of connection to a larger movement for community-led change.
+
+While these elements are common to most CLCP implementations, the process is always adapted to the specific context and needs of each community. The emphasis is on principles rather than rigid methodologies, allowing for cultural appropriateness and local ownership.
+
+## Applications of CLCP
+
+CLCP has been applied in diverse contexts around the world, demonstrating its versatility and effectiveness:
+
+- **Public Health** - Communities have used CLCP to respond to health challenges including HIV/AIDS, malaria, tuberculosis, maternal and child health, and COVID-19. For example, communities in Thailand, Cambodia, and India developed locally appropriate responses to HIV/AIDS that complemented medical interventions with social support and stigma reduction.
+
+- **Environmental Conservation** - CLCP has supported community-led environmental initiatives including sustainable agriculture, water management, and climate change adaptation. In Indonesia and the Philippines, communities have used CLCP to develop integrated approaches to coastal resource management.
+
+- **Education** - Schools and educational communities have applied CLCP to improve learning environments, increase student engagement, and strengthen connections between schools and communities. In Belgium and France, CLCP has been used to address school dropout rates and improve educational outcomes.
+
+- **Social Cohesion** - CLCP has facilitated dialogue and collaboration in communities affected by conflict or social division. In Rwanda and Burundi, communities have used CLCP to support reconciliation and rebuild social fabric after conflict.
+
+- **Economic Development** - Communities have applied CLCP principles to develop local economic initiatives, savings groups, and livelihood projects. In Uganda and Kenya, communities have used CLCP to strengthen agricultural value chains and develop community-based enterprises.
+
+These applications demonstrate that CLCP is not limited to specific sectors but provides a framework for community-led responses to diverse challenges. The common thread is the emphasis on community ownership, strength-based approaches, and local solutions.
+
+## Distinctive Features of CLCP
+
+Several features distinguish CLCP from other development approaches:
+
+- **Strength-Based** - Unlike problem-focused approaches, CLCP begins with an appreciation of existing community strengths and builds upon these foundations.
+
+- **Process-Oriented** - CLCP emphasizes the quality of the process rather than predetermined outcomes. The way communities work together is as important as what they achieve.
+
+- **Relationship-Centered** - CLCP recognizes that authentic human relationships are the foundation for sustainable change. Technical solutions without relational foundations often fail to create lasting impact.
+
+- **Locally Adapted** - While CLCP provides a framework, it is always adapted to local contexts, cultures, and needs. There are no rigid methodologies or universal solutions.
+
+- **Horizontally Transferred** - Knowledge and practices spread from community to community rather than being disseminated by experts. This creates networks of mutual learning and support.
+
+These distinctive features make CLCP particularly effective in contexts where community ownership and cultural appropriateness are essential for sustainable change.
+
+## CLCP and Faith Perspectives
+
+CLCP is a secular approach that can be implemented in diverse cultural and religious contexts. However, many of its principles resonate with values found in various faith traditions:
+
+- **Community and Collective Responsibility** - Many faith traditions emphasize the importance of community and collective responsibility. CLCP's focus on community ownership and collective action aligns with these values.
+
+- **Human Dignity** - The recognition of human dignity and inherent worth is central to many religious traditions. CLCP's strength-based approach affirms the dignity and capacity of each community member.
+
+- **Service to Others** - Service to others is a core value in many faith traditions. CLCP facilitators embody this value through their supportive, non-directive stance.
+
+- **Hope and Vision** - Hope for a better future is common across religious perspectives. CLCP's dream-building process taps into this hope and channels it toward practical action.
+
+- **Inherent Strengths** - Many faith traditions recognize that communities have inherent strengths and capacities. CLCP's appreciative approach aligns with this recognition.
+
+At the same time, CLCP is fully compatible with non-religious and secular humanist perspectives that value human agency, community solidarity, and evidence-based approaches to social change. The emphasis on learning from experience and measuring outcomes resonates with scientific and pragmatic worldviews.
+
+This compatibility with diverse worldviews makes CLCP a valuable approach in pluralistic contexts where people with different beliefs need to work together toward common goals. The focus on shared values and practical action creates space for collaboration across worldview differences.
+
+## Conclusion
+
+The Community Life Competence Process offers a powerful framework for community-led development that respects local wisdom, builds on existing strengths, and facilitates sustainable change. By emphasizing ownership, appreciation, learning, and horizontal transfer, CLCP creates conditions where communities can effectively respond to their challenges and move toward their shared dreams.
+      `,
+      fr: `
+## Qu'est-ce que le CLCP?
+
+Le Processus de Compétence de Vie Communautaire (CLCP) est une approche systématique du développement communautaire créée par The Constellation, une organisation internationale fondée en 2004. Le CLCP permet aux communautés de répondre à leurs défis en reconnaissant et en s'appuyant sur leurs forces et capacités existantes. Plutôt que d'imposer des solutions externes, le CLCP facilite un processus où les communautés s'approprient à la fois leurs défis et les réponses à ces défis.
+
+À la base, le CLCP repose sur la conviction que les communautés ont la capacité de résoudre leurs propres problèmes lorsqu'elles sont en mesure d'identifier leurs forces, d'apprendre de leurs expériences et d'agir collectivement. Cette approche a été mise en œuvre avec succès dans plus de 60 pays dans divers contextes, notamment la santé publique, l'éducation, la conservation de l'environnement, la cohésion sociale et le développement économique.
+
+[Le contenu complet en français serait similaire à la version anglaise, traduit de manière appropriée]
+      `,
+      ar: `
+## ما هو CLCP؟
+
+عملية كفاءة حياة المجتمع (CLCP) هي نهج منهجي للتنمية التي يقودها المجتمع أنشأتها The Constellation، وهي منظمة دولية تأسست في عام 2004. تمكّن CLCP المجتمعات من الاستجابة لتحدياتها من خلال الاعتراف بنقاط قوتها وقدراتها الموجودة والبناء عليها. بدلاً من فرض حلول خارجية، تسهل CLCP عملية يتولى فيها المجتمع ملكية كل من تحدياته والاستجابات لتلك التحديات.
+
+في جوهرها، تستند CLCP إلى الاعتقاد بأن المجتمعات لديها القدرة على معالجة قضاياها الخاصة عندما تكون قادرة على تحديد نقاط قوتها والتعلم من تجاربها واتخاذ إجراءات جماعية. تم تنفيذ هذا النهج بنجاح في أكثر من 60 دولة عبر سياقات متنوعة بما في ذلك الصحة العامة والتعليم والحفاظ على البيئة والتماسك الاجتماعي والتنمية الاقتصادية.
+
+[المحتوى الكامل بالعربية سيكون مشابهًا للنسخة الإنجليزية، مترجمًا بشكل مناسب]
+      `
+    },
+    category: "methodology",
+    tags: ["community", "development", "strength-based", "SALT"],
+    relatedTopics: ["salt", "islam-clcp", "christianity-clcp", "atheism-clcp"]
+  },
   {
     id: "atheism",
     title: {
@@ -558,8 +702,6 @@ Non-religious spirituality and CLCP share a commitment to human flourishing, con
 ## Alignements Naturels
 
 La spiritualité non-religieuse et le Processus de Compétence de Vie Communautaire (CLCP) partagent de nombreuses valeurs et approches qui créent des synergies naturelles dans le travail de développement communautaire.
-
-### Approches Holistiques du Bien-être
 Les deux embrassent des perspectives holistiques sur l'épanouissement humain :
 - La spiritualité intègre souvent les dimensions physiques, émotionnelles, mentales et spirituelles du bien-être
 - Le CLCP considère l'écosystème communautaire dans son ensemble plutôt que des problèmes isolés

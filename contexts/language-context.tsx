@@ -125,7 +125,7 @@ const enTranslations: Record<string, string> = {
   "topic.return": "Return to Topics",
 
   // Footer
-  "footer.copyright": "© 2023 Noor - Neutral Open Objective Resource",
+  "footer.copyright": "CC BY 2023 Noor - Neutral Open Objective Resource",
   "footer.license": "Licensed under",
   "footer.creative.commons": "Creative Commons Attribution 4.0",
   "footer.fanf": "Faith and Non-Faith Resources",
@@ -252,7 +252,7 @@ const frTranslations: Record<string, string> = {
   "topic.return": "Retourner aux Sujets",
 
   // Footer
-  "footer.copyright": "© 2023 Noor - Ressource Objective Ouverte Neutre",
+  "footer.copyright": "CC BY 2023 Noor - Ressource Objective Ouverte Neutre",
   "footer.license": "Sous licence",
   "footer.creative.commons": "Creative Commons Attribution 4.0",
   "footer.fanf": "Ressources de Foi et Non-Foi",
