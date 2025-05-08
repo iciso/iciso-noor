@@ -38,17 +38,19 @@ export default function BrowsePage() {
     },
     clcp: {
       title: language === "en" ? "CLCP Topics" : "Sujets CLCP",
-      topics: Object.keys(responses).filter(
-        (key) =>
-          key === "salt" ||
-          key === "being-humane" ||
-          key === "islam-clcp" ||
-          key === "christianity-clcp" ||
-          key === "buddhism-clcp" ||
-          key === "hinduism-clcp" ||
-          key === "sikhism-clcp" ||
-          key === "clcp-religions",
-      ),
+      topics: [
+        // Order explicitly by global religious demographics
+        "christianity-clcp",
+        "islam-clcp",
+        "hinduism-clcp",
+        "buddhism-clcp",
+        "sikhism-clcp",
+        "atheism-clcp",
+        "spirituality-clcp",
+        "salt",
+        "being-humane",
+        "clcp-religions",
+      ].filter((key) => Object.keys(responses).includes(key)),
     },
     nonfaith: {
       title: language === "en" ? "Non-Faith Perspectives" : "Perspectives Non-Religieuses",

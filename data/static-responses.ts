@@ -22,7 +22,8 @@ export const STATIC_RESPONSES_EN = {
     "Spirituality without religion focuses on meaning, connection, and transcendence outside of organized religious frameworks.",
   comparison: "Comparative religion explores similarities and differences between faiths.",
   salvation: "Salvation is a concept of spiritual liberation or redemption.",
-  afterlife: "Beliefs about what happens after death vary across religions.",
+  afterlife:
+    "Beliefs about what happens after death vary across religions, from reincarnation to heaven and hell, judgment, or spiritual union with the divine.",
   default: "Ask me about comparative religion or CLCP!",
 }
 
@@ -51,7 +52,8 @@ export const STATIC_RESPONSES_FR = {
     "La spiritualité sans religion se concentre sur le sens, la connexion et la transcendance en dehors des cadres religieux organisés.",
   comparison: "La religion comparée explore les similitudes et les différences entre les religions.",
   salvation: "Le salut est un concept de libération ou de rédemption spirituelle.",
-  afterlife: "Les croyances sur ce qui se passe après la mort varient selon les religions.",
+  afterlife:
+    "Les croyances sur ce qui se passe après la mort varient selon les religions, de la réincarnation au paradis et à l'enfer, au jugement ou à l'union spirituelle avec le divin.",
   default: "Posez-moi des questions sur la religion comparée ou le CLCP !",
 }
 
@@ -61,7 +63,63 @@ export const staticResponses = {
     "islam-clcp": {
       title: "Islam and CLCP",
       content: `<p>${STATIC_RESPONSES_EN["islam-clcp"]}</p>
-      <p>Islamic principles of community service (khidma), compassion (rahma), and human dignity (karama) align closely with CLCP's emphasis on community ownership and strength-based approaches.</p>`,
+      <p>Islamic principles of community service (khidma), compassion (rahma), and human dignity (karama) align closely with CLCP's emphasis on community ownership and strength-based approaches.</p>
+      
+      <h3>Shared Values and Approaches</h3>
+      <p>Islam and the Community Life Competence Process (CLCP) share several important values and approaches that create natural synergies:</p>
+      
+      <h4>1. Community Responsibility and Solidarity</h4>
+      <ul>
+        <li><strong>Ummah</strong>: Islam emphasizes the concept of ummah (community) where believers support one another</li>
+        <li><strong>Mutual Support</strong>: The Quran (5:2) instructs believers to "help one another in righteousness and piety"</li>
+        <li><strong>CLCP Approach</strong>: CLCP focuses on community ownership and collective action for addressing challenges</li>
+        <li><strong>Shared Vision</strong>: Both recognize that individuals flourish within supportive communities</li>
+      </ul>
+      
+      <h4>2. Service and Compassion</h4>
+      <ul>
+        <li><strong>Khidma</strong>: Service to others is a core Islamic value, with the Prophet Muhammad saying "The best of people are those who benefit others"</li>
+        <li><strong>Rahma</strong>: Compassion and mercy are emphasized throughout Islamic teachings</li>
+        <li><strong>CLCP Facilitation</strong>: CLCP facilitators serve communities by supporting their journey without imposing solutions</li>
+        <li><strong>Strength-Based</strong>: Both value humble service that empowers others rather than creating dependency</li>
+      </ul>
+      
+      <h4>3. Human Dignity and Potential</h4>
+      <ul>
+        <li><strong>Karama</strong>: Islam teaches that all humans have inherent dignity (karama) as Allah's creation</li>
+        <li><strong>Khalifah</strong>: Humans are considered khalifah (stewards) on earth with responsibility and capability</li>
+        <li><strong>CLCP's Approach</strong>: CLCP's strength-based approach focuses on community assets rather than deficits</li>
+        <li><strong>Shared Belief</strong>: Both affirm human capacity and potential for positive change</li>
+      </ul>
+      
+      <h4>4. Justice and Equity</h4>
+      <ul>
+        <li><strong>Adl</strong>: Justice ('adl) is a fundamental principle in Islam</li>
+        <li><strong>Social Responsibility</strong>: Zakat (obligatory charity) and sadaqah (voluntary charity) institutionalize care for the vulnerable</li>
+        <li><strong>CLCP's Vision</strong>: CLCP works toward equitable community development where all members can contribute and benefit</li>
+        <li><strong>Shared Goal</strong>: Both seek to create just communities where all members can thrive</li>
+      </ul>
+      
+      <h3>Practical Applications</h3>
+      <p>Muslim communities implementing CLCP often find that:</p>
+      <ul>
+        <li>CLCP provides practical tools for living out Islamic values of service and community</li>
+        <li>The SALT approach resonates with Islamic practices of consultation (shura) and consensus-building</li>
+        <li>CLCP's horizontal learning aligns with the Islamic tradition of seeking knowledge and wisdom</li>
+        <li>The emphasis on local ownership complements the principle of self-reliance in Islamic thought</li>
+      </ul>
+      
+      <h3>Examples from Practice</h3>
+      <p>Muslim communities and organizations have used CLCP to:</p>
+      <ul>
+        <li>Strengthen community resilience during challenging times</li>
+        <li>Address social issues like poverty, health challenges, and education</li>
+        <li>Build bridges between different communities through shared action</li>
+        <li>Connect faith values with practical community development</li>
+        <li>Empower youth to become active contributors to community well-being</li>
+      </ul>
+      
+      <p>The integration of Islamic principles and CLCP creates opportunities for communities to live out their faith through practical action while respecting the dignity and agency of all community members.</p>`,
     },
     "christianity-clcp": {
       title: "Christianity and CLCP",
@@ -125,12 +183,124 @@ export const staticResponses = {
     "buddhism-clcp": {
       title: "Buddhism and CLCP",
       content: `<p>${STATIC_RESPONSES_EN["buddhism-clcp"]}</p>
-      <p>Buddhist practices of mindfulness, compassion (karuna), and interdependence (pratityasamutpada) complement CLCP's approach to community awareness and interconnected solutions.</p>`,
+      <p>Buddhist practices of mindfulness, compassion (karuna), and interdependence (pratityasamutpada) complement CLCP's approach to community awareness and interconnected solutions.</p>
+      
+      <h3>Shared Values and Approaches</h3>
+      <p>Buddhism and the Community Life Competence Process (CLCP) share several important values and approaches that create natural synergies:</p>
+      
+      <h4>1. Mindfulness and Awareness</h4>
+      <ul>
+        <li><strong>Sati (Mindfulness)</strong>: Buddhism emphasizes present-moment awareness and clear seeing of reality as it is</li>
+        <li><strong>Right Understanding</strong>: The first step of the Eightfold Path involves seeing things clearly without distortion</li>
+        <li><strong>CLCP's Appreciative Approach</strong>: CLCP begins with communities seeing and acknowledging their strengths and capacities</li>
+        <li><strong>Shared Practice</strong>: Both value honest self-assessment and awareness as foundations for positive change</li>
+      </ul>
+      
+      <h4>2. Compassion and Loving-Kindness</h4>
+      <ul>
+        <li><strong>Karuna (Compassion)</strong>: The wish to alleviate suffering in all beings</li>
+        <li><strong>Metta (Loving-Kindness)</strong>: Unconditional goodwill toward all beings without exception</li>
+        <li><strong>CLCP Facilitation</strong>: CLCP facilitators approach communities with deep respect and genuine care</li>
+        <li><strong>Shared Orientation</strong>: Both recognize compassion as a motivating force for community action</li>
+      </ul>
+      
+      <h4>3. Interdependence and Community</h4>
+      <ul>
+        <li><strong>Pratityasamutpada (Dependent Origination)</strong>: The Buddhist understanding that all phenomena arise in dependence upon multiple causes and conditions</li>
+        <li><strong>Sangha (Community)</strong>: The importance of supportive community in Buddhist practice</li>
+        <li><strong>CLCP's Systems Approach</strong>: CLCP recognizes the interconnected nature of community challenges and solutions</li>
+        <li><strong>Shared Vision</strong>: Both see individuals as part of larger interconnected systems rather than isolated entities</li>
+      </ul>
+      
+      <h4>4. Non-Attachment and Process Orientation</h4>
+      <ul>
+        <li><strong>Non-Attachment</strong>: Buddhism teaches the value of not clinging to fixed outcomes or rigid views</li>
+        <li><strong>Middle Way</strong>: Finding balance between extremes of approach</li>
+        <li><strong>CLCP's Process Focus</strong>: CLCP emphasizes the journey of community development rather than predetermined solutions</li>
+        <li><strong>Shared Approach</strong>: Both value adaptability, learning, and responsiveness to changing conditions</li>
+      </ul>
+      
+      <h3>Practical Applications</h3>
+      <p>Buddhist communities implementing CLCP often find that:</p>
+      <ul>
+        <li>CLCP provides practical tools for living out Buddhist values of compassion and interdependence</li>
+        <li>The SALT approach resonates with Buddhist practices of mindful listening and non-judgment</li>
+        <li>CLCP's horizontal learning aligns with the Buddhist tradition of dharma sharing and collective wisdom</li>
+        <li>The emphasis on local ownership complements the principle of self-reliance (attadipa) in Buddhist thought</li>
+      </ul>
+      
+      <h3>Examples from Practice</h3>
+      <p>Buddhist communities and organizations have used CLCP to:</p>
+      <ul>
+        <li>Strengthen community resilience during challenging times</li>
+        <li>Address social issues like poverty, health challenges, and environmental concerns</li>
+        <li>Build bridges between different spiritual traditions through shared action</li>
+        <li>Connect contemplative practice with practical community development</li>
+        <li>Develop socially engaged Buddhist approaches to community challenges</li>
+      </ul>
+      
+      <p>The integration of Buddhist principles and CLCP creates opportunities for communities to embody wisdom and compassion through practical action while honoring the interconnectedness of all beings.</p>`,
     },
     "hinduism-clcp": {
       title: "Hinduism and CLCP",
       content: `<p>${STATIC_RESPONSES_EN["hinduism-clcp"]}</p>
-      <p>Hindu concepts of dharma (duty), seva (selfless service), and community responsibility resonate with CLCP's emphasis on community ownership and collective action.</p>`,
+      <p>Hindu concepts of dharma (duty), seva (selfless service), and community responsibility resonate with CLCP's emphasis on community ownership and collective action.</p>
+      
+      <h3>Shared Values and Approaches</h3>
+      <p>Hinduism and the Community Life Competence Process (CLCP) share several important values and approaches that create natural synergies:</p>
+      
+      <h4>1. Dharma and Community Responsibility</h4>
+      <ul>
+        <li><strong>Dharma</strong>: The Hindu concept of dharma encompasses cosmic order, ethical duty, and righteous living according to one's nature and stage of life</li>
+        <li><strong>Social Responsibility</strong>: Dharma includes responsibilities toward family, community, and society</li>
+        <li><strong>CLCP Approach</strong>: CLCP focuses on community ownership and collective responsibility for addressing challenges</li>
+        <li><strong>Shared Vision</strong>: Both recognize that individual well-being is interconnected with community well-being</li>
+      </ul>
+      
+      <h4>2. Seva and Selfless Service</h4>
+      <ul>
+        <li><strong>Seva</strong>: Selfless service is a core Hindu value, seen as both spiritual practice and social responsibility</li>
+        <li><strong>Karma Yoga</strong>: The path of selfless action without attachment to results, as taught in the Bhagavad Gita</li>
+        <li><strong>CLCP Facilitation</strong>: CLCP facilitators serve communities by supporting their journey without imposing solutions</li>
+        <li><strong>Shared Approach</strong>: Both value service that empowers others rather than creating dependency</li>
+      </ul>
+      
+      <h4>3. Inherent Dignity and Potential</h4>
+      <ul>
+        <li><strong>Divine Essence</strong>: Hinduism teaches that all beings have divine essence (atman) and inherent worth</li>
+        <li><strong>Human Potential</strong>: The concept that each person has the potential to realize their divine nature</li>
+        <li><strong>CLCP's Approach</strong>: CLCP's strength-based approach focuses on community assets rather than deficits</li>
+        <li><strong>Shared Belief</strong>: Both affirm human capacity and potential for positive change</li>
+      </ul>
+      
+      <h4>4. Interconnectedness and Holistic Thinking</h4>
+      <ul>
+        <li><strong>Vasudhaiva Kutumbakam</strong>: The Hindu concept that "the world is one family"</li>
+        <li><strong>Holistic Worldview</strong>: Hinduism emphasizes the interconnectedness of all aspects of life</li>
+        <li><strong>CLCP's Systems Approach</strong>: CLCP recognizes that community challenges require holistic solutions</li>
+        <li><strong>Shared Perspective</strong>: Both see communities as interconnected systems rather than isolated individuals</li>
+      </ul>
+      
+      <h3>Practical Applications</h3>
+      <p>Hindu communities implementing CLCP often find that:</p>
+      <ul>
+        <li>CLCP provides practical tools for living out Hindu values of seva and community responsibility</li>
+        <li>The SALT approach resonates with Hindu practices of appreciative inquiry and learning from others</li>
+        <li>CLCP's horizontal learning aligns with the Hindu tradition of guru-shishya (teacher-student) knowledge transmission</li>
+        <li>The emphasis on local ownership complements the principle of swadeshi (self-reliance) in Hindu thought</li>
+      </ul>
+      
+      <h3>Examples from Practice</h3>
+      <p>Hindu communities and organizations have used CLCP to:</p>
+      <ul>
+        <li>Strengthen community resilience during challenging times</li>
+        <li>Address social issues like poverty, health challenges, and education</li>
+        <li>Revitalize traditional practices of community care and mutual support</li>
+        <li>Connect spiritual values with practical community development</li>
+        <li>Empower women and youth to become active contributors to community well-being</li>
+      </ul>
+      
+      <p>The integration of Hindu principles and CLCP creates opportunities for communities to live out their spiritual values through practical action while respecting the dignity and agency of all community members.</p>`,
     },
     "sikhism-clcp": {
       title: "Sikhism and CLCP",
@@ -140,7 +310,63 @@ export const staticResponses = {
     "atheism-clcp": {
       title: "Atheism and CLCP",
       content: `<p>${STATIC_RESPONSES_EN["atheism-clcp"]}</p>
-      <p>Atheist perspectives on human agency, evidence-based approaches, and community empowerment complement CLCP's focus on local solutions and measurable outcomes without requiring religious frameworks.</p>`,
+  <p>Atheist perspectives on human agency, evidence-based approaches, and community empowerment complement CLCP's focus on local solutions and measurable outcomes without requiring religious frameworks.</p>
+  
+  <h3>Shared Values and Approaches</h3>
+  <p>Atheism and the Community Life Competence Process (CLCP) share several important values and approaches that create natural synergies:</p>
+  
+  <h4>1. Human Agency and Empowerment</h4>
+  <ul>
+    <li><strong>Self-Determination</strong>: Atheism emphasizes human capacity to shape our own lives without divine intervention</li>
+    <li><strong>Collective Action</strong>: Many atheist communities value working together to address social challenges</li>
+    <li><strong>CLCP Approach</strong>: CLCP focuses on communities taking ownership of their challenges and solutions</li>
+    <li><strong>Shared Vision</strong>: Both recognize that humans have the capacity to improve their conditions through deliberate action</li>
+  </ul>
+  
+  <h4>2. Evidence-Based Thinking</h4>
+  <ul>
+    <li><strong>Empirical Approach</strong>: Atheism often emphasizes evidence and reason as the basis for understanding reality</li>
+    <li><strong>Critical Thinking</strong>: Questioning assumptions and testing ideas against evidence</li>
+    <li><strong>CLCP's Learning Process</strong>: CLCP values measuring outcomes and adapting approaches based on what works</li>
+    <li><strong>Shared Methodology</strong>: Both value practical results over dogmatic adherence to untested ideas</li>
+  </ul>
+  
+  <h4>3. Ethical Frameworks Based on Human Well-being</h4>
+  <ul>
+    <li><strong>Humanistic Ethics</strong>: Many atheists ground morality in human flourishing and harm reduction</li>
+    <li><strong>Social Responsibility</strong>: Emphasis on our obligations to one another in this life</li>
+    <li><strong>CLCP's Values</strong>: CLCP focuses on improving community well-being through inclusive approaches</li>
+    <li><strong>Shared Foundation</strong>: Both can work from ethical frameworks that don't require supernatural justification</li>
+  </ul>
+  
+  <h4>4. Community and Solidarity</h4>
+  <ul>
+    <li><strong>Social Connection</strong>: Many atheist communities emphasize the importance of human connection and mutual support</li>
+    <li><strong>Collective Problem-Solving</strong>: Valuing collaborative approaches to addressing challenges</li>
+    <li><strong>CLCP's Community Focus</strong>: CLCP centers on building community capacity and shared responsibility</li>
+    <li><strong>Shared Perspective</strong>: Both recognize that humans thrive through cooperation and social bonds</li>
+  </ul>
+  
+  <h3>Practical Applications</h3>
+  <p>Atheist communities implementing CLCP often find that:</p>
+  <ul>
+    <li>CLCP provides practical tools for community development without requiring religious frameworks</li>
+    <li>The SALT approach resonates with humanistic values of respect, appreciation, and learning</li>
+    <li>CLCP's horizontal learning aligns with democratic and egalitarian principles valued in many atheist communities</li>
+    <li>The emphasis on measurable outcomes complements evidence-based approaches to social change</li>
+  </ul>
+  
+  <h3>Examples from Practice</h3>
+  <p>Secular and atheist communities have used CLCP-like approaches to:</p>
+  <ul>
+    <li>Develop mutual aid networks during crises based on shared human values</li>
+    <li>Address community challenges through rational, collaborative problem-solving</li>
+    <li>Build inclusive spaces that welcome people regardless of belief or non-belief</li>
+    <li>Create ethical frameworks for community action based on shared human concerns</li>
+    <li>Implement evidence-based interventions for community well-being</li>
+  </ul>
+  
+  <p>The integration of atheist perspectives and CLCP creates opportunities for communities to address challenges through rational, evidence-based approaches while respecting human agency and the diversity of worldviews.</p>`,
     },
     "spirituality-clcp": {
       title: "Spirituality and CLCP",
@@ -236,7 +462,58 @@ export const staticResponses = {
     buddhism: {
       title: "Buddhism",
       content: `<p>${STATIC_RESPONSES_EN.buddhism}</p>
-      <p>Buddhism follows the teachings of Buddha, emphasizing mindfulness, compassion, the Four Noble Truths, and the Eightfold Path as ways to overcome suffering and achieve enlightenment.</p>`,
+      <p>Buddhism follows the teachings of Buddha, emphasizing mindfulness, compassion, the Four Noble Truths, and the Eightfold Path as ways to overcome suffering and achieve enlightenment.</p>
+      
+      <h3>Origins and Development</h3>
+      <p>Buddhism originated in northern India in the 5th century BCE with the teachings of Siddhartha Gautama, who became known as the Buddha ("the Awakened One"). After his enlightenment under the Bodhi tree, the Buddha spent 45 years teaching a path to liberation from suffering. Buddhism spread throughout Asia and has more recently gained followers worldwide, with approximately 500 million adherents today.</p>
+      
+      <h3>Core Teachings</h3>
+      
+      <h4>The Four Noble Truths</h4>
+      <ul>
+        <li><strong>Dukkha</strong>: Life involves suffering, unsatisfactoriness, and stress</li>
+        <li><strong>Samudaya</strong>: The cause of suffering is craving and attachment</li>
+        <li><strong>Nirodha</strong>: Suffering can cease when craving ceases</li>
+        <li><strong>Magga</strong>: The Eightfold Path leads to the cessation of suffering</li>
+      </ul>
+      
+      <h4>The Noble Eightfold Path</h4>
+      <ul>
+        <li><strong>Right Understanding</strong>: Seeing reality as it is, understanding the Four Noble Truths</li>
+        <li><strong>Right Intention</strong>: Commitment to ethical and mental self-improvement</li>
+        <li><strong>Right Speech</strong>: Speaking truthfully, avoiding harsh language and gossip</li>
+        <li><strong>Right Action</strong>: Behaving peacefully and harmoniously, avoiding harmful actions</li>
+        <li><strong>Right Livelihood</strong>: Earning a living in a way that does not harm others</li>
+        <li><strong>Right Effort</strong>: Cultivating positive states of mind and overcoming negative ones</li>
+        <li><strong>Right Mindfulness</strong>: Developing awareness of body, feelings, thoughts, and phenomena</li>
+        <li><strong>Right Concentration</strong>: Practicing meditation to focus and unify the mind</li>
+      </ul>
+      
+      <h3>Key Concepts</h3>
+      <ul>
+        <li><strong>Karma</strong>: The law of moral causation; actions have consequences that shape future experiences</li>
+        <li><strong>Rebirth</strong>: The cycle of death and rebirth driven by karma and craving</li>
+        <li><strong>Nirvana</strong>: The ultimate goal of Buddhist practice; liberation from suffering and the cycle of rebirth</li>
+        <li><strong>Anatta (Non-self)</strong>: The teaching that there is no permanent, unchanging self or soul</li>
+        <li><strong>Anicca (Impermanence)</strong>: The understanding that all phenomena are transient and constantly changing</li>
+        <li><strong>Pratityasamutpada (Dependent Origination)</strong>: All phenomena arise in dependence upon multiple causes and conditions</li>
+      </ul>
+      
+      <h3>Major Traditions</h3>
+      <ul>
+        <li><strong>Theravada</strong>: "The Way of the Elders," prevalent in Sri Lanka, Thailand, Myanmar, Cambodia, and Laos, emphasizing the original teachings of the Buddha and individual liberation</li>
+        <li><strong>Mahayana</strong>: "The Great Vehicle," found in China, Japan, Korea, and Vietnam, emphasizing compassion for all beings and the bodhisattva ideal</li>
+        <li><strong>Vajrayana</strong>: "The Diamond Vehicle," practiced in Tibet, Nepal, Mongolia, and parts of India, incorporating tantric practices and visualization techniques</li>
+      </ul>
+      
+      <h3>Practices</h3>
+      <ul>
+        <li><strong>Meditation</strong>: Developing concentration, mindfulness, and insight</li>
+        <li><strong>Ethical Conduct</strong>: Following precepts that guide moral behavior</li>
+        <li><strong>Generosity</strong>: Practicing dana (giving) to develop non-attachment</li>
+        <li><strong>Chanting and Devotion</strong>: Reciting sutras and expressing reverence</li>
+        <li><strong>Study</strong>: Learning the Buddha's teachings (dharma)</li>
+      </ul>`,
     },
     hinduism: {
       title: "Hinduism",
@@ -284,112 +561,7 @@ export const staticResponses = {
         <li><strong>Ramayana</strong>: Epic story of Rama, an avatar of Vishnu, embodying dharmic ideals</li>
         <li><strong>Puranas</strong>: Ancient texts containing stories of deities, cosmology, and philosophy</li>
         <li><strong>Dharma Shastras</strong>: Texts on law, ethics, and social conduct, including the Laws of Manu</li>
-      </ul>
-      
-      <h3>Major Traditions and Paths</h3>
-      
-      <h4>Devotional Traditions (Bhakti)</h4>
-      <ul>
-        <li><strong>Vaishnavism</strong>: Devotion to Vishnu and his avatars, especially Krishna and Rama</li>
-        <li><strong>Shaivism</strong>: Devotion to Shiva as the supreme deity</li>
-        <li><strong>Shaktism</strong>: Worship of the divine feminine power (Shakti) in forms like Durga and Kali</li>
-        <li><strong>Practices</strong>: Include prayer, singing devotional songs (bhajans), pilgrimage, and temple worship (puja)</li>
-      </ul>
-      
-      <h4>Philosophical Schools (Jnana)</h4>
-      <ul>
-        <li><strong>Advaita Vedanta</strong>: Non-dualism taught by Adi Shankara, asserting the oneness of Atman and Brahman</li>
-        <li><strong>Vishishtadvaita</strong>: Qualified non-dualism taught by Ramanuja, where souls are distinct but dependent on God</li>
-        <li><strong>Dvaita</strong>: Dualism taught by Madhva, maintaining a permanent distinction between individual souls and God</li>
-        <li><strong>Approach</strong>: Emphasizes intellectual inquiry, scriptural study, and meditation</li>
-      </ul>
-      
-      <h4>Yoga Traditions (Raja)</h4>
-      <ul>
-        <li><strong>Ashtanga Yoga</strong>: The eight-limbed path described by Patanjali in the Yoga Sutras</li>
-        <li><strong>Hatha Yoga</strong>: Physical practices including asanas (postures) and pranayama (breath control)</li>
-        <li><strong>Kundalini Yoga</strong>: Practices to awaken spiritual energy at the base of the spine</li>
-        <li><strong>Goal</strong>: Control of the mind and senses to achieve spiritual realization</li>
-      </ul>
-      
-      <h4>Action and Service (Karma)</h4>
-      <ul>
-        <li><strong>Karma Yoga</strong>: The path of selfless action without attachment to results</li>
-        <li><strong>Seva</strong>: Selfless service as spiritual practice</li>
-        <li><strong>Approach</strong>: Performing one's duties as sacred acts, offering the fruits to the divine</li>
-      </ul>
-      
-      <h3>Practices and Rituals</h3>
-      
-      <h4>Worship and Devotion</h4>
-      <ul>
-        <li><strong>Puja</strong>: Ritual worship involving offerings to deities, often performed at home shrines or temples</li>
-        <li><strong>Darshan</strong>: Beholding the divine image in temples, considered a reciprocal seeing and being seen by the deity</li>
-        <li><strong>Aarti</strong>: Ritual of light, waving lamps before the deity while chanting prayers</li>
-        <li><strong>Bhajan and Kirtan</strong>: Devotional singing and chanting, often in groups</li>
-      </ul>
-      
-      <h4>Life-Cycle Rituals (Samskaras)</h4>
-      <ul>
-        <li><strong>Birth Rituals</strong>: Including naming ceremonies and first feeding</li>
-        <li><strong>Upanayana</strong>: Sacred thread ceremony marking the beginning of formal education</li>
-        <li><strong>Vivaha</strong>: Marriage ceremonies with various regional traditions</li>
-        <li><strong>Antyeshti</strong>: Funeral rites, typically involving cremation</li>
-      </ul>
-      
-      <h4>Festivals and Celebrations</h4>
-      <ul>
-        <li><strong>Diwali</strong>: Festival of lights celebrating the triumph of light over darkness</li>
-        <li><strong>Holi</strong>: Spring festival of colors and renewal</li>
-        <li><strong>Navaratri</strong>: Nine nights honoring the goddess in her various forms</li>
-        <li><strong>Janmashtami</strong>: Celebration of Krishna's birth</li>
-        <li><strong>Maha Shivaratri</strong>: Night dedicated to Shiva</li>
-      </ul>
-      
-      <h3>Social and Ethical Dimensions</h3>
-      
-      <h4>Varnashrama Dharma</h4>
-      <ul>
-        <li><strong>Varnas</strong>: The four traditional social categories (Brahmin, Kshatriya, Vaishya, Shudra)</li>
-        <li><strong>Ashramas</strong>: The four stages of life (student, householder, forest-dweller, renunciant)</li>
-        <li><strong>Modern Context</strong>: These concepts have evolved and are interpreted differently in contemporary Hinduism</li>
-      </ul>
-      
-      <h4>Ethical Principles</h4>
-      <ul>
-        <li><strong>Ahimsa</strong>: Non-violence toward all living beings</li>
-        <li><strong>Satya</strong>: Truthfulness in thought, speech, and action</li>
-        <li><strong>Asteya</strong>: Non-stealing</li>
-        <li><strong>Daya</strong>: Compassion toward all creatures</li>
-        <li><strong>Tapas</strong>: Self-discipline and austerity</li>
-      </ul>
-      
-      <h3>Contemporary Hinduism</h3>
-      
-      <h4>Global Presence</h4>
-      <ul>
-        <li><strong>Diaspora</strong>: Significant Hindu communities in North America, Europe, Africa, the Caribbean, and Southeast Asia</li>
-        <li><strong>Temples</strong>: Hindu temples serve as cultural and religious centers in many countries</li>
-        <li><strong>Organizations</strong>: Various international Hindu organizations promote Hindu values and practices globally</li>
-      </ul>
-      
-      <h4>Modern Movements</h4>
-      <ul>
-        <li><strong>Reform Movements</strong>: Including the Brahmo Samaj, Arya Samaj, and Ramakrishna Mission</li>
-        <li><strong>Guru Traditions</strong>: Various spiritual teachers and their lineages have global followings</li>
-        <li><strong>Neo-Vedanta</strong>: Modern interpretations emphasizing universal spiritual principles</li>
-        <li><strong>ISKCON</strong> (Hare Krishna): International movement focused on Krishna devotion</li>
-      </ul>
-      
-      <h4>Engagement with Contemporary Issues</h4>
-      <ul>
-        <li><strong>Environmentalism</strong>: Drawing on Hindu concepts of reverence for nature</li>
-        <li><strong>Social Justice</strong>: Addressing caste discrimination and promoting equality</li>
-        <li><strong>Interfaith Dialogue</strong>: Participation in global conversations on religious harmony</li>
-        <li><strong>Science and Spirituality</strong>: Exploring connections between Hindu philosophy and modern science</li>
-      </ul>
-      
-      <p>Hinduism's diversity, adaptability, and depth have allowed it to evolve over millennia while maintaining continuity with its ancient roots. Its emphasis on multiple paths to spiritual fulfillment offers practitioners various approaches to connect with the divine and realize their spiritual potential according to their individual natures and inclinations.</p>`,
+      </ul>`,
     },
     judaism: {
       title: "Judaism",
@@ -443,63 +615,7 @@ export const staticResponses = {
         <li><strong>Consequentialist Ethics</strong>: Some Buddhist approaches focus on actions that reduce suffering.</li>
         <li><strong>Natural Law</strong>: Catholic Christianity emphasizes moral principles discernible through reason.</li>
         <li><strong>Humanistic Ethics</strong>: Secular approaches ground morality in human well-being and flourishing.</li>
-      </ul>
-      
-      <h4>4. Ritual and Practice</h4>
-      <ul>
-        <li><strong>Prayer and Worship</strong>: Formal communication with divine beings varies widely across traditions.</li>
-        <li><strong>Meditation</strong>: Contemplative practices range from mindfulness (Buddhism) to devotional focus (bhakti in Hinduism).</li>
-        <li><strong>Communal Gatherings</strong>: From Muslim Friday prayers to Christian Sunday services to secular community meetings.</li>
-        <li><strong>Rites of Passage</strong>: Birth, coming-of-age, marriage, and death rituals mark life transitions across cultures.</li>
-        <li><strong>Dietary Practices</strong>: From halal (Islam) and kosher (Judaism) to vegetarianism (Jainism) to fasting traditions.</li>
-      </ul>
-      
-      <h4>5. Views on Human Nature</h4>
-      <ul>
-        <li><strong>Original Sin</strong>: Traditional Christianity emphasizes humanity's fallen nature requiring redemption.</li>
-        <li><strong>Inherent Goodness</strong>: Confucianism and some humanist perspectives see humans as naturally inclined toward goodness.</li>
-        <li><strong>Neutral Potential</strong>: Buddhism sees human nature as neither inherently good nor evil but shaped by causes and conditions.</li>
-        <li><strong>Divine Image</strong>: Abrahamic faiths teach that humans are created in God's image with inherent dignity.</li>
-        <li><strong>Evolutionary Product</strong>: Naturalistic perspectives view human nature as shaped by biological and cultural evolution.</li>
-      </ul>
-      
-      <h3>Shared Themes Across Traditions</h3>
-      
-      <p>Despite their differences, religious and non-religious worldviews often share common concerns:</p>
-      
-      <ul>
-        <li><strong>The Golden Rule</strong>: Treating others as one wishes to be treated appears across diverse traditions.</li>
-        <li><strong>Compassion</strong>: Concern for the suffering of others is central to many ethical frameworks.</li>
-        <li><strong>Community</strong>: The importance of human connection and social bonds transcends specific beliefs.</li>
-        <li><strong>Meaning-Making</strong>: All traditions offer frameworks for understanding life's purpose and significance.</li>
-        <li><strong>Moral Development</strong>: Most traditions emphasize the cultivation of character and ethical growth.</li>
-      </ul>
-      
-      <h3>Approaches to Religious Diversity</h3>
-      
-      <p>Scholars and practitioners take various approaches to religious differences:</p>
-      
-      <ul>
-        <li><strong>Exclusivism</strong>: The view that one tradition contains the exclusive truth, while others are mistaken.</li>
-        <li><strong>Inclusivism</strong>: The belief that one's own tradition represents the fullest truth, but other traditions contain partial truths.</li>
-        <li><strong>Pluralism</strong>: The perspective that multiple traditions represent valid responses to ultimate reality.</li>
-        <li><strong>Universalism</strong>: The view that all traditions ultimately lead to the same truth, despite different expressions.</li>
-        <li><strong>Naturalism</strong>: The approach that explains religious diversity through historical, psychological, and sociological factors.</li>
-      </ul>
-      
-      <h3>Contemporary Relevance</h3>
-      
-      <p>Comparative religion offers several benefits in our diverse global society:</p>
-      
-      <ul>
-        <li>Promotes understanding and respect across cultural and religious boundaries</li>
-        <li>Provides context for interpreting religious references in literature, art, and politics</li>
-        <li>Helps individuals explore their own beliefs by encountering alternative perspectives</li>
-        <li>Contributes to interfaith dialogue and cooperation on shared concerns</li>
-        <li>Offers insights into the common human quest for meaning, purpose, and ethical guidance</li>
-      </ul>
-      
-      <p>By studying diverse religious and non-religious perspectives with respect and curiosity, we gain a richer understanding of humanity's enduring questions about meaning, purpose, ethics, and ultimate reality.</p>`,
+      </ul>`,
     },
     salvation: {
       title: "Salvation and Liberation",
@@ -529,115 +645,90 @@ export const staticResponses = {
         <li><strong>Atonement</strong>: Christ's death provides forgiveness of sins (with various theological interpretations)</li>
         <li><strong>Eternal Life</strong>: Communion with God now and in the hereafter</li>
       </ul>
-      <p>As expressed in Ephesians 2:8-9: "For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God—not by works, so that no one can boast."</p>
+      <p>As expressed in Ephesians 2:8-9: "For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God—not by works, so that no one can boast."</p>`,
+    },
+    afterlife: {
+      title: "Afterlife",
+      content: `<h2>Afterlife: Perspectives Across Religious and Philosophical Traditions</h2>
+      
+      <p>Beliefs about what happens after death vary widely across religious and philosophical traditions, reflecting diverse understandings of human nature, cosmic order, and ultimate reality. These conceptions of the afterlife address fundamental human questions about mortality, justice, meaning, and the possibility of continued existence beyond physical death.</p>
+      
+      <h3>Abrahamic Traditions</h3>
+      
+      <h4>Islam</h4>
+      <p>Islamic afterlife beliefs include:</p>
+      <ul>
+        <li><strong>Barzakh</strong>: An intermediate state between death and resurrection where the soul remains in a state of sleep or consciousness</li>
+        <li><strong>Yawm al-Qiyamah</strong>: The Day of Resurrection when all souls will be reunited with their bodies</li>
+        <li><strong>Divine Judgment</strong>: Each person's deeds will be weighed, with the record of deeds presented in the right hand (for the righteous) or left hand (for the unrighteous)</li>
+        <li><strong>Jannah (Paradise)</strong>: A realm of eternal bliss described as gardens with flowing rivers, abundant food, and companionship</li>
+        <li><strong>Jahannam (Hell)</strong>: A place of punishment for unbelievers and sinners, with various levels corresponding to different sins</li>
+      </ul>
+      <p>The Quran states: "Every soul will taste death. Then to Us will you be returned" (29:57).</p>
+      
+      <h4>Christianity</h4>
+      <p>Christian conceptions of the afterlife (with denominational variations) include:</p>
+      <ul>
+        <li><strong>Heaven</strong>: Eternal communion with God and the saints, often described as a state of perfect joy and peace</li>
+        <li><strong>Hell</strong>: Separation from God, variously understood as a place of punishment or a state of self-chosen alienation</li>
+        <li><strong>Purgatory</strong>: In Catholic and some other traditions, a state of purification before entering heaven</li>
+        <li><strong>Resurrection</strong>: The belief that believers will receive glorified bodies at Christ's return</li>
+        <li><strong>New Creation</strong>: The ultimate renewal of heaven and earth where God will dwell with humanity</li>
+      </ul>
+      <p>Jesus taught: "In my Father's house are many rooms... I go to prepare a place for you" (John 14:2).</p>
       
       <h4>Judaism</h4>
-      <p>Judaism focuses less on individual salvation and more on:</p>
+      <p>Jewish perspectives on the afterlife have evolved and vary widely:</p>
       <ul>
-        <li><strong>Covenant Relationship</strong>: Maintaining the special relationship between God and the Jewish people</li>
-        <li><strong>Tikkun Olam</strong>: "Repairing the world" through justice and righteous action</li>
-        <li><strong>Ethical Monotheism</strong>: Living according to God's moral law</li>
-        <li><strong>Messianic Age</strong>: A future time of universal peace and harmony rather than individual afterlife</li>
-        <li><strong>This-Worldly Focus</strong>: Emphasis on living ethically in this life rather than securing rewards in the next</li>
+        <li><strong>Sheol</strong>: In early biblical texts, a shadowy underworld where the dead exist in a diminished state</li>
+        <li><strong>Olam Ha-Ba</strong>: "The World to Come," variously understood as a messianic age on earth or a spiritual realm</li>
+        <li><strong>Gan Eden</strong>: Paradise or the Garden of Eden as a place for the righteous</li>
+        <li><strong>Gehinnom</strong>: A place of purification, typically limited to twelve months</li>
+        <li><strong>Resurrection</strong>: Belief in bodily resurrection appears in later Jewish texts and remains important in Orthodox Judaism</li>
       </ul>
-      <p>The prophet Micah summarized: "What does the Lord require of you? To act justly and to love mercy and to walk humbly with your God" (Micah 6:8).</p>
+      <p>The focus often remains on the continuation of the Jewish people and the coming of the messianic age rather than individual afterlife.</p>
       
       <h3>Dharmic Traditions</h3>
       
       <h4>Hinduism</h4>
-      <p>Hindu traditions offer several paths to liberation (moksha):</p>
+      <p>Hindu conceptions of what happens after death include:</p>
       <ul>
-        <li><strong>Release from Samsara</strong>: Liberation from the cycle of rebirth and suffering</li>
-        <li><strong>Self-Realization</strong>: Recognition of one's true nature as Atman (self) and its unity with Brahman (ultimate reality)</li>
-        <li><strong>Multiple Paths</strong>: Karma yoga (action), bhakti yoga (devotion), jnana yoga (knowledge), and raja yoga (meditation)</li>
-        <li><strong>Dharma</strong>: Living according to one's ethical and social duties</li>
-        <li><strong>Grace</strong>: In some traditions, divine grace (especially in bhakti traditions) is essential</li>
+        <li><strong>Samsara</strong>: The cycle of death and rebirth (reincarnation) determined by karma</li>
+        <li><strong>Karma</strong>: The law of cause and effect that determines one's future births</li>
+        <li><strong>Svarga and Naraka</strong>: Temporary heavens and hells where souls experience the results of good or bad karma before rebirth</li>
+        <li><strong>Moksha</strong>: Liberation from the cycle of rebirth, the ultimate goal</li>
       </ul>
-      <p>The Bhagavad Gita teaches: "When a person is devoted to something with complete faith, I unify his faith in that form" (7:21).</p>
       
       <h4>Buddhism</h4>
-      <p>Buddhism focuses on liberation (nirvana) through:</p>
+      <p>Buddhist understandings of what happens after death include:</p>
       <ul>
-        <li><strong>Ending Suffering</strong>: Recognizing and addressing the causes of suffering (dukkha)</li>
-        <li><strong>Four Noble Truths</strong>: Understanding suffering, its origin, cessation, and the path to its end</li>
-        <li><strong>Eightfold Path</strong>: Ethical conduct, mental discipline, and wisdom leading to liberation</li>
-        <li><strong>Impermanence and Non-self</strong>: Recognizing that all phenomena are transient and without inherent self</li>
-        <li><strong>Enlightenment</strong>: Awakening to the true nature of reality and freedom from delusion</li>
-      </ul>
-      <p>The Buddha taught: "Just as the ocean has one taste, the taste of salt, so too this teaching and discipline has one taste, the taste of liberation."</p>
-      
-      <h4>Jainism</h4>
-      <p>Jain liberation (moksha) involves:</p>
-      <ul>
-        <li><strong>Ahimsa</strong>: Non-violence toward all living beings as the highest principle</li>
-        <li><strong>Karma Removal</strong>: Eliminating accumulated karma through asceticism and non-attachment</li>
-        <li><strong>Self-Control</strong>: Strict discipline of mind, speech, and body</li>
-        <li><strong>Right Knowledge, Faith, and Conduct</strong>: The three jewels (ratnatraya) of Jainism</li>
-        <li><strong>Liberation of the Soul</strong>: The jiva (soul) freed from karmic bondage ascends to the realm of the liberated</li>
-      </ul>
-      
-      <h3>East Asian Traditions</h3>
-      
-      <h4>Daoism</h4>
-      <p>Daoist fulfillment centers on:</p>
-      <ul>
-        <li><strong>Harmony with the Dao</strong>: Aligning with the natural way of the universe</li>
-        <li><strong>Wu-wei</strong>: "Non-action" or effortless action in accordance with nature</li>
-        <li><strong>Simplicity</strong>: Returning to an uncomplicated, natural state</li>
-        <li><strong>Longevity</strong>: In some traditions, physical immortality through alchemical practices</li>
-        <li><strong>Balance</strong>: Harmonizing opposing forces (yin and yang)</li>
-      </ul>
-      
-      <h4>Confucianism</h4>
-      <p>Confucian fulfillment emphasizes:</p>
-      <ul>
-        <li><strong>Moral Cultivation</strong>: Developing virtue (de) and becoming a junzi (person of noble character)</li>
-        <li><strong>Social Harmony</strong>: Proper relationships within family and society</li>
-        <li><strong>Ritual Propriety</strong>: Appropriate conduct in all situations</li>
-        <li><strong>This-Worldly Focus</strong>: Emphasis on social ethics rather than afterlife</li>
-        <li><strong>Mandate of Heaven</strong>: Aligning human affairs with cosmic moral order</li>
+        <li><strong>Rebirth</strong>: Continuation of the stream of consciousness in a new form, distinguished from reincarnation as no permanent self transfers</li>
+        <li><strong>Six Realms</strong>: Possible realms of rebirth including gods, demi-gods, humans, animals, hungry ghosts, and hell beings</li>
+        <li><strong>Karma</strong>: Actions that shape future rebirths based on intention rather than divine judgment</li>
+        <li><strong>Nirvana</strong>: The cessation of suffering and the cycle of rebirth, not a place but a state beyond conceptualization</li>
       </ul>
       
       <h3>Non-Religious Perspectives</h3>
       
-      <h4>Secular Humanism</h4>
-      <p>Humanist fulfillment focuses on:</p>
+      <p>Those who do not adhere to religious beliefs typically view death as the end of personal existence:</p>
       <ul>
-        <li><strong>Human Flourishing</strong>: Well-being and development of human potential</li>
-        <li><strong>Ethical Living</strong>: Morality based on human needs and rational principles</li>
-        <li><strong>Social Progress</strong>: Creating a more just and compassionate society</li>
-        <li><strong>Scientific Understanding</strong>: Knowledge as a path to solving human problems</li>
-        <li><strong>This-Worldly Focus</strong>: Finding meaning within natural human existence</li>
-      </ul>
-      
-      <h4>Existentialism</h4>
-      <p>Existentialist fulfillment involves:</p>
-      <ul>
-        <li><strong>Authentic Existence</strong>: Living according to one's own choices rather than external dictates</li>
-        <li><strong>Creating Meaning</strong>: Finding or creating purpose in an objectively meaningless universe</li>
-        <li><strong>Confronting Mortality</strong>: Facing the reality of death and finitude</li>
-        <li><strong>Freedom and Responsibility</strong>: Accepting the burden of choice and its consequences</li>
-        <li><strong>Engagement</strong>: Active participation in life rather than detached observation</li>
+        <li><strong>Naturalism</strong>: The view that consciousness ends with brain death, with no continuation of personal identity</li>
+        <li><strong>Legacy</strong>: Many secular individuals find meaning in the impact they leave behind through their actions, relationships, and contributions to society</li>
+        <li><strong>Material Continuation</strong>: The understanding that the matter that makes up our bodies returns to the ecosystem in a form of physical continuity</li>
       </ul>
       
       <h3>Comparative Insights</h3>
       
-      <p>Despite their differences, these approaches to salvation and liberation reveal some common themes:</p>
+      <p>Despite their differences, many religious traditions share certain themes in their afterlife concepts:</p>
       
       <ul>
-        <li><strong>Transformation</strong>: All traditions seek some form of profound change in human experience</li>
-        <li><strong>Ethical Dimension</strong>: Most paths involve moral development and ethical action</li>
-        <li><strong>Overcoming Limitations</strong>: Whether sin, ignorance, attachment, or inauthenticity</li>
-        <li><strong>Community Context</strong>: Salvation rarely occurs in isolation but within traditions and communities</li>
-        <li><strong>Ultimate Concerns</strong>: All address humanity's deepest questions about meaning and purpose</li>
+        <li><strong>Continuity</strong>: Most traditions affirm that something of the human person continues beyond death</li>
+        <li><strong>Moral Accountability</strong>: Many traditions teach that one's actions in this life have consequences in the next</li>
+        <li><strong>Ultimate Justice</strong>: The idea that injustices in this world will eventually be addressed</li>
+        <li><strong>Transformation</strong>: Death as a transition rather than an absolute end</li>
       </ul>
       
-      <p>Understanding these diverse approaches to salvation and liberation helps us appreciate the variety of ways humans have sought to address fundamental existential questions across cultures and throughout history.</p>`,
-    },
-    afterlife: {
-      title: "Afterlife",
-      content: `<p>${STATIC_RESPONSES_EN.afterlife}</p>
-      <p>Beliefs about what happens after death vary widely across religions, from reincarnation to heaven and hell, judgment, or spiritual union with the divine, while some traditions focus more on this-worldly concerns.</p>`,
+      <p>These diverse conceptions of the afterlife reflect humanity's ongoing engagement with mortality, meaning, and the possibility of transcendence.</p>`,
     },
     default: {
       title: "Noor",
@@ -648,7 +739,63 @@ export const staticResponses = {
     "islam-clcp": {
       title: "Islam et CLCP",
       content: `<p>${STATIC_RESPONSES_FR["islam-clcp"]}</p>
-      <p>Les principes islamiques de service communautaire (khidma), de compassion (rahma) et de dignité humaine (karama) s'alignent étroitement sur l'accent mis par le CLCP sur l'appropriation communautaire et les approches basées sur les forces.</p>`,
+      <p>Les principes islamiques de service communautaire (khidma), de compassion (rahma) et de dignité humaine (karama) s'alignent étroitement sur l'accent mis par le CLCP sur l'appropriation communautaire et les approches basées sur les forces.</p>
+      
+      <h3>Valeurs et Approches Partagées</h3>
+      <p>L'Islam et le Processus de Compétence de Vie Communautaire (CLCP) partagent plusieurs valeurs et approches importantes qui créent des synergies naturelles:</p>
+      
+      <h4>1. Responsabilité Communautaire et Solidarité</h4>
+      <ul>
+        <li><strong>Oummah</strong>: L'Islam met l'accent sur le concept d'oummah (communauté) où les croyants se soutiennent mutuellement</li>
+        <li><strong>Soutien Mutuel</strong>: Le Coran (5:2) instruit les croyants à "s'entraider dans l'accomplissement des bonnes œuvres et de la piété"</li>
+        <li><strong>Approche CLCP</strong>: Le CLCP se concentre sur l'appropriation communautaire et l'action collective pour relever les défis</li>
+        <li><strong>Vision Partagée</strong>: Les deux reconnaissent que les individus s'épanouissent au sein de communautés solidaires</li>
+      </ul>
+      
+      <h4>2. Service et Compassion</h4>
+      <ul>
+        <li><strong>Khidma</strong>: Le service aux autres est une valeur islamique fondamentale, le Prophète Muhammad ayant dit "Les meilleurs des hommes sont ceux qui sont les plus utiles aux autres"</li>
+        <li><strong>Rahma</strong>: La compassion et la miséricorde sont soulignées dans tous les enseignements islamiques</li>
+        <li><strong>Facilitation CLCP</strong>: Les facilitateurs CLCP servent les communautés en soutenant leur parcours sans imposer de solutions</li>
+        <li><strong>Basé sur les Forces</strong>: Les deux valorisent le service humble qui autonomise les autres plutôt que de créer une dépendance</li>
+      </ul>
+      
+      <h4>3. Dignité Humaine et Potentiel</h4>
+      <ul>
+        <li><strong>Karama</strong>: L'Islam enseigne que tous les humains ont une dignité inhérente (karama) en tant que création d'Allah</li>
+        <li><strong>Khalifah</strong>: Les humains sont considérés comme khalifah (intendants) sur terre avec responsabilité et capacité</li>
+        <li><strong>Approche du CLCP</strong>: L'approche du CLCP basée sur les forces se concentre sur les atouts de la communauté plutôt que sur les déficits</li>
+        <li><strong>Croyance Partagée</strong>: Les deux affirment la capacité humaine et le potentiel de changement positif</li>
+      </ul>
+      
+      <h4>4. Justice et Équité</h4>
+      <ul>
+        <li><strong>Adl</strong>: La justice ('adl) est un principe fondamental en Islam</li>
+        <li><strong>Responsabilité Sociale</strong>: La Zakat (charité obligatoire) et la sadaqa (charité volontaire) institutionnalisent le soin des personnes vulnérables</li>
+        <li><strong>Vision du CLCP</strong>: Le CLCP œuvre pour un développement communautaire équitable où tous les membres peuvent contribuer et bénéficier</li>
+        <li><strong>Objectif Commun</strong>: Les deux cherchent à créer des communautés justes où tous les membres peuvent s'épanouir</li>
+      </ul>
+      
+      <h3>Applications Pratiques</h3>
+      <p>Les communautés musulmanes mettant en œuvre le CLCP constatent souvent que:</p>
+      <ul>
+        <li>Le CLCP fournit des outils pratiques pour vivre les valeurs islamiques de service et de communauté</li>
+        <li>L'approche SALT résonne avec les pratiques islamiques de consultation (shura) et de construction de consensus</li>
+        <li>L'apprentissage horizontal du CLCP s'aligne avec la tradition islamique de recherche de connaissance et de sagesse</li>
+        <li>L'accent mis sur l'appropriation locale complète le principe d'autonomie dans la pensée islamique</li>
+      </ul>
+      
+      <h3>Exemples de la Pratique</h3>
+      <p>Les communautés et organisations musulmanes ont utilisé le CLCP pour:</p>
+      <ul>
+        <li>Renforcer la résilience communautaire pendant les périodes difficiles</li>
+        <li>Aborder les problèmes sociaux comme la pauvreté, les défis de santé et l'éducation</li>
+        <li>Construire des ponts entre différentes communautés par une action partagée</li>
+        <li>Connecter les valeurs de foi avec le développement communautaire pratique</li>
+        <li>Autonomiser les jeunes pour qu'ils deviennent des contributeurs actifs au bien-être communautaire</li>
+      </ul>
+      
+      <p>L'intégration des principes islamiques et du CLCP crée des opportunités pour les communautés de vivre leur foi à travers une action pratique tout en respectant la dignité et l'agence de tous les membres de la communauté.</p>`,
     },
     "christianity-clcp": {
       title: "Christianisme et CLCP",
@@ -712,12 +859,124 @@ export const staticResponses = {
     "buddhism-clcp": {
       title: "Bouddhisme et CLCP",
       content: `<p>${STATIC_RESPONSES_FR["buddhism-clcp"]}</p>
-      <p>Les pratiques bouddhistes de pleine conscience, de compassion (karuna) et d'interdépendance (pratityasamutpada) complètent l'approche du CLCP en matière de sensibilisation communautaire et de solutions interconnectées.</p>`,
+      <p>Les pratiques bouddhistes de pleine conscience, de compassion (karuna) et d'interdépendance (pratityasamutpada) complètent l'approche du CLCP en matière de sensibilisation communautaire et de solutions interconnectées.</p>
+      
+      <h3>Valeurs et Approches Partagées</h3>
+      <p>Le bouddhisme et le Processus de Compétence de Vie Communautaire (CLCP) partagent plusieurs valeurs et approches importantes qui créent des synergies naturelles:</p>
+      
+      <h4>1. Pleine Conscience et Conscience</h4>
+      <ul>
+        <li><strong>Sati (Pleine Conscience)</strong>: Le bouddhisme met l'accent sur la conscience du moment présent et la vision claire de la réalité telle qu'elle est</li>
+        <li><strong>Compréhension Juste</strong>: La première étape de l'Octuple Sentier implique de voir les choses clairement sans distorsion</li>
+        <li><strong>Approche Appréciative du CLCP</strong>: Le CLCP commence par la reconnaissance et l'appréciation par les communautés de leurs forces et capacités</li>
+        <li><strong>Pratique Partagée</strong>: Les deux valorisent l'auto-évaluation honnête et la conscience comme fondements du changement positif</li>
+      </ul>
+      
+      <h4>2. Compassion et Bienveillance Aimante</h4>
+      <ul>
+        <li><strong>Karuna (Compassion)</strong>: Le souhait de soulager la souffrance de tous les êtres</li>
+        <li><strong>Metta (Bienveillance Aimante)</strong>: Bonne volonté inconditionnelle envers tous les êtres sans exception</li>
+        <li><strong>Facilitation CLCP</strong>: Les facilitateurs CLCP approchent les communautés avec un profond respect et un souci sincère</li>
+        <li><strong>Orientation Partagée</strong>: Les deux reconnaissent la compassion comme une force motivante pour l'action communautaire</li>
+      </ul>
+      
+      <h4>3. Interdépendance et Communauté</h4>
+      <ul>
+        <li><strong>Pratityasamutpada (Origine Dépendante)</strong>: La compréhension bouddhiste que tous les phénomènes surgissent en dépendance de multiples causes et conditions</li>
+        <li><strong>Sangha (Communauté)</strong>: L'importance de la communauté de soutien dans la pratique bouddhiste</li>
+        <li><strong>Approche Systémique du CLCP</strong>: Le CLCP reconnaît la nature interconnectée des défis et des solutions communautaires</li>
+        <li><strong>Vision Partagée</strong>: Les deux voient les individus comme faisant partie de systèmes interconnectés plus larges plutôt que comme des entités isolées</li>
+      </ul>
+      
+      <h4>4. Non-Attachement et Orientation vers le Processus</h4>
+      <ul>
+        <li><strong>Non-Attachement</strong>: Le bouddhisme enseigne la valeur de ne pas s'accrocher à des résultats fixes ou à des vues rigides</li>
+        <li><strong>Voie du Milieu</strong>: Trouver l'équilibre entre les extrêmes d'approche</li>
+        <li><strong>Focus sur le Processus du CLCP</strong>: Le CLCP met l'accent sur le parcours du développement communautaire plutôt que sur des solutions prédéterminées</li>
+        <li><strong>Approche Partagée</strong>: Les deux valorisent l'adaptabilité, l'apprentissage et la réactivité aux conditions changeantes</li>
+      </ul>
+      
+      <h3>Applications Pratiques</h3>
+      <p>Les communautés bouddhistes mettant en œuvre le CLCP constatent souvent que:</p>
+      <ul>
+        <li>Le CLCP fournit des outils pratiques pour vivre les valeurs bouddhistes de compassion et d'interdépendance</li>
+        <li>L'approche SALT résonne avec les pratiques bouddhistes d'écoute attentive et de non-jugement</li>
+        <li>L'apprentissage horizontal du CLCP s'aligne avec la tradition bouddhiste de partage du dharma et de sagesse collective</li>
+        <li>L'accent mis sur l'appropriation locale complète le principe d'autonomie (attadipa) dans la pensée bouddhiste</li>
+      </ul>
+      
+      <h3>Exemples de la Pratique</h3>
+      <p>Les communautés et organisations bouddhistes ont utilisé le CLCP pour:</p>
+      <ul>
+        <li>Renforcer la résilience communautaire pendant les périodes difficiles</li>
+        <li>Aborder les problèmes sociaux comme la pauvreté, les défis de santé et les préoccupations environnementales</li>
+        <li>Construire des ponts entre différentes traditions spirituelles par une action partagée</li>
+        <li>Connecter la pratique contemplative avec le développement communautaire pratique</li>
+        <li>Développer des approches bouddhistes socialement engagées face aux défis communautaires</li>
+      </ul>
+      
+      <p>L'intégration des principes bouddhistes et du CLCP crée des opportunités pour les communautés d'incarner la sagesse et la compassion à travers une action pratique tout en honorant l'interconnexion de tous les êtres.</p>`,
     },
     "hinduism-clcp": {
       title: "Hindouisme et CLCP",
       content: `<p>${STATIC_RESPONSES_FR["hinduism-clcp"]}</p>
-      <p>Les concepts hindous de dharma (devoir), seva (service désintéressé) et de responsabilité communautaire résonnent avec l'accent mis par le CLCP sur l'appropriation communautaire et l'action collective.</p>`,
+      <p>Les concepts hindous de dharma (devoir), seva (service désintéressé) et de responsabilité communautaire résonnent avec l'accent mis par le CLCP sur l'appropriation communautaire et l'action collective.</p>
+      
+      <h3>Valeurs et Approches Partagées</h3>
+      <p>L'hindouisme et le Processus de Compétence de Vie Communautaire (CLCP) partagent plusieurs valeurs et approches importantes qui créent des synergies naturelles:</p>
+      
+      <h4>1. Dharma et Responsabilité Communautaire</h4>
+      <ul>
+        <li><strong>Dharma</strong>: Le concept hindou de dharma englobe l'ordre cosmique, le devoir éthique et la vie juste selon sa nature et son stade de vie</li>
+        <li><strong>Responsabilité Sociale</strong>: Le dharma inclut des responsabilités envers la famille, la communauté et la société</li>
+        <li><strong>Approche CLCP</strong>: Le CLCP se concentre sur l'appropriation communautaire et la responsabilité collective pour relever les défis</li>
+        <li><strong>Vision Partagée</strong>: Les deux reconnaissent que le bien-être individuel est interconnecté avec le bien-être communautaire</li>
+      </ul>
+      
+      <h4>2. Seva et Service Désintéressé</h4>
+      <ul>
+        <li><strong>Seva</strong>: Le service désintéressé est une valeur hindoue fondamentale, considérée à la fois comme une pratique spirituelle et une responsabilité sociale</li>
+        <li><strong>Karma Yoga</strong>: La voie de l'action désintéressée sans attachement aux résultats, comme enseigné dans la Bhagavad Gita</li>
+        <li><strong>Facilitation CLCP</strong>: Les facilitateurs CLCP servent les communautés en soutenant leur parcours sans imposer de solutions</li>
+        <li><strong>Approche Partagée</strong>: Les deux valorisent le service qui autonomise les autres plutôt que de créer une dépendance</li>
+      </ul>
+      
+      <h4>3. Dignité et Potentiel Inhérents</h4>
+      <ul>
+        <li><strong>Essence Divine</strong>: L'hindouisme enseigne que tous les êtres ont une essence divine (atman) et une valeur inhérente</li>
+        <li><strong>Potentiel Humain</strong>: Le concept que chaque personne a le potentiel de réaliser sa nature divine</li>
+        <li><strong>Approche du CLCP</strong>: L'approche du CLCP basée sur les forces se concentre sur les atouts de la communauté plutôt que sur les déficits</li>
+        <li><strong>Croyance Partagée</strong>: Les deux affirment la capacité humaine et le potentiel de changement positif</li>
+      </ul>
+      
+      <h4>4. Interconnexion et Pensée Holistique</h4>
+      <ul>
+        <li><strong>Vasudhaiva Kutumbakam</strong>: Le concept hindou que "le monde est une seule famille"</li>
+        <li><strong>Vision du Monde Holistique</strong>: L'hindouisme met l'accent sur l'interconnexion de tous les aspects de la vie</li>
+        <li><strong>Approche Systémique du CLCP</strong>: Le CLCP reconnaît que les défis communautaires nécessitent des solutions holistiques</li>
+        <li><strong>Perspective Partagée</strong>: Les deux voient les communautés comme des systèmes interconnectés plutôt que des individus isolés</li>
+      </ul>
+      
+      <h3>Applications Pratiques</h3>
+      <p>Les communautés hindoues mettant en œuvre le CLCP constatent souvent que:</p>
+      <ul>
+        <li>Le CLCP fournit des outils pratiques pour vivre les valeurs hindoues de seva et de responsabilité communautaire</li>
+        <li>L'approche SALT résonne avec les pratiques hindoues d'enquête appréciative et d'apprentissage auprès des autres</li>
+        <li>L'apprentissage horizontal du CLCP s'aligne avec la tradition hindoue de guru-shishya (maître-élève) de transmission des connaissances</li>
+        <li>L'accent mis sur l'appropriation locale complète le principe de swadeshi (autonomie) dans la pensée hindoue</li>
+      </ul>
+      
+      <h3>Exemples de la Pratique</h3>
+      <p>Les communautés et organisations hindoues ont utilisé le CLCP pour:</p>
+      <ul>
+        <li>Renforcer la résilience communautaire pendant les périodes difficiles</li>
+        <li>Aborder les problèmes sociaux comme la pauvreté, les défis de santé et l'éducation</li>
+        <li>Revitaliser les pratiques traditionnelles de soins communautaires et de soutien mutuel</li>
+        <li>Connecter les valeurs spirituelles avec le développement communautaire pratique</li>
+        <li>Autonomiser les femmes et les jeunes pour qu'ils deviennent des contributeurs actifs au bien-être communautaire</li>
+      </ul>
+      
+      <p>L'intégration des principes hindous et du CLCP crée des opportunités pour les communautés de vivre leurs valeurs spirituelles à travers une action pratique tout en respectant la dignité et l'agence de tous les membres de la communauté.</p>`,
     },
     "sikhism-clcp": {
       title: "Sikhisme et CLCP",
@@ -727,7 +986,63 @@ export const staticResponses = {
     "atheism-clcp": {
       title: "Athéisme et CLCP",
       content: `<p>${STATIC_RESPONSES_FR["atheism-clcp"]}</p>
-      <p>Les perspectives athées sur l'agence humaine, les approches fondées sur des preuves et l'autonomisation communautaire complètent l'accent mis par le CLCP sur les solutions locales et les résultats mesurables sans nécessiter de cadres religieux.</p>`,
+  <p>Les perspectives athées sur l'agence humaine, les approches fondées sur des preuves et l'autonomisation communautaire complètent l'accent mis par le CLCP sur les solutions locales et les résultats mesurables sans nécessiter de cadres religieux.</p>
+  
+  <h3>Valeurs et Approches Partagées</h3>
+  <p>L'athéisme et le Processus de Compétence de Vie Communautaire (CLCP) partagent plusieurs valeurs et approches importantes qui créent des synergies naturelles:</p>
+  
+  <h4>1. Agence Humaine et Autonomisation</h4>
+  <ul>
+    <li><strong>Autodétermination</strong>: L'athéisme met l'accent sur la capacité humaine à façonner nos propres vies sans intervention divine</li>
+    <li><strong>Action Collective</strong>: De nombreuses communautés athées valorisent le travail collectif pour relever les défis sociaux</li>
+    <li><strong>Approche CLCP</strong>: Le CLCP se concentre sur les communautés qui s'approprient leurs défis et leurs solutions</li>
+    <li><strong>Vision Partagée</strong>: Les deux reconnaissent que les humains ont la capacité d'améliorer leurs conditions par une action délibérée</li>
+  </ul>
+  
+  <h4>2. Pensée Fondée sur des Preuves</h4>
+  <ul>
+    <li><strong>Approche Empirique</strong>: L'athéisme met souvent l'accent sur les preuves et la raison comme base de compréhension de la réalité</li>
+    <li><strong>Pensée Critique</strong>: Remettre en question les hypothèses et tester les idées par rapport aux preuves</li>
+    <li><strong>Processus d'Apprentissage du CLCP</strong>: Le CLCP valorise la mesure des résultats et l'adaptation des approches en fonction de ce qui fonctionne</li>
+    <li><strong>Méthodologie Partagée</strong>: Les deux valorisent les résultats pratiques plutôt que l'adhésion dogmatique à des idées non testées</li>
+  </ul>
+  
+  <h4>3. Cadres Éthiques Basés sur le Bien-être Humain</h4>
+  <ul>
+    <li><strong>Éthique Humaniste</strong>: De nombreux athées fondent la moralité sur l'épanouissement humain et la réduction des préjudices</li>
+    <li><strong>Responsabilité Sociale</strong>: Accent mis sur nos obligations les uns envers les autres dans cette vie</li>
+    <li><strong>Valeurs du CLCP</strong>: Le CLCP se concentre sur l'amélioration du bien-être communautaire par des approches inclusives</li>
+    <li><strong>Fondement Commun</strong>: Les deux peuvent travailler à partir de cadres éthiques qui ne nécessitent pas de justification surnaturelle</li>
+  </ul>
+  
+  <h4>4. Communauté et Solidarité</h4>
+  <ul>
+    <li><strong>Connexion Sociale</strong>: De nombreuses communautés athées soulignent l'importance de la connexion humaine et du soutien mutuel</li>
+    <li><strong>Résolution Collective de Problèmes</strong>: Valoriser les approches collaboratives pour relever les défis</li>
+    <li><strong>Focus Communautaire du CLCP</strong>: Le CLCP est centré sur le renforcement des capacités communautaires et la responsabilité partagée</li>
+    <li><strong>Perspective Partagée</strong>: Les deux reconnaissent que les humains s'épanouissent grâce à la coopération et aux liens sociaux</li>
+  </ul>
+  
+  <h3>Applications Pratiques</h3>
+  <p>Les communautés athées mettant en œuvre le CLCP constatent souvent que:</p>
+  <ul>
+    <li>Le CLCP fournit des outils pratiques pour le développement communautaire sans nécessiter de cadres religieux</li>
+    <li>L'approche SALT résonne avec les valeurs humanistes de respect, d'appréciation et d'apprentissage</li>
+    <li>L'apprentissage horizontal du CLCP s'aligne sur les principes démocratiques et égalitaires valorisés dans de nombreuses communautés athées</li>
+    <li>L'accent mis sur les résultats mesurables complète les approches fondées sur des preuves du changement social</li>
+  </ul>
+  
+  <h3>Exemples de la Pratique</h3>
+  <p>Les communautés séculières et athées ont utilisé des approches similaires au CLCP pour:</p>
+  <ul>
+    <li>Développer des réseaux d'entraide pendant les crises basés sur des valeurs humaines partagées</li>
+    <li>Aborder les défis communautaires par une résolution de problèmes rationnelle et collaborative</li>
+    <li>Construire des espaces inclusifs qui accueillent les personnes indépendamment de leurs croyances ou non-croyances</li>
+    <li>Créer des cadres éthiques pour l'action communautaire basés sur des préoccupations humaines partagées</li>
+    <li>Mettre en œuvre des interventions fondées sur des preuves pour le bien-être communautaire</li>
+  </ul>
+  
+  <p>L'intégration des perspectives athées et du CLCP crée des opportunités pour les communautés d'aborder les défis par des approches rationnelles et fondées sur des preuves tout en respectant l'agence humaine et la diversité des visions du monde.</p>`,
     },
     "spirituality-clcp": {
       title: "Spiritualité et CLCP",
@@ -785,7 +1100,58 @@ export const staticResponses = {
     buddhism: {
       title: "Bouddhisme",
       content: `<p>${STATIC_RESPONSES_FR.buddhism}</p>
-      <p>Le bouddhisme suit les enseignements de Bouddha, mettant l'accent sur la pleine conscience, la compassion, les Quatre Nobles Vérités et le Noble Chemin Octuple comme moyens de surmonter la souffrance et d'atteindre l'illumination.</p>`,
+      <p>Le bouddhisme suit les enseignements de Bouddha, mettant l'accent sur la pleine conscience, la compassion, les Quatre Nobles Vérités et le Noble Chemin Octuple comme moyens de surmonter la souffrance et d'atteindre l'illumination.</p>
+      
+      <h3>Origines et Développement</h3>
+      <p>Le bouddhisme est né dans le nord de l'Inde au 5ème siècle avant J.-C. avec les enseignements de Siddhartha Gautama, qui est devenu connu sous le nom de Bouddha ("l'Éveillé"). Après son illumination sous l'arbre Bodhi, le Bouddha a passé 45 ans à enseigner une voie de libération de la souffrance. Le bouddhisme s'est répandu dans toute l'Asie et a plus récemment gagné des adeptes dans le monde entier, avec environ 500 millions d'adhérents aujourd'hui.</p>
+      
+      <h3>Enseignements Fondamentaux</h3>
+      
+      <h4>Les Quatre Nobles Vérités</h4>
+      <ul>
+        <li><strong>Dukkha</strong>: La vie implique souffrance, insatisfaction et stress</li>
+        <li><strong>Samudaya</strong>: La cause de la souffrance est le désir et l'attachement</li>
+        <li><strong>Nirodha</strong>: La souffrance peut cesser quand le désir cesse</li>
+        <li><strong>Magga</strong>: Le Noble Chemin Octuple mène à la cessation de la souffrance</li>
+      </ul>
+      
+      <h4>Le Noble Chemin Octuple</h4>
+      <ul>
+        <li><strong>Compréhension Juste</strong>: Voir la réalité telle qu'elle est, comprendre les Quatre Nobles Vérités</li>
+        <li><strong>Pensée Juste</strong>: Engagement envers l'amélioration éthique et mentale de soi</li>
+        <li><strong>Parole Juste</strong>: Parler avec vérité, éviter le langage dur et les commérages</li>
+        <li><strong>Action Juste</strong>: Se comporter pacifiquement et harmonieusement, éviter les actions nuisibles</li>
+        <li><strong>Moyens d'Existence Justes</strong>: Gagner sa vie d'une manière qui ne nuit pas aux autres</li>
+        <li><strong>Effort Juste</strong>: Cultiver des états d'esprit positifs et surmonter les négatifs</li>
+        <li><strong>Attention Juste</strong>: Développer la conscience du corps, des sentiments, des pensées et des phénomènes</li>
+        <li><strong>Concentration Juste</strong>: Pratiquer la méditation pour concentrer et unifier l'esprit</li>
+      </ul>
+      
+      <h3>Concepts Clés</h3>
+      <ul>
+        <li><strong>Karma</strong>: La loi de causalité morale; les actions ont des conséquences qui façonnent les expériences futures</li>
+        <li><strong>Renaissance</strong>: Le cycle de mort et de renaissance conduit par le karma et le désir</li>
+        <li><strong>Nirvana</strong>: Le but ultime de la pratique bouddhiste; libération de la souffrance et du cycle de renaissance</li>
+        <li><strong>Anatta (Non-soi)</strong>: L'enseignement qu'il n'y a pas de soi ou d'âme permanent et immuable</li>
+        <li><strong>Anicca (Impermanence)</strong>: La compréhension que tous les phénomènes sont transitoires et en constante évolution</li>
+        <li><strong>Pratityasamutpada (Origine Dépendante)</strong>: Tous les phénomènes surgissent en dépendance de multiples causes et conditions</li>
+      </ul>
+      
+      <h3>Traditions Majeures</h3>
+      <ul>
+        <li><strong>Theravada</strong>: "La Voie des Anciens", répandue au Sri Lanka, en Thaïlande, au Myanmar, au Cambodge et au Laos, mettant l'accent sur les enseignements originaux du Bouddha et la libération individuelle</li>
+        <li><strong>Mahayana</strong>: "Le Grand Véhicule", présent en Chine, au Japon, en Corée et au Vietnam, mettant l'accent sur la compassion pour tous les êtres et l'idéal du bodhisattva</li>
+        <li><strong>Vajrayana</strong>: "Le Véhicule de Diamant", pratiqué au Tibet, au Népal, en Mongolie et dans certaines parties de l'Inde, incorporant des pratiques tantriques et des techniques de visualisation</li>
+      </ul>
+      
+      <h3>Pratiques</h3>
+      <ul>
+        <li><strong>Méditation</strong>: Développer la concentration, la pleine conscience et la perspicacité</li>
+        <li><strong>Conduite Éthique</strong>: Suivre des préceptes qui guident le comportement moral</li>
+        <li><strong>Générosité</strong>: Pratiquer dana (don) pour développer le non-attachement</li>
+        <li><strong>Chant et Dévotion</strong>: Réciter des sutras et exprimer la révérence</li>
+        <li><strong>Étude</strong>: Apprendre les enseignements du Bouddha (dharma)</li>
+      </ul>`,
     },
     hinduism: {
       title: "Hindouisme",
@@ -802,9 +1168,6 @@ export const staticResponses = {
         <li><strong>Relation</strong>: Différentes écoles de pensée hindoue comprennent différemment la relation entre Brahman et Atman, de l'identité complète (Advaita Vedanta) au non-dualisme qualifié (Vishishtadvaita) au dualisme (Dvaita)</li>
       </ul>
       
-        au non-dualisme qualifié (Vishishtadvaita) au dualisme (Dvaita)</li>
-      </ul>
-      
       <h4>Dharma, Karma et Samsara</h4>
       <ul>
         <li><strong>Dharma</strong>: Ordre cosmique, devoir éthique et vie juste selon sa nature et son stade de vie</li>
@@ -819,129 +1182,7 @@ export const staticResponses = {
         <li><strong>Divinités Majeures</strong>: Incluent Brahma (créateur), Vishnu (préservateur), Shiva (transformateur), Devi (la déesse sous diverses formes comme Durga, Kali, Lakshmi, Saraswati), et Ganesha (celui qui élimine les obstacles)</li>
         <li><strong>Ishta Devata</strong>: Le concept d'une divinité personnelle choisie pour l'adoration</li>
         <li><strong>Avatars</strong>: Incarnations divines, particulièrement de Vishnu (comme Rama et Krishna)</li>
-      </ul>
-      
-      <h3>Textes Sacrés</h3>
-      
-      <h4>Shruti ("Ce qui est Entendu")</h4>
-      <ul>
-        <li><strong>Vedas</strong>: Les plus anciens textes sacrés, comprenant le Rig Veda, Sama Veda, Yajur Veda et Atharva Veda</li>
-        <li><strong>Upanishads</strong>: Textes philosophiques explorant la nature de la réalité, de la conscience et de la libération</li>
-        <li><strong>Statut</strong>: Considérés comme des connaissances révélées, des vérités éternelles "entendues" par les sages anciens</li>
-      </ul>
-      
-      <h4>Smriti ("Ce qui est Rappelé")</h4>
-      <ul>
-        <li><strong>Bhagavad Gita</strong>: Partie de l'épopée Mahabharata, un dialogue entre Krishna et Arjuna sur le devoir, la dévotion et la connaissance spirituelle</li>
-        <li><strong>Ramayana</strong>: Histoire épique de Rama, un avatar de Vishnu, incarnant les idéaux dharmiques</li>
-        <li><strong>Puranas</strong>: Textes anciens contenant des histoires de divinités, de cosmologie et de philosophie</li>
-        <li><strong>Dharma Shastras</strong>: Textes sur la loi, l'éthique et la conduite sociale, y compris les Lois de Manu</li>
-      </ul>
-      
-      <h3>Traditions et Voies Majeures</h3>
-      
-      <h4>Traditions Dévotionnelles (Bhakti)</h4>
-      <ul>
-        <li><strong>Vaishnavisme</strong>: Dévotion à Vishnu et ses avatars, spécialement Krishna et Rama</li>
-        <li><strong>Shaivisme</strong>: Dévotion à Shiva comme divinité suprême</li>
-        <li><strong>Shaktisme</strong>: Adoration du pouvoir divin féminin (Shakti) sous des formes comme Durga et Kali</li>
-        <li><strong>Pratiques</strong>: Incluent la prière, le chant de chansons dévotionnelles (bhajans), le pèlerinage et l'adoration au temple (puja)</li>
-      </ul>
-      
-      <h4>Écoles Philosophiques (Jnana)</h4>
-      <ul>
-        <li><strong>Advaita Vedanta</strong>: Non-dualisme enseigné par Adi Shankara, affirmant l'unité d'Atman et Brahman</li>
-        <li><strong>Vishishtadvaita</strong>: Non-dualisme qualifié enseigné par Ramanuja, où les âmes sont distinctes mais dépendantes de Dieu</li>
-        <li><strong>Dvaita</strong>: Dualisme enseigné par Madhva, maintenant une distinction permanente entre les âmes individuelles et Dieu</li>
-        <li><strong>Approche</strong>: Met l'accent sur l'enquête intellectuelle, l'étude des écritures et la méditation</li>
-      </ul>
-      
-      <h4>Traditions du Yoga (Raja)</h4>
-      <ul>
-        <li><strong>Ashtanga Yoga</strong>: La voie à huit membres décrite par Patanjali dans les Yoga Sutras</li>
-        <li><strong>Hatha Yoga</strong>: Pratiques physiques incluant asanas (postures) et pranayama (contrôle du souffle)</li>
-        <li><strong>Kundalini Yoga</strong>: Pratiques pour éveiller l'énergie spirituelle à la base de la colonne vertébrale</li>
-        <li><strong>Objectif</strong>: Contrôle de l'esprit et des sens pour atteindre la réalisation spirituelle</li>
-      </ul>
-      
-      <h4>Action et Service (Karma)</h4>
-      <ul>
-        <li><strong>Karma Yoga</strong>: La voie de l'action désintéressée sans attachement aux résultats</li>
-        <li><strong>Seva</strong>: Service désintéressé comme pratique spirituelle</li>
-        <li><strong>Approche</strong>: Accomplir ses devoirs comme des actes sacrés, offrant les fruits au divin</li>
-      </ul>
-      
-      <h3>Pratiques et Rituels</h3>
-      
-      <h4>Adoration et Dévotion</h4>
-      <ul>
-        <li><strong>Puja</strong>: Adoration rituelle impliquant des offrandes aux divinités, souvent réalisée dans des autels domestiques ou des temples</li>
-        <li><strong>Darshan</strong>: Contempler l'image divine dans les temples, considéré comme un voir et être vu réciproque par la divinité</li>
-        <li><strong>Aarti</strong>: Rituel de lumière, agitant des lampes devant la divinité tout en chantant des prières</li>
-        <li><strong>Bhajan et Kirtan</strong>: Chant dévotionnel, souvent en groupes</li>
-      </ul>
-      
-      <h4>Rituels du Cycle de Vie (Samskaras)</h4>
-      <ul>
-        <li><strong>Rituels de Naissance</strong>: Incluant les cérémonies de nomination et première alimentation</li>
-        <li><strong>Upanayana</strong>: Cérémonie du fil sacré marquant le début de l'éducation formelle</li>
-        <li><strong>Vivaha</strong>: Cérémonies de mariage avec diverses traditions régionales</li>
-        <li><strong>Antyeshti</strong>: Rites funéraires, impliquant typiquement la crémation</li>
-      </ul>
-      
-      <h4>Festivals et Célébrations</h4>
-      <ul>
-        <li><strong>Diwali</strong>: Festival des lumières célébrant le triomphe de la lumière sur l'obscurité</li>
-        <li><strong>Holi</strong>: Festival de printemps des couleurs et du renouveau</li>
-        <li><strong>Navaratri</strong>: Neuf nuits honorant la déesse sous ses diverses formes</li>
-        <li><strong>Janmashtami</strong>: Célébration de la naissance de Krishna</li>
-        <li><strong>Maha Shivaratri</strong>: Nuit dédiée à Shiva</li>
-      </ul>
-      
-      <h3>Dimensions Sociales et Éthiques</h3>
-      
-      <h4>Varnashrama Dharma</h4>
-      <ul>
-        <li><strong>Varnas</strong>: Les quatre catégories sociales traditionnelles (Brahmin, Kshatriya, Vaishya, Shudra)</li>
-        <li><strong>Ashramas</strong>: Les quatre étapes de la vie (étudiant, maître de maison, ermite forestier, renonçant)</li>
-        <li><strong>Contexte Moderne</strong>: Ces concepts ont évolué et sont interprétés différemment dans l'hindouisme contemporain</li>
-      </ul>
-      
-      <h4>Principes Éthiques</h4>
-      <ul>
-        <li><strong>Ahimsa</strong>: Non-violence envers tous les êtres vivants</li>
-        <li><strong>Satya</strong>: Véracité dans la pensée, la parole et l'action</li>
-        <li><strong>Asteya</strong>: Non-vol</li>
-        <li><strong>Daya</strong>: Compassion envers toutes les créatures</li>
-        <li><strong>Tapas</strong>: Auto-discipline et austérité</li>
-      </ul>
-      
-      <h3>Hindouisme Contemporain</h3>
-      
-      <h4>Présence Mondiale</h4>
-      <ul>
-        <li><strong>Diaspora</strong>: Communautés hindoues significatives en Amérique du Nord, Europe, Afrique, Caraïbes et Asie du Sud-Est</li>
-        <li><strong>Temples</strong>: Les temples hindous servent de centres culturels et religieux dans de nombreux pays</li>
-        <li><strong>Organisations</strong>: Diverses organisations hindoues internationales promeuvent les valeurs et pratiques hindoues globalement</li>
-      </ul>
-      
-      <h4>Mouvements Modernes</h4>
-      <ul>
-        <li><strong>Mouvements de Réforme</strong>: Incluant le Brahmo Samaj, Arya Samaj et la Mission Ramakrishna</li>
-        <li><strong>Traditions de Gourous</strong>: Divers enseignants spirituels et leurs lignées ont des suiveurs mondiaux</li>
-        <li><strong>Néo-Vedanta</strong>: Interprétations modernes mettant l'accent sur les principes spirituels universels</li>
-        <li><strong>ISKCON</strong> (Hare Krishna): Mouvement international centré sur la dévotion à Krishna</li>
-      </ul>
-      
-      <h4>Engagement avec les Questions Contemporaines</h4>
-      <ul>
-        <li><strong>Environnementalisme</strong>: S'appuyant sur les concepts hindous de révérence pour la nature</li>
-        <li><strong>Justice Sociale</strong>: Aborder la discrimination de caste et promouvoir l'égalité</li>
-        <li><strong>Dialogue Interreligieux</strong>: Participation aux conversations globales sur l'harmonie religieuse</li>
-        <li><strong>Science et Spiritualité</strong>: Explorer les connexions entre la philosophie hindoue et la science moderne</li>
-      </ul>
-      
-      <p>La diversité, l'adaptabilité et la profondeur de l'hindouisme lui ont permis d'évoluer sur des millénaires tout en maintenant une continuité avec ses racines anciennes. Son accent sur les multiples voies vers l'accomplissement spirituel offre aux pratiquants diverses approches pour se connecter avec le divin et réaliser leur potentiel spirituel selon leurs natures et inclinations individuelles.</p>`,
+      </ul>`,
     },
     judaism: {
       title: "Judaïsme",
@@ -984,74 +1225,9 @@ export const staticResponses = {
       <ul>
         <li><strong>Textes Révélés</strong>: Le Coran (Islam), la Bible (Christianisme) et la Torah (Judaïsme) sont considérés comme des révélations divines.</li>
         <li><strong>Littérature de Sagesse</strong>: Les sutras bouddhistes et les Upanishads hindous offrent des aperçus philosophiques plutôt que des commandements divins.</li>
-        <li><strong>Traditions Orales</strong>: De nombreuses traditions spirituelles indigènes transmettent les enseignements par la narration orale et le rituel.</li>
+        <li><strong>Oral Traditions</strong>: De nombreuses traditions spirituelles indigènes transmettent les enseignements par la narration orale et le rituel.</li>
         <li><strong>Autorité Interprétative</strong>: Les religions diffèrent quant à qui peut interpréter les textes avec autorité—clergé, érudits, individus ou consensus communautaire.</li>
-      </ul>
-      
-      <h4>3. Cadres Éthiques</h4>
-      <ul>
-        <li><strong>Commandement Divin</strong>: De nombreuses traditions théistes fondent l'éthique sur la volonté divine ou la révélation.</li>
-        <li><strong>Éthique de la Vertu</strong>: Le confucianisme met l'accent sur la cultivation des vertus personnelles comme la bienveillance et la bienséance.</li>
-        <li><strong>Éthique Conséquentialiste</strong>: Certaines approches bouddhistes se concentrent sur les actions qui réduisent la souffrance.</li>
-        <li><strong>Loi Naturelle</strong>: Le christianisme catholique met l'accent sur les principes moraux discernables par la raison.</li>
-        <li><strong>Éthique Humaniste</strong>: Les approches séculières fondent la moralité sur le bien-être et l'épanouissement humains.</li>
-      </ul>
-      
-      <h4>4. Rituel et Pratique</h4>
-      <ul>
-        <li><strong>Prière et Culte</strong>: La communication formelle avec les êtres divins varie considérablement selon les traditions.</li>
-        <li><strong>Méditation</strong>: Les pratiques contemplatives vont de la pleine conscience (bouddhisme) à la concentration dévotionnelle (bhakti dans l'hindouisme).</li>
-        <li><strong>Rassemblements Communautaires</strong>: Des prières du vendredi musulmanes aux services dominicaux chrétiens aux réunions communautaires séculières.</li>
-        <li><strong>Rites de Passage</strong>: Les rituels de naissance, de passage à l'âge adulte, de mariage et de mort marquent les transitions de vie dans toutes les cultures.</li>
-        <li><strong>Pratiques Alimentaires</strong>: Du halal (Islam) et casher (Judaïsme) au végétarisme (Jaïnisme) aux traditions de jeûne.</li>
-      </ul>
-      
-      <h4>5. Vues sur la Nature Humaine</h4>
-      <ul>
-        <li><strong>Péché Originel</strong>: Le christianisme traditionnel met l'accent sur la nature déchue de l'humanité nécessitant la rédemption.</li>
-        <li><strong>Bonté Inhérente</strong>: Le confucianisme et certaines perspectives humanistes voient les humains comme naturellement inclinés vers le bien.</li>
-        <li><strong>Potentiel Neutre</strong>: Le bouddhisme voit la nature humaine comme n'étant ni intrinsèquement bonne ni mauvaise mais façonnée par les causes et conditions.</li>
-        <li><strong>Image Divine</strong>: Les religions abrahamiques enseignent que les humains sont créés à l'image de Dieu avec une dignité inhérente.</li>
-        <li><strong>Produit Évolutif</strong>: Les perspectives naturalistes voient la nature humaine comme façonnée par l'évolution biologique et culturelle.</li>
-      </ul>
-      
-      <h3>Thèmes Communs à Travers les Traditions</h3>
-      
-      <p>Malgré leurs différences, les visions du monde religieuses et non religieuses partagent souvent des préoccupations communes:</p>
-      
-      <ul>
-        <li><strong>La Règle d'Or</strong>: Traiter les autres comme on souhaite être traité apparaît dans diverses traditions.</li>
-        <li><strong>Compassion</strong>: Le souci de la souffrance des autres est central dans de nombreux cadres éthiques.</li>
-        <li><strong>Communauté</strong>: L'importance de la connexion humaine et des liens sociaux transcende les croyances spécifiques.</li>
-        <li><strong>Création de Sens</strong>: Toutes les traditions offrent des cadres pour comprendre le but et la signification de la vie.</li>
-        <li><strong>Développement Moral</strong>: La plupart des traditions mettent l'accent sur la cultivation du caractère et la croissance éthique.</li>
-      </ul>
-      
-      <h3>Approches de la Diversité Religieuse</h3>
-      
-      <p>Les érudits et les praticiens adoptent diverses approches face aux différences religieuses:</p>
-      
-      <ul>
-        <li><strong>Exclusivisme</strong>: La vision qu'une tradition contient la vérité exclusive, tandis que les autres se trompent.</li>
-        <li><strong>Inclusivisme</strong>: La croyance que sa propre tradition représente la vérité la plus complète, mais que d'autres traditions contiennent des vérités partielles.</li>
-        <li><strong>Pluralisme</strong>: La perspective que plusieurs traditions représentent des réponses valides à la réalité ultime.</li>
-        <li><strong>Universalisme</strong>: La vision que toutes les traditions mènent ultimement à la même vérité, malgré des expressions différentes.</li>
-        <li><strong>Naturalisme</strong>: L'approche qui explique la diversité religieuse par des facteurs historiques, psychologiques et sociologiques.</li>
-      </ul>
-      
-      <h3>Pertinence Contemporaine</h3>
-      
-      <p>La religion comparée offre plusieurs avantages dans notre société mondiale diverse:</p>
-      
-      <ul>
-        <li>Favorise la compréhension et le respect à travers les frontières culturelles et religieuses</li>
-        <li>Fournit un contexte pour interpréter les références religieuses dans la littérature, l'art et la politique</li>
-        <li>Aide les individus à explorer leurs propres croyances en rencontrant des perspectives alternatives</li>
-        <li>Contribue au dialogue interreligieux et à la coopération sur des préoccupations communes</li>
-        <li>Offre des aperçus sur la quête humaine commune de sens, de but et de guidance éthique</li>
-      </ul>
-      
-      <p>En étudiant diverses perspectives religieuses et non religieuses avec respect et curiosité, nous acquérons une compréhension plus riche des questions durables de l'humanité concernant le sens, le but, l'éthique et la réalité ultime.</p>`,
+      </ul>`,
     },
     salvation: {
       title: "Salut et Libération",
@@ -1081,115 +1257,89 @@ export const staticResponses = {
         <li><strong>Expiation</strong>: La mort du Christ offre le pardon des péchés (avec diverses interprétations théologiques)</li>
         <li><strong>Vie Éternelle</strong>: Communion avec Dieu maintenant et dans l'au-delà</li>
       </ul>
-      <p>Comme l'exprime Éphésiens 2:8-9: "Car c'est par la grâce que vous êtes sauvés, par le moyen de la foi. Et cela ne vient pas de vous, c'est le don de Dieu. Ce n'est point par les œuvres, afin que personne ne se glorifie."</p>
+      <p>Comme l'exprime Éphésiens 2:8-9: "Car c'est par la grâce que vous êtes sauvés, par le moyen de la foi. Et cela ne vient pas de vous, c'est le don de Dieu. Ce n'est point par les œuvres, afin que personne ne se glorifie."</p>`,
+    },
+    afterlife: {
+      title: "Vie Après la Mort",
+      content: `<h2>La Vie Après la Mort: Perspectives à Travers les Traditions Religieuses et Philosophiques</h2>
+      
+      <p>Les croyances sur ce qui se passe après la mort varient considérablement selon les traditions religieuses et philosophiques, reflétant diverses compréhensions de la nature humaine, de l'ordre cosmique et de la réalité ultime. Ces conceptions de l'au-delà abordent des questions humaines fondamentales concernant la mortalité, la justice, le sens et la possibilité d'une existence continue au-delà de la mort physique.</p>
+      
+      <h3>Traditions Abrahamiques</h3>
+      
+      <h4>Islam</h4>
+      <p>Les croyances islamiques sur l'au-delà comprennent:</p>
+      <ul>
+        <li><strong>Barzakh</strong>: Un état intermédiaire entre la mort et la résurrection où l'âme reste dans un état de sommeil ou de conscience</li>
+        <li><strong>Yawm al-Qiyamah</strong>: Le Jour de la Résurrection quand toutes les âmes seront réunies avec leurs corps</li>
+        <li><strong>Jugement Divin</strong>: Les actions de chaque personne seront pesées, avec le registre des actions présenté dans la main droite (pour les justes) ou la main gauche (pour les injustes)</li>
+        <li><strong>Jannah (Paradis)</strong>: Un royaume de félicité éternelle décrit comme des jardins avec des rivières qui coulent, de la nourriture abondante et de la compagnie</li>
+        <li><strong>Jahannam (Enfer)</strong>: Un lieu de punition pour les incroyants et les pécheurs, avec différents niveaux correspondant à différents péchés</li>
+      </ul>
+      <p>Le Coran déclare: "Chaque âme goûtera la mort. Puis vers Nous vous serez ramenés" (29:57).</p>
+      
+      <h4>Christianisme</h4>
+      <p>Les conceptions chrétiennes de l'au-delà (avec des variations confessionnelles) comprennent:</p>
+      <ul>
+        <li><strong>Ciel</strong>: Communion éternelle avec Dieu et les saints, souvent décrite comme un état de joie et de paix parfaites</li>
+        <li><strong>Enfer</strong>: Séparation de Dieu, diversement comprise comme un lieu de punition ou un état d'aliénation choisi par soi-même</li>
+        <li><strong>Purgatoire</strong>: Dans la tradition catholique et certaines autres, un état de purification avant d'entrer au ciel</li>
+        <li><strong>Résurrection</strong>: La croyance que les croyants recevront des corps glorifiés au retour du Christ</li>
+        <li><strong>Nouvelle Création</strong>: Le renouvellement ultime du ciel et de la terre où Dieu habitera avec l'humanité</li>
+      </ul>
       
       <h4>Judaïsme</h4>
-      <p>Le judaïsme se concentre moins sur le salut individuel et davantage sur:</p>
+      <p>Les perspectives juives sur l'au-delà ont évolué et varient largement:</p>
       <ul>
-        <li><strong>Relation d'Alliance</strong>: Maintenir la relation spéciale entre Dieu et le peuple juif</li>
-        <li><strong>Tikkun Olam</strong>: "Réparer le monde" par la justice et l'action juste</li>
-        <li><strong>Monothéisme Éthique</strong>: Vivre selon la loi morale de Dieu</li>
-        <li><strong>Ère Messianique</strong>: Un temps futur de paix et d'harmonie universelles plutôt qu'une vie après la mort individuelle</li>
-        <li><strong>Focus sur Ce Monde</strong>: Accent mis sur une vie éthique dans cette vie plutôt que sur l'obtention de récompenses dans la suivante</li>
+        <li><strong>Sheol</strong>: Dans les premiers textes bibliques, un monde souterrain obscur où les morts existent dans un état diminué</li>
+        <li><strong>Olam Ha-Ba</strong>: "Le Monde à Venir," diversement compris comme un âge messianique sur terre ou un royaume spirituel</li>
+        <li><strong>Gan Eden</strong>: Le Paradis ou le Jardin d'Eden comme lieu pour les justes</li>
+        <li><strong>Gehinnom</strong>: Un lieu de purification, typiquement limité à douze mois</li>
+        <li><strong>Résurrection</strong>: La croyance en la résurrection corporelle apparaît dans des textes juifs ultérieurs et reste importante dans le judaïsme orthodoxe</li>
       </ul>
-      <p>Le prophète Michée a résumé: "Qu'est-ce que l'Éternel demande de toi? C'est que tu pratiques la justice, que tu aimes la miséricorde, et que tu marches humblement avec ton Dieu" (Michée 6:8).</p>
+      <p>L'accent reste souvent mis sur la continuation du peuple juif et la venue de l'ère messianique plutôt que sur l'au-delà individuel.</p>
       
       <h3>Traditions Dharmiques</h3>
       
-      <h4>Hindouisme</h4>
-      <p>Les traditions hindoues offrent plusieurs voies vers la libération (moksha):</p>
+      <h4>Hinduism</h4>
+      <p>Les conceptions hindoues de ce qui se passe après la mort comprennent:</p>
       <ul>
-        <li><strong>Libération du Samsara</strong>: Libération du cycle de renaissance et de souffrance</li>
-        <li><strong>Réalisation de Soi</strong>: Reconnaissance de sa vraie nature comme Atman (soi) et son unité avec Brahman (réalité ultime)</li>
-        <li><strong>Voies Multiples</strong>: Karma yoga (action), bhakti yoga (dévotion), jnana yoga (connaissance) et raja yoga (méditation)</li>
-        <li><strong>Dharma</strong>: Vivre selon ses devoirs éthiques et sociaux</li>
-        <li><strong>Grâce</strong>: Dans certaines traditions, la grâce divine (particulièrement dans les traditions bhakti) est essentielle</li>
-      </ul>
-      <p>La Bhagavad Gita enseigne: "Quand une personne est dévouée à quelque chose avec une foi complète, j'unifie sa foi dans cette forme" (7:21).</p>
-      
-      <h4>Bouddhisme</h4>
-      <p>Le bouddhisme se concentre sur la libération (nirvana) à travers:</p>
-      <ul>
-        <li><strong>Fin de la Souffrance</strong>: Reconnaître et aborder les causes de la souffrance (dukkha)</li>
-        <li><strong>Quatre Nobles Vérités</strong>: Comprendre la souffrance, son origine, sa cessation et le chemin vers sa fin</li>
-        <li><strong>Noble Chemin Octuple</strong>: Conduite éthique, discipline mentale et sagesse menant à la libération</li>
-        <li><strong>Impermanence et Non-soi</strong>: Reconnaître que tous les phénomènes sont transitoires et sans soi inhérent</li>
-        <li><strong>Éveil</strong>: S'éveiller à la vraie nature de la réalité et à la liberté de l'illusion</li>
-      </ul>
-      <p>Le Bouddha a enseigné: "Tout comme l'océan a un seul goût, le goût du sel, de même cet enseignement et cette discipline ont un seul goût, le goût de la libération."</p>
-      
-      <h4>Jaïnisme</h4>
-      <p>La libération jaïne (moksha) implique:</p>
-      <ul>
-        <li><strong>Ahimsa</strong>: Non-violence envers tous les êtres vivants comme principe suprême</li>
-        <li><strong>Élimination du Karma</strong>: Éliminer le karma accumulé par l'ascétisme et le non-attachement</li>
-        <li><strong>Maîtrise de Soi</strong>: Discipline stricte de l'esprit, de la parole et du corps</li>
-        <li><strong>Connaissance, Foi et Conduite Justes</strong>: Les trois joyaux (ratnatraya) du jaïnisme</li>
-        <li><strong>Libération de l'Âme</strong>: Le jiva (âme) libéré des liens karmiques s'élève vers le royaume des libérés</li>
+        <li><strong>Samsara</strong>: Le cycle de mort et de renaissance (réincarnation) déterminé par le karma</li>
+        <li><strong>Karma</strong>: La loi de cause à effet qui détermine les naissances futures</li>
+        <li><strong>Svarga et Naraka</strong>: Cieux et enfers temporaires où les âmes expérimentent les résultats du bon ou mauvais karma avant la renaissance</li>
+        <li><strong>Moksha</strong>: Libération du cycle de renaissance, le but ultime</li>
       </ul>
       
-      <h3>Traditions d'Asie de l'Est</h3>
-      
-      <h4>Taoïsme</h4>
-      <p>L'accomplissement taoïste se centre sur:</p>
+      <h4>Buddhism</h4>
+      <p>Les compréhensions bouddhistes de ce qui se passe après la mort comprennent:</p>
       <ul>
-        <li><strong>Harmonie avec le Tao</strong>: S'aligner avec la voie naturelle de l'univers</li>
-        <li><strong>Wu-wei</strong>: "Non-action" ou action sans effort en accord avec la nature</li>
-        <li><strong>Simplicité</strong>: Retour à un état naturel et non compliqué</li>
-        <li><strong>Longévité</strong>: Dans certaines traditions, immortalité physique par des pratiques alchimiques</li>
-        <li><strong>Équilibre</strong>: Harmonisation des forces opposées (yin et yang)</li>
-      </ul>
-      
-      <h4>Confucianisme</h4>
-      <p>L'accomplissement confucéen met l'accent sur:</p>
-      <ul>
-        <li><strong>Cultivation Morale</strong>: Développer la vertu (de) et devenir un junzi (personne de noble caractère)</li>
-        <li><strong>Harmonie Sociale</strong>: Relations appropriées au sein de la famille et de la société</li>
-        <li><strong>Bienséance Rituelle</strong>: Conduite appropriée dans toutes les situations</li>
-        <li><strong>Focus sur Ce Monde</strong>: Accent mis sur l'éthique sociale plutôt que sur l'au-delà</li>
-        <li><strong>Mandat du Ciel</strong>: Aligner les affaires humaines avec l'ordre moral cosmique</li>
+        <li><strong>Rebirth</strong>: Continuation du flux de conscience dans une nouvelle forme, distinguée de la réincarnation car aucun soi permanent ne se transfère</li>
+        <li><strong>Six Royaumes</strong>: Royaumes possibles de renaissance incluant dieux, demi-dieux, humains, animaux, esprits affamés et êtres infernaux</li>
+        <li><strong>Karma</strong>: Actions qui façonnent les renaissances futures basées sur l'intention plutôt que sur le jugement divin</li>
+        <li><strong>Nirvana</strong>: La cessation de la souffrance et du cycle de renaissance, non pas un lieu mais un état au-delà de la conceptualisation</li>
       </ul>
       
       <h3>Perspectives Non-Religieuses</h3>
       
-      <h4>Humanisme Séculier</h4>
-      <p>L'accomplissement humaniste se concentre sur:</p>
+      <p>Ceux qui n'adhèrent pas aux croyances religieuses considèrent généralement la mort comme la fin de l'existence personnelle:</p>
       <ul>
-        <li><strong>Épanouissement Humain</strong>: Bien-être et développement du potentiel humain</li>
-        <li><strong>Vie Éthique</strong>: Moralité basée sur les besoins humains et les principes rationnels</li>
-        <li><strong>Progrès Social</strong>: Créer une société plus juste et compatissante</li>
-        <li><strong>Compréhension Scientifique</strong>: La connaissance comme voie pour résoudre les problèmes humains</li>
-        <li><strong>Focus sur Ce Monde</strong>: Trouver du sens dans l'existence humaine naturelle</li>
-      </ul>
-      
-      <h4>Existentialisme</h4>
-      <p>L'accomplissement existentialiste implique:</p>
-      <ul>
-        <li><strong>Existence Authentique</strong>: Vivre selon ses propres choix plutôt que selon des dictats externes</li>
-        <li><strong>Création de Sens</strong>: Trouver ou créer un but dans un univers objectivement dépourvu de sens</li>
-        <li><strong>Confrontation à la Mortalité</strong>: Faire face à la réalité de la mort et de la finitude</li>
-        <li><strong>Liberté et Responsabilité</strong>: Accepter le fardeau du choix et ses conséquences</li>
-        <li><strong>Engagement</strong>: Participation active à la vie plutôt qu'observation détachée</li>
+        <li><strong>Naturalisme</strong>: La vision selon laquelle la conscience se termine avec la mort cérébrale, sans continuation de l'identité personnelle</li>
+        <li><strong>Héritage</strong>: De nombreux individus séculiers trouvent un sens dans l'impact qu'ils laissent à travers leurs actions, leurs relations et leurs contributions à la société</li>
+        <li><strong>Matériel Continuation</strong>: La compréhension que la matière qui compose nos corps retourne à l'écosystème dans une forme de continuité physique</li>
       </ul>
       
       <h3>Aperçus Comparatifs</h3>
       
-      <p>Malgré leurs différences, ces approches du salut et de la libération révèlent quelques thèmes communs:</p>
+      <p>Malgré leurs différences, de nombreuses traditions religieuses partagent certains thèmes dans leurs concepts de l'au-delà:</p>
       
       <ul>
-        <li><strong>Transformation</strong>: Toutes les traditions cherchent une forme de changement profond dans l'expérience humaine</li>
-        <li><strong>Dimension Éthique</strong>: La plupart des voies impliquent un développement moral et une action éthique</li>
-        <li><strong>Surmonter les Limitations</strong>: Que ce soit le péché, l'ignorance, l'attachement ou l'inauthenticité</li>
-        <li><strong>Contexte Communautaire</strong>: Le salut se produit rarement isolément mais au sein de traditions et de communautés</li>
-        <li><strong>Préoccupations Ultimes</strong>: Toutes abordent les questions les plus profondes de l'humanité concernant le sens et le but</li>
+        <li><strong>Continuité</strong>: La plupart des traditions affirment que quelque chose de la personne humaine continue au-delà de la mort</li>
+        <li><strong>Responsabilité Morale</strong>: De nombreuses traditions enseignent que les actions dans cette vie ont des conséquences dans la suivante</li>
+        <li><strong>Justice Ultime</strong>: L'idée que les injustices dans ce monde seront éventuellement traitées</li>
+        <li><strong>Transformation</strong>: La mort comme transition plutôt que comme fin absolue</li>
       </ul>
       
-      <p>Comprendre ces diverses approches du salut et de la libération nous aide à apprécier la variété des façons dont les humains ont cherché à aborder les questions existentielles fondamentales à travers les cultures et tout au long de l'histoire.</p>`,
-    },
-    afterlife: {
-      title: "Vie Après la Mort",
-      content: `<p>${STATIC_RESPONSES_FR.afterlife}</p>
-      <p>Les croyances sur ce qui se passe après la mort varient considérablement selon les religions, de la réincarnation au paradis et à l'enfer, au jugement ou à l'union spirituelle avec le divin, tandis que certaines traditions se concentrent davantage sur les préoccupations de ce monde.</p>`,
+      <p>Ces diverses conceptions de l'au-delà reflètent l'engagement continu de l'humanité avec la mortalité, le sens et la possibilité de transcendance.</p>`,
     },
     default: {
       title: "Noor",
