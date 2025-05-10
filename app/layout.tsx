@@ -10,7 +10,7 @@ import { ServiceWorkerHandler } from "@/components/service-worker-handler"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Noor - Comparative Religion Resource",
+  title: "Noor: Faiths, Non-Faiths & CLCP",
   description:
     "Noor (Neutral Open Objective Resource) explores the commonalities between CLCP (Community Life Competence Process) and various faiths and non-faiths. It provides factual, non-biased information about religious and non-religious worldviews and their relationship with community-led development principles. Noor is freeware and open source, following the principles of Community Led Development (CLD) as reflected in The Constellation's approach to CLCP.",
   keywords:
