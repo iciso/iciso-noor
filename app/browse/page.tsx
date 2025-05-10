@@ -30,6 +30,10 @@ export default function BrowsePage() {
       title: language === "en" ? "Hinduism" : "Hindouisme",
       topics: Object.keys(responses).filter((key) => key.includes("hindu") && key !== "hinduism-clcp"),
     },
+    judaism: {
+      title: language === "en" ? "Judaism" : "Judaïsme",
+      topics: Object.keys(responses).filter((key) => key.includes("juda") && key !== "judaism-clcp"),
+    },
     comparative: {
       title: language === "en" ? "Comparative Topics" : "Sujets Comparatifs",
       topics: Object.keys(responses).filter(
@@ -45,6 +49,7 @@ export default function BrowsePage() {
         "hinduism-clcp",
         "buddhism-clcp",
         "sikhism-clcp",
+        "judaism-clcp",
         "atheism-clcp",
         "spirituality-clcp",
         "salt",
