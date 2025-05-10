@@ -548,7 +548,7 @@ export const staticResponses = {
       <li><strong>Compassion</strong>: The capacity to recognize suffering and respond with care and kindness</li>
       <li><strong>Dignity</strong>: Acknowledging the inherent worth of every person regardless of circumstances</li>
       <li><strong>Respect</strong>: Treating others with consideration and honoring their autonomy</li>
-      <li><strong>Empathy</strong>: The ability to understand others' experiences and perspectives</li>
+      <li><strong><strong>Empathy</strong>: The ability to understand others' experiences and perspectives</li>
       <li><strong>Non-violence</strong>: Commitment to avoiding harm in thought, word, and action</li>
       <li><strong>Justice</strong>: Ensuring fair treatment and equitable access to resources and opportunities</li>
     </ul>
@@ -671,8 +671,134 @@ export const staticResponses = {
     },
     "clcp-religions": {
       title: "CLCP and Religions",
-      content: `<p>${STATIC_RESPONSES_EN["clcp-religions"]}</p>
-      <p>CLCP shares common values with many religious traditions, including community service, human dignity, compassion, and collective responsibility for well-being.</p>`,
+      content: `<h2>CLCP and Religious Traditions: Universal Values in Community Development</h2>
+
+<p>The Community Life Competence Process (CLCP) resonates deeply with core values found across religious and non-religious traditions worldwide. This alignment creates natural synergies when implementing CLCP in diverse cultural and spiritual contexts.</p>
+
+<h3>Universal Values Across Traditions</h3>
+
+<p>Despite their theological differences, major faith traditions and secular worldviews share several fundamental values that align with CLCP principles:</p>
+
+<h4>1. Human Dignity and Worth</h4>
+<ul>
+  <li><strong>Islam</strong>: Concept of <em>karama</em> (dignity) as inherent in all humans as Allah's creation</li>
+  <li><strong>Christianity</strong>: Belief in humans created in God's image (<em>imago dei</em>)</li>
+  <li><strong>Judaism</strong>: Principle of <em>b'tzelem Elohim</em> (in God's image) establishing human worth</li>
+  <li><strong>Hinduism</strong>: Recognition of divine essence (<em>atman</em>) within all beings</li>
+  <li><strong>Buddhism</strong>: Acknowledgment of Buddha-nature and potential for awakening in all</li>
+  <li><strong>Sikhism</strong>: Emphasis on equality of all humans before Waheguru (God)</li>
+  <li><strong>Secular Humanism</strong>: Affirmation of inherent human worth without supernatural reference</li>
+  <li><strong>CLCP Alignment</strong>: Strength-based approach that recognizes capacity and agency in all community members</li>
+</ul>
+
+<h4>2. Community and Collective Responsibility</h4>
+<ul>
+  <li><strong>Islam</strong>: Concept of <em>ummah</em> (community) and mutual support</li>
+  <li><strong>Christianity</strong>: Vision of church as community (<em>ekklesia</em>) with shared responsibility</li>
+  <li><strong>Judaism</strong>: Emphasis on <em>kehillah</em> (community) and collective obligation</li>
+  <li><strong>Hinduism</strong>: Principle of <em>dharma</em> including social responsibility</li>
+  <li><strong>Buddhism</strong>: Importance of <em>sangha</em> (community) for spiritual practice</li>
+  <li><strong>Sikhism</strong>: Tradition of <em>sarbat khalsa</em> (community assembly) for collective decisions</li>
+  <li><strong>Secular Perspectives</strong>: Recognition of social bonds and mutual aid as essential to human flourishing</li>
+  <li><strong>CLCP Alignment</strong>: Focus on community ownership and collective action for addressing challenges</li>
+</ul>
+
+<h4>3. Service and Compassion</h4>
+<ul>
+  <li><strong>Islam</strong>: Value of <em>khidma</em> (service) and <em>rahma</em> (compassion)</li>
+  <li><strong>Christianity</strong>: Emphasis on servant leadership and love of neighbor</li>
+  <li><strong>Judaism</strong>: Practice of <em>chesed</em> (loving-kindness) and <em>tzedakah</em> (charity)</li>
+  <li><strong>Hinduism</strong>: Tradition of <em>seva</em> (selfless service) as spiritual practice</li>
+  <li><strong>Buddhism</strong>: Cultivation of <em>karuna</em> (compassion) and <em>metta</em> (loving-kindness)</li>
+  <li><strong>Sikhism</strong>: Central value of <em>seva</em> (selfless service) to all humanity</li>
+  <li><strong>Secular Ethics</strong>: Recognition of compassion and service as foundations for ethical society</li>
+  <li><strong>CLCP Alignment</strong>: Facilitation approach that serves communities without imposing solutions</li>
+</ul>
+
+<h4>4. Transformation and Hope</h4>
+<ul>
+  <li><strong>Islam</strong>: Belief in human capacity for positive change and growth</li>
+  <li><strong>Christianity</strong>: Vision of personal and social transformation</li>
+  <li><strong>Judaism</strong>: Concept of <em>tikkun olam</em> (repairing the world)</li>
+  <li><strong>Hinduism</strong>: Path toward self-realization and social harmony</li>
+  <li><strong>Buddhism</strong>: Possibility of awakening and alleviating suffering</li>
+  <li><strong>Sikhism</strong>: Vision of <em>sarbat da bhala</em> (welfare of all)</li>
+  <li><strong>Secular Progressivism</strong>: Belief in human capacity to create positive social change</li>
+  <li><strong>CLCP Alignment</strong>: Dream-building process that envisions and works toward a better future</li>
+</ul>
+
+<h3>CLCP as an Inclusive Framework</h3>
+
+<p>CLCP offers a unique framework that can accommodate diverse religious and non-religious perspectives because:</p>
+
+<ul>
+  <li><strong>Values-Based, Not Doctrine-Based</strong>: CLCP focuses on shared human values rather than specific theological claims</li>
+  <li><strong>Process-Oriented</strong>: The emphasis on process rather than predetermined outcomes allows for cultural and spiritual adaptation</li>
+  <li><strong>Community-Defined</strong>: Communities determine their own vision and priorities, allowing for integration of their spiritual values</li>
+  <li><strong>Appreciative Approach</strong>: The strength-based methodology respects existing cultural and religious resources</li>
+  <li><strong>Practical Focus</strong>: Emphasis on tangible action creates common ground across worldview differences</li>
+</ul>
+
+<h3>Practical Applications Across Traditions</h3>
+
+<h4>Religious Communities Using CLCP</h4>
+<p>Faith communities have successfully implemented CLCP in ways that honor their traditions while embracing its core principles:</p>
+
+<ul>
+  <li><strong>Muslim Communities</strong>: Integrating CLCP with Islamic principles of community service and mutual support</li>
+  <li><strong>Christian Organizations</strong>: Using CLCP to live out values of love and service in practical ways</li>
+  <li><strong>Buddhist Groups</strong>: Combining mindfulness practices with CLCP's community engagement approaches</li>
+  <li><strong>Hindu Contexts</strong>: Aligning CLCP with traditions of seva and community responsibility</li>
+  <li><strong>Jewish Communities</strong>: Implementing CLCP as an expression of tikkun olam and tzedek</li>
+  <li><strong>Sikh Organizations</strong>: Extending principles of langar and seva through CLCP methodologies</li>
+  <li><strong>Secular Contexts</strong>: Applying CLCP as a human-centered, evidence-based approach to community development</li>
+</ul>
+
+<h4>Interfaith Applications</h4>
+<p>CLCP has proven particularly valuable in interfaith and pluralistic contexts:</p>
+
+<ul>
+  <li><strong>Bridge-Building</strong>: Creating common ground through shared action despite theological differences</li>
+  <li><strong>Inclusive Language</strong>: Using terminology that resonates across different worldviews</li>
+  <li><strong>Practical Focus</strong>: Emphasizing tangible community outcomes rather than doctrinal agreement</li>
+  <li><strong>Mutual Learning</strong>: Facilitating exchange of wisdom and practices across traditions</li>
+  <li><strong>Shared Humanity</strong>: Highlighting common human experiences and needs that transcend religious boundaries</li>
+</ul>
+
+<h3>Case Examples</h3>
+
+<h4>1. Interfaith Collaboration in Post-Conflict Settings</h4>
+<p>In several post-conflict regions, CLCP has brought together communities across religious divides to work on shared concerns:</p>
+<ul>
+  <li>Communities identify common challenges despite different religious backgrounds</li>
+  <li>The strength-based approach helps overcome historical tensions by focusing on shared capacities</li>
+  <li>Practical collaboration on community projects builds relationships across divides</li>
+  <li>Religious leaders find common ground in values of compassion and service</li>
+</ul>
+
+<h4>2. Faith-Based Organizations Adopting CLCP</h4>
+<p>Many faith-based organizations have integrated CLCP into their community development work:</p>
+<ul>
+  <li>Religious principles provide motivation while CLCP offers practical methodology</li>
+  <li>Communities connect their faith values with concrete action steps</li>
+  <li>Spiritual practices enhance CLCP processes (e.g., prayer or meditation before community meetings)</li>
+  <li>Religious institutions serve as hubs for community-led initiatives</li>
+</ul>
+
+<h4>3. Secular-Religious Partnerships</h4>
+<p>CLCP has facilitated productive partnerships between secular organizations and religious communities:</p>
+<ul>
+  <li>Focus on shared values and practical outcomes transcends theological differences</li>
+  <li>Religious communities contribute spiritual resources while secular partners bring technical expertise</li>
+  <li>CLCP's neutral framework allows for respectful collaboration without compromising either perspective</li>
+  <li>Communities benefit from the combined strengths of different worldviews</li>
+</ul>
+
+<h3>Conclusion: A Universal Framework for Diverse Contexts</h3>
+
+<p>The Community Life Competence Process offers a unique framework that resonates with values found across religious and non-religious traditions. By focusing on shared human values like dignity, community responsibility, compassion, and hope for transformation, CLCP creates space for diverse communities to work together toward common goals while honoring their distinct spiritual or philosophical perspectives.</p>
+
+<p>This alignment makes CLCP particularly valuable in our pluralistic world, where communities with different worldviews must find ways to collaborate on shared challenges. By providing a methodology that transcends theological differences while respecting spiritual motivations, CLCP helps build bridges across divides while empowering communities to address their challenges in ways that honor their unique cultural and religious contexts.</p>`,
     },
     clcp: {
       title: "CLCP",
@@ -862,914 +988,6 @@ export const staticResponses = {
       
       <h4>Islam</h4>
       <p>In Islam, salvation (najat) involves:</p>
-      <ul>
-        <li><strong>Soumission à Allah</strong>: Suivre la volonté de Dieu telle que révélée dans le Coran et exemplifiée par le Prophète Muhammad</li>
-        <li><strong>Foi et Actions Justes</strong>: Croyance en l'unicité de Dieu (tawhid) combinée avec de bonnes actions</li>
-        <li><strong>Miséricorde Divine</strong>: Le salut ultime dépend de la miséricorde et du pardon d'Allah</li>
-        <li><strong>Jugement</strong>: Au Jour du Jugement, les actions de chacun seront pesées pour déterminer sa destinée éternelle</li>
-        <li><strong>Paradis (Jannah)</strong>: La récompense ultime pour les fidèles, décrite comme des jardins de félicité</li>
-      </ul>
-      <p>Le Coran déclare: "Certes, ceux qui ont cru et accompli de bonnes œuvres auront pour résidence les Jardins du Paradis" (18:107).</p>
-      
-      <h4>Christianity</h4>
-      <p>La compréhension chrétienne du salut comprend:</p>
-      <ul>
-        <li><strong>Péché et Rédemption</strong>: L'humanité est séparée de Dieu par le péché mais rachetée par le Christ</li>
-        <li><strong>Grâce</strong>: Le salut est un don de Dieu, non mérité par les œuvres (bien que les traditions diffèrent sur le rôle des œuvres)</li>
-        <li><strong>Foi en Christ</strong>: La croyance en Jésus comme sauveur est centrale dans la plupart des compréhensions chrétiennes</li>
-        <li><strong>Atonement</strong>: La mort du Christ offre le pardon des péchés (avec diverses interprétations théologiques)</li>
-        <li><strong>Vie Éternelle</strong>: Communion avec Dieu maintenant et dans l'au-delà</li>
-      </ul>
-      <p>Comme exprimé dans Éphésiens 2:8-9: "Car c'est par la grâce que vous êtes sauvés, par le moyen de la foi. Et cela ne vient pas de vous, c'est le don de Dieu. Ce n'est point par les œuvres, afin que personne ne se glorifie."</p>`,
-    },
-    afterlife: {
-      title: "Au-delà",
-      content: `<h2>Au-delà: Perspectives à Travers les Traditions Religieuses et Philosophiques</h2>
-      
-      <p>Les croyances sur ce qui se passe après la mort varient considérablement selon les traditions religieuses et philosophiques, reflétant diverses compréhensions de la nature humaine, de l'ordre cosmique et de la réalité ultime. Ces conceptions de l'au-delà abordent des questions humaines fondamentales sur la mortalité, la justice, le sens et la possibilité d'une existence continue au-delà de la mort physique.</p>
-      
-      <h3>Traditions Abrahamiques</h3>
-      
-      <h4>Islam</h4>
-      <p>Les croyances islamiques sur l'au-delà comprennent:</p>
-      <ul>
-        <li><strong>Barzakh</strong>: Un état intermédiaire entre la mort et la résurrection où l'âme reste dans un état de sommeil ou de conscience</li>
-        <li><strong>Yawm al-Qiyamah</strong>: Le Jour de la Résurrection quand toutes les âmes seront réunies avec leurs corps</li>
-        <li><strong>Jugement Divin</strong>: Les actions de chaque personne seront pesées, avec le registre des actions présenté dans la main droite (pour les justes) ou la main gauche (pour les injustes)</li>
-        <li><strong>Jannah (Paradis)</strong>: Un royaume de félicité éternelle décrit comme des jardins avec des rivières qui coulent, de la nourriture abondante et de la compagnie</li>
-        <li><strong>Jahannam (Enfer)</strong>: Un lieu de punition pour les incroyants et les pécheurs, avec différents niveaux correspondant à différents péchés</li>
-      </ul>
-      <p>Le Coran déclare: "Toute âme goûtera la mort. Puis, c'est vers Nous que vous serez ramenés" (29:57).</p>
-      
-      <h4>Christianity</h4>
-      <p>Les conceptions chrétiennes de l'au-delà (avec des variations confessionnelles) comprennent:</p>
-      <ul>
-        <li><strong>Ciel</strong>: Communion éternelle avec Dieu et les saints, souvent décrite comme un état de joie et de paix parfaites</li>
-        <li><strong>Enfer</strong>: Séparation de Dieu, diversement comprise comme un lieu de punition ou un état d'aliénation choisie par soi-même</li>
-        <li><strong>Purgatoire</strong>: Dans la tradition catholique et certaines autres, un état de purification avant d'entrer au ciel</li>
-        <li><strong>Résurrection</strong>: La croyance que les croyants recevront des corps glorifiés au retour du Christ</li>
-        <li><strong>Nouvelle Création</strong>: Le renouvellement ultime du ciel et de la terre où Dieu habitera avec l'humanité</li>
-      </ul>
-      <p>Jésus a enseigné: "Il y a plusieurs demeures dans la maison de mon Père... Je vais vous préparer une place" (Jean 14:2).</p>
-      
-      <h4>Judaism</h4>
-      <p>Les perspectives juives sur l'au-delà ont évolué et varient largement:</p>
-      <ul>
-        <li><strong>Sheol</strong>: Dans les premiers textes bibliques, un monde souterrain obscur où les morts existent dans un état diminué</li>
-        <li><strong>Olam Ha-Ba</strong>: "Le Monde à Venir", diversement compris comme un âge messianique sur terre ou un royaume spirituel</li>
-        <li><strong>Gan Eden</strong>: Le Paradis ou le Jardin d'Eden comme lieu pour les justes</li>
-        <li><strong>Gehinnom</strong>: Un lieu de purification, typiquement limité à douze mois</li>
-        <li><strong>Résurrection</strong>: La croyance en la résurrection corporelle apparaît dans des textes juifs ultérieurs et reste importante dans le judaïsme orthodoxe</li>
-      </ul>
-      <p>L'accent reste souvent mis sur la continuation du peuple juif et la venue de l'ère messianique plutôt que sur l'au-delà individuel.</p>
-      
-      <h3>Traditions Dharmiques</h3>
-      
-      <h4>Hinduism</h4>
-      <p>Les conceptions hindoues de ce qui se passe après la mort comprennent:</p>
-      <ul>
-        <li><strong>Samsara</strong>: Le cycle de mort et de renaissance (réincarnation) déterminé par le karma</li>
-        <li><strong>Karma</strong>: La loi de cause à effet qui détermine les futures naissances</li>
-        <li><strong>Svarga et Naraka</strong>: Cieux et enfers temporaires où les âmes expérimentent les résultats du bon ou mauvais karma avant la renaissance</li>
-        <li><strong>Moksha</strong>: Libération du cycle de renaissance, le but ultime</li>
-      </ul>
-      
-      <h4>Buddhism</h4>
-      <p>Buddhist understandings of what happens after death include:</p>
-      <ul>
-        <li><strong>Rebirth</strong>: Continuation of the stream of consciousness in a new form, distinguished from reincarnation as no permanent self transfers</li>
-        <li><strong>Six Royaumes</strong>: Royaumes possibles de renaissance incluant dieux, demi-dieux, humains, animaux, esprits affamés et êtres infernaux</li>
-        <li><strong>Karma</strong>: Actions that shape future rebirths based on intention plutôt que sur le jugement divin</li>
-        <li><strong>Nirvana</strong>: La cessation de la souffrance et du cycle de renaissance, non pas un lieu mais un état au-delà de la conceptualisation</li>
-      </ul>
-      
-      <h3>Perspectives Non Religieuses</h3>
-      
-      <p>Ceux qui n'adhèrent pas aux croyances religieuses considèrent généralement la mort comme la fin de l'existence personnelle:</p>
-      <ul>
-        <li><strong>Naturalisme</strong>: La vision que la conscience se termine avec la mort cérébrale, sans continuation de l'identité personnelle</li>
-        <li><strong>Héritage</strong>: De nombreux individus séculiers trouvent un sens dans l'impact qu'ils laissent derrière eux à travers leurs actions, relations et contributions à la société</li>
-        <li><strong>Continuation Matérielle</strong>: La compréhension que la matière qui compose nos corps retourne à l'écosystème sous une forme de continuité physique</li>
-      </ul>
-      
-      <h3>Aperçus Comparatifs</h3>
-      
-      <p>Malgré leurs différences, de nombreuses traditions religieuses partagent certains thèmes dans leurs concepts d'au-delà:</p>
-      
-        many religious traditions share certain themes in their afterlife concepts:</p>
-      
-      <ul>
-        <li><strong>Continuité</strong>: La plupart des traditions affirment que quelque chose de la personne humaine continue au-delà de la mort</li>
-        <li><strong>Responsabilité Morale</strong>: De nombreuses traditions enseignent que les actions dans cette vie ont des conséquences dans la suivante</li>
-        <li><strong>Justice Ultime</strong>: L'idée que les injustices dans ce monde seront éventuellement traitées</li>
-        <li><strong>Transformation</strong>: La mort comme une transition plutôt qu'une fin absolue</li>
-      </ul>
-      
-      <p>Ces conceptions diverses de l'au-delà reflètent l'engagement continu de l'humanité avec la mortalité, le sens et la possibilité de transcendance.</p>`,
-    },
-    default: {
-      title: "Noor",
-      content: `<p>${STATIC_RESPONSES_EN.default}</p>`,
-    },
-  },
-  fr: {
-    "islam-clcp": {
-      title: "Islam et CLCP",
-      content: `<p>${STATIC_RESPONSES_FR["islam-clcp"]}</p>
-      <p>Les principes islamiques de service communautaire (khidma), de compassion (rahma) et de dignité humaine (karama) s'alignent étroitement sur l'accent mis par le CLCP sur l'appropriation communautaire et les approches basées sur les forces.</p>
-      
-      <h3>Valeurs et Approches Partagées</h3>
-      <p>L'Islam et le Processus de Compétence de Vie Communautaire (CLCP) partagent plusieurs valeurs et approches importantes qui créent des synergies naturelles:</p>
-      
-      <h4>1. Responsabilité Communautaire et Solidarité</h4>
-      <ul>
-        <li><strong>Oummah</strong>: L'Islam met l'accent sur le concept d'oummah (communauté) où les croyants se soutiennent mutuellement</li>
-        <li><strong>Soutien Mutuel</strong>: Le Coran (5:2) instruit les croyants à "s'entraider dans l'accomplissement des bonnes œuvres et de la piété"</li>
-        <li><strong>Approche CLCP</strong>: Le CLCP se concentre sur l'appropriation communautaire et l'action collective pour relever les défis</li>
-        <li><strong>Vision Partagée</strong>: Les deux reconnaissent que les individus s'épanouissent au sein de communautés solidaires</li>
-      </ul>
-      
-      <h4>2. Service et Compassion</h4>
-      <ul>
-        <li><strong>Khidma</strong>: Le service aux autres est une valeur islamique fondamentale, le Prophète Muhammad ayant dit "Les meilleurs des hommes sont ceux qui sont les plus utiles aux autres"</li>
-        <li><strong>Rahma</strong>: La compassion et la miséricorde sont soulignées dans tous les enseignements islamiques</li>
-        <li><strong>Facilitation CLCP</strong>: Les facilitateurs CLCP servent les communautés en soutenant leur parcours sans imposer de solutions</li>
-        <li><strong>Basé sur les Forces</strong>: Les deux valorisent le service humble qui autonomise les autres plutôt que de créer une dépendance</li>
-      </ul>
-      
-      <h4>3. Dignité Humaine et Potentiel</h4>
-      <ul>
-        <li><strong>Karama</strong>: L'Islam enseigne que tous les humains ont une dignité inhérente (karama) en tant que création d'Allah</li>
-        <li><strong>Khalifah</strong>: Les humains sont considérés comme khalifah (intendants) sur terre avec responsabilité et capacité</li>
-        <li><strong>Approche du CLCP</strong>: L'approche du CLCP basée sur les forces se concentre sur les atouts de la communauté plutôt que sur les déficits</li>
-        <li><strong>Croyance Partagée</strong>: Les deux affirment la capacité humaine et le potentiel de changement positif</li>
-      </ul>
-      
-      <h4>4. Justice et Équité</h4>
-      <ul>
-        <li><strong>Adl</strong>: La justice ('adl) est un principe fondamental en Islam</li>
-        <li><strong>Responsabilité Sociale</strong>: La Zakat (charité obligatoire) et la sadaqa (charité volontaire) institutionnalisent le soin des personnes vulnérables</li>
-        <li><strong>Vision du CLCP</strong>: Le CLCP œuvre pour un développement communautaire équitable où tous les membres peuvent contribuer et bénéficier</li>
-        <li><strong>Objectif Commun</strong>: Les deux cherchent à créer des communautés justes où tous les membres peuvent s'épanouir</li>
-      </ul>
-      
-      <h3>Applications Pratiques</h3>
-      <p>Les communautés musulmanes mettant en œuvre le CLCP constatent souvent que:</p>
-      <ul>
-        <li>Le CLCP fournit des outils pratiques pour vivre les valeurs islamiques de service et de communauté</li>
-        <li>L'approche SALT résonne avec les pratiques islamiques de consultation (shura) et de construction de consensus</li>
-        <li>L'apprentissage horizontal du CLCP s'aligne avec la tradition islamique de recherche de connaissance et de sagesse</li>
-        <li>L'accent mis sur l'appropriation locale complète le principe d'autonomie dans la pensée islamique</li>
-      </ul>
-      
-      <h3>Exemples de la Pratique</h3>
-      <p>Les communautés et organisations musulmanes ont utilisé le CLCP pour:</p>
-      <ul>
-        <li>Renforcer la résilience communautaire pendant les périodes difficiles</li>
-        <li>Aborder les problèmes sociaux comme la pauvreté, les défis de santé et l'éducation</li>
-        <li>Construire des ponts entre différentes communautés par une action partagée</li>
-        <li>Connecter les valeurs de foi avec le développement communautaire pratique</li>
-        <li>Autonomiser les jeunes pour qu'ils deviennent des contributeurs actifs au bien-être communautaire</li>
-      </ul>
-      
-      <p>L'intégration des principes islamiques et du CLCP crée des opportunités pour les communautés de vivre leur foi à travers une action pratique tout en respectant la dignité et l'agence de tous les membres de la communauté.</p>`,
-    },
-    "christianity-clcp": {
-      title: "Christianisme et CLCP",
-      content: `<p>${STATIC_RESPONSES_FR["christianity-clcp"]}</p>
-      
-      <h3>Valeurs et Approches Partagées</h3>
-      <p>Le christianisme et le Processus de Compétence de Vie Communautaire (CLCP) partagent plusieurs valeurs et approches importantes qui créent des synergies naturelles:</p>
-      
-      <h4>1. Communauté et Responsabilité Collective</h4>
-      <ul>
-        <li>Le christianisme met l'accent sur l'église en tant que communauté de croyants (ekklesia) qui se soutiennent mutuellement</li>
-        <li>L'église chrétienne primitive dans Actes 2:42-47 pratiquait la vie communautaire et partageait les ressources</li>
-        <li>Le CLCP se concentre sur l'appropriation communautaire et l'action collective pour relever les défis</li>
-        <li>Les deux reconnaissent que les individus s'épanouissent au sein de communautés solidaires</li>
-      </ul>
-      
-      <h4>2. Service aux Autres</h4>
-      <ul>
-        <li>Jésus a modelé le leadership serviteur et a enseigné que "le plus grand parmi vous sera votre serviteur" (Matthieu 23:11)</li>
-        <li>Le service chrétien (diakonia) est une expression fondamentale de la foi en action</li>
-        <li>Les facilitateurs du CLCP servent les communautés en soutenant leur parcours sans imposer de solutions</li>
-        <li>Les deux valorisent le service humble qui autonomise les autres</li>
-      </ul>
-      
-      <h4>3. Reconnaissance de la Dignité et des Forces Inhérentes</h4>
-      <ul>
-        <li>Le christianisme enseigne que tous les humains sont créés à l'image de Dieu (imago dei) avec une valeur inhérente</li>
-        <li>Jésus reconnaissait souvent et faisait ressortir les forces et le potentiel des gens</li>
-        <li>L'approche du CLCP basée sur les forces se concentre sur les atouts de la communauté plutôt que sur les déficits</li>
-        <li>Les deux affirment la capacité et le potentiel humains</li>
-      </ul>
-      
-      <h4>4. Transformation et Espoir</h4>
-      <ul>
-        <li>Le christianisme offre l'espoir d'une transformation personnelle et sociale</li>
-        <li>Le concept du Royaume de Dieu représente une vision pour un monde transformé</li>
-        <li>Le processus de construction de rêve du CLCP aide les communautés à envisager et à travailler vers un avenir meilleur</li>
-        <li>Les deux équilibrent l'action pragmatique avec une vision pleine d'espoir</li>
-      </ul>
-      
-      <h3>Applications Pratiques</h3>
-      <p>Les communautés chrétiennes mettant en œuvre le CLCP constatent souvent que:</p>
-      <ul>
-        <li>Le CLCP fournit des outils pratiques pour vivre les valeurs chrétiennes de service et de communauté</li>
-        <li>L'approche SALT résonne avec les pratiques chrétiennes de discernement appréciatif</li>
-        <li>L'apprentissage horizontal du CLCP s'aligne avec le concept du sacerdoce de tous les croyants dans de nombreuses traditions protestantes</li>
-        <li>L'accent mis sur l'appropriation locale complète le principe de subsidiarité dans l'enseignement social catholique</li>
-      </ul>
-      
-      <h3>Exemples de la Pratique</h3>
-      <p>Les églises et organisations chrétiennes ont utilisé le CLCP pour:</p>
-      <ul>
-        <li>Renforcer la vie et la mission de la congrégation</li>
-        <li>Aborder les défis communautaires comme la pauvreté, les problèmes de santé et la division sociale</li>
-        <li>Construire des ponts entre différentes dénominations par une action partagée</li>
-        <li>Connecter les valeurs de foi avec le développement communautaire pratique</li>
-      </ul>
-      
-      <p>L'intégration de la foi chrétienne et du CLCP crée des opportunités pour les communautés de vivre leur foi à travers une action pratique tout en respectant la dignité et l'agence de tous les membres de la communauté.</p>`,
-    },
-    "buddhism-clcp": {
-      title: "Bouddhisme et CLCP",
-      content: `<p>${STATIC_RESPONSES_FR["buddhism-clcp"]}</p>
-      <p>Les pratiques bouddhistes de pleine conscience, de compassion (karuna) et d'interdépendance (pratityasamutpada) complètent l'approche du CLCP en matière de sensibilisation communautaire et de solutions interconnectées.</p>
-      
-      <h3>Valeurs et Approches Partagées</h3>
-      <p>Le bouddhisme et le Processus de Compétence de Vie Communautaire (CLCP) partagent plusieurs valeurs et approches importantes qui créent des synergies naturelles:</p>
-      
-      <h4>1. Pleine Conscience et Conscience</h4>
-      <ul>
-        <li><strong>Sati (Pleine Conscience)</strong>: Le bouddhisme met l'accent sur la conscience du moment présent et la vision claire de la réalité telle qu'elle est</li>
-        <li><strong>Compréhension Juste</strong>: La première étape de l'Octuple Sentier implique de voir les choses clairement sans distorsion</li>
-        <li><strong>Approche Appréciative du CLCP</strong>: Le CLCP commence par la reconnaissance et l'appréciation par les communautés de leurs forces et capacités</li>
-        <li><strong>Pratique Partagée</strong>: Les deux valorisent l'auto-évaluation honnête et la conscience comme fondements du changement positif</li>
-      </ul>
-      
-      <h4>2. Compassion et Bienveillance Aimante</h4>
-      <ul>
-        <li><strong>Karuna (Compassion)</strong>: Le souhait de soulager la souffrance de tous les êtres</li>
-        <li><strong>Metta (Bienveillance Aimante)</strong>: Bonne volonté inconditionnelle envers tous les êtres sans exception</li>
-        <li><strong>Facilitation CLCP</strong>: Les facilitateurs CLCP approchent les communautés avec un profond respect et un souci sincère</li>
-        <li><strong>Orientation Partagée</strong>: Les deux reconnaissent la compassion comme une force motivante pour l'action communautaire</li>
-      </ul>
-      
-      <h4>3. Interdépendance et Communauté</h4>
-      <ul>
-        <li><strong>Pratityasamutpada (Origine Dépendante)</strong>: La compréhension bouddhiste que tous les phénomènes surgissent en dépendance de multiples causes et conditions</li>
-        <li><strong>Sangha (Communauté)</strong>: L'importance de la communauté de soutien dans la pratique bouddhiste</li>
-        <li><strong>Approche Systémique du CLCP</strong>: Le CLCP reconnaît la nature interconnectée des défis et des solutions communautaires</li>
-        <li><strong>Vision Partagée</strong>: Les deux voient les individus comme faisant partie de systèmes interconnectés plus larges plutôt que comme des entités isolées</li>
-      </ul>
-      
-      <h4>4. Non-Attachement et Orientation vers le Processus</h4>
-      <ul>
-        <li><strong>Non-Attachement</strong>: Le bouddhisme enseigne la valeur de ne pas s'accrocher à des résultats fixes ou à des vues rigides</li>
-        <li><strong>Voie du Milieu</strong>: Trouver l'équilibre entre les extrêmes d'approche</li>
-        <li><strong>Focus sur le Processus du CLCP</strong>: Le CLCP met l'accent sur le parcours du développement communautaire plutôt que sur des solutions prédéterminées</li>
-        <li><strong>Approche Partagée</strong>: Les deux valorisent l'adaptabilité, l'apprentissage et la réactivité aux conditions changeantes</li>
-      </ul>
-      
-      <h3>Applications Pratiques</h3>
-      <p>Les communautés bouddhistes mettant en œuvre le CLCP constatent souvent que:</p>
-      <ul>
-        <li>Le CLCP fournit des outils pratiques pour vivre les valeurs bouddhistes de compassion et d'interdépendance</li>
-        <li>L'approche SALT résonne avec les pratiques bouddhistes d'écoute attentive et de non-jugement</li>
-        <li>L'apprentissage horizontal du CLCP s'aligne avec la tradition bouddhiste de partage du dharma et de sagesse collective</li>
-        <li>L'accent mis sur l'appropriation locale complète le principe d'autonomie (attadipa) dans la pensée bouddhiste</li>
-      </ul>
-      
-      <h3>Exemples de la Pratique</h3>
-      <p>Les communautés et organisations bouddhistes ont utilisé le CLCP pour:</p>
-      <ul>
-        <li>Renforcer la résilience communautaire pendant les périodes difficiles</li>
-        <li>Aborder les problèmes sociaux comme la pauvreté, les défis de santé et les préoccupations environnementales</li>
-        <li>Construire des ponts entre différentes traditions spirituelles par une action partagée</li>
-        <li>Connecter la pratique contemplative avec le développement communautaire pratique</li>
-        <li>Développer des approches bouddhistes socialement engagées face aux défis communautaires</li>
-      </ul>
-      
-      <p>L'intégration des principes bouddhistes et du CLCP crée des opportunités pour les communautés d'incarner la sagesse et la compassion à travers une action pratique tout en honorant l'interconnexion de tous les êtres.</p>`,
-    },
-    "hinduism-clcp": {
-      title: "Hindouisme et CLCP",
-      content: `<p>${STATIC_RESPONSES_FR["hinduism-clcp"]}</p>
-      <p>Les concepts hindous de dharma (devoir), seva (service désintéressé) et de responsabilité communautaire résonnent avec l'accent mis par le CLCP sur l'appropriation communautaire et l'action collective.</p>
-      
-      <h3>Valeurs et Approches Partagées</h3>
-      <p>L'hindouisme et le Processus de Compétence de Vie Communautaire (CLCP) partagent plusieurs valeurs et approches importantes qui créent des synergies naturelles:</p>
-      
-      <h4>1. Dharma et Responsabilité Communautaire</h4>
-      <ul>
-        <li><strong>Dharma</strong>: Le concept hindou de dharma englobe l'ordre cosmique, le devoir éthique et la vie juste selon sa nature et son stade de vie</li>
-        <li><strong>Responsabilité Sociale</strong>: Le dharma inclut des responsabilités envers la famille, la communauté et la société</li>
-        <li><strong>Approche CLCP</strong>: Le CLCP se concentre sur l'appropriation communautaire et la responsabilité collective pour relever les défis</li>
-        <li><strong>Vision Partagée</strong>: Les deux reconnaissent que le bien-être individuel est interconnecté avec le bien-être communautaire</li>
-      </ul>
-      
-      <h4>2. Seva et Service Désintéressé</h4>
-      <ul>
-        <li><strong>Seva</strong>: Le service désintéressé est une valeur hindoue fondamentale, considérée à la fois comme une pratique spirituelle et une responsabilité sociale</li>
-        <li><strong>Karma Yoga</strong>: La voie de l'action désintéressée sans attachement aux résultats, comme enseigné dans la Bhagavad Gita</li>
-        <li><strong>Facilitation CLCP</strong>: Les facilitateurs CLCP servent les communautés en soutenant leur parcours sans imposer de solutions</li>
-        <li><strong>Approche Partagée</strong>: Les deux valorisent le service qui autonomise les autres plutôt que de créer une dépendance</li>
-      </ul>
-      
-      <h4>3. Dignité et Potentiel Inhérents</h4>
-      <ul>
-        <li><strong>Essence Divine</strong>: L'hindouisme enseigne que tous les êtres ont une essence divine (atman) et une valeur inhérente</li>
-        <li><strong>Potentiel Humain</strong>: Le concept que chaque personne a le potentiel de réaliser sa nature divine</li>
-        <li><strong>Approche du CLCP</strong>: L'approche du CLCP basée sur les forces se concentre sur les atouts de la communauté plutôt que sur les déficits</li>
-        <li><strong>Croyance Partagée</strong>: Les deux affirment la capacité humaine et le potentiel de changement positif</li>
-      </ul>
-      
-      <h4>4. Interconnexion et Pensée Holistique</h4>
-      <ul>
-        <li><strong>Vasudhaiva Kutumbakam</strong>: Le concept hindou que "le monde est une seule famille"</li>
-        <li><strong>Vision du Monde Holistique</strong>: L'hindouisme met l'accent sur l'interconnexion de tous les aspects de la vie</li>
-        <li><strong>Approche Systémique du CLCP</strong>: Le CLCP reconnaît que les défis communautaires nécessitent des solutions holistiques</li>
-        <li><strong>Perspective Partagée</strong>: Les deux voient les communautés comme des systèmes interconnectés plutôt que des individus isolés</li>
-      </ul>
-      
-      <h3>Applications Pratiques</h3>
-      <p>Les communautés hindoues mettant en œuvre le CLCP constatent souvent que:</p>
-      <ul>
-        <li>Le CLCP fournit des outils pratiques pour vivre les valeurs hindoues de seva et de responsabilité communautaire</li>
-        <li>L'approche SALT résonne avec les pratiques hindoues d'enquête appréciative et d'apprentissage auprès des autres</li>
-        <li>L'apprentissage horizontal du CLCP s'aligne avec la tradition hindoue de guru-shishya (maître-élève) de transmission des connaissances</li>
-        <li>L'accent mis sur l'appropriation locale complète le principe de swadeshi (autonomie) dans la pensée hindoue</li>
-      </ul>
-      
-      <h3>Exemples de la Pratique</h3>
-      <p>Les communautés et organisations hindoues ont utilisé le CLCP pour:</p>
-      <ul>
-        <li>Renforcer la résilience communautaire pendant les périodes difficiles</li>
-        <li>Aborder les problèmes sociaux comme la pauvreté, les défis de santé et l'éducation</li>
-        <li>Revitaliser les pratiques traditionnelles de soins communautaires et de soutien mutuel</li>
-        <li>Connecter les valeurs spirituelles avec le développement communautaire pratique</li>
-        <li>Autonomiser les femmes et les jeunes pour qu'ils deviennent des contributeurs actifs au bien-être communautaire</li>
-      </ul>
-      
-      <p>L'intégration des principes hindous et du CLCP crée des opportunités pour les communautés de vivre leurs valeurs spirituelles à travers une action pratique tout en respectant la dignité et l'agence de tous les membres de la communauté.</p>`,
-    },
-    "sikhism-clcp": {
-      title: "Sikhisme et CLCP",
-      content: `
-        <h2>Sikhisme et Pratique Collaborative Dirigée par la Communauté : Valeurs et Approches Partagées</h2>
-        
-        <p>Le service, l'égalité et l'action communautaire sont essentiels tant au sikhisme qu'à la Pratique Collaborative Dirigée par la Communauté (CLCP). Les principes sikhs d'égalité (sarbat da bhala), de service (seva) et d'action communautaire (langar) s'alignent avec l'accent mis par le CLCP sur le développement communautaire inclusif et la responsabilité partagée.</p>
-        
-        <h3>Alignements Philosophiques Fondamentaux</h3>
-        
-        <h4>1. Égalité et Dignité Humaine</h4>
-        <p><strong>Sikhisme :</strong> Fondé au 15ème siècle par Guru Nanak, le sikhisme est apparu comme une réponse au système de castes rigide et à l'inégalité sociale en Inde. Le concept de <em>sarbat da bhala</em> (bien-être de tous) souligne que tous les humains sont égaux aux yeux de Dieu (Waheguru), indépendamment de la caste, de la croyance, du genre ou du statut social.</p>
-        
-        <p><strong>CLCP :</strong> De même, le CLCP est fondé sur le principe que tous les membres de la communauté ont une valeur inhérente et devraient avoir une voix égale dans les processus de prise de décision. Il rejette les approches descendantes qui privilégient certaines voix par rapport à d'autres.</p>
-        
-        <h4>2. Service Désintéressé</h4>
-        <p><strong>Sikhisme :</strong> <em>Seva</em> (service désintéressé) est une pierre angulaire de la pratique sikhe. Les sikhs sont encouragés à servir les autres sans attente de récompense ou de reconnaissance. Ce principe est illustré par la tradition du <em>kar seva</em> (travail volontaire) pour des projets communautaires comme la construction de gurdwaras (temples sikhs) ou de centres communautaires.</p>
-        
-        <p><strong>CLCP :</strong> L'aspect collaboratif du CLCP met l'accent sur la contribution aux objectifs collectifs plutôt que sur le gain individuel. Les facilitateurs et les participants sont encouragés à servir les besoins de la communauté plutôt qu'à imposer des agendas externes.</p>
-        
-        <h4>3. Subsistance Communautaire</h4>
-        <p><strong>Sikhisme :</strong> L'institution du <em>langar</em> (cuisine communautaire) fournit des repas gratuits à tous les visiteurs, indépendamment de leur origine, symbolisant l'égalité et la subsistance communautaire. Chaque gurdwara maintient un langar, servant de démonstration pratique des valeurs sikhes.</p>
-        
-        <p><strong>CLCP :</strong> Le CLCP met l'accent sur le développement communautaire durable qui répond aux besoins fondamentaux tout en renforçant les capacités à long terme. Comme le langar, les initiatives CLCP répondent souvent aux besoins immédiats de la communauté tout en construisant des systèmes de soutien continu.</p>
-        
-        <h3>Mises en Œuvre Pratiques</h3>
-        
-        <h4>1. Prise de Décision Collective</h4>
-        <p><strong>Sikhisme :</strong> La tradition du <em>sarbat khalsa</em> (assemblée communautaire) permet aux sikhs de prendre des décisions collectives sur les questions affectant la communauté. Historiquement, ces assemblées ont abordé les défis auxquels la communauté sikhe est confrontée et déterminé les plans d'action.</p>
-        
-        <p><strong>CLCP :</strong> La prise de décision participative est fondamentale pour le CLCP, avec des méthodes comme la construction de consensus, l'enquête appréciative et les forums communautaires permettant à diverses parties prenantes de façonner ensemble des initiatives.</p>
-        
-        <h4>2. Partage des Ressources</h4>
-        <p><strong>Sikhisme :</strong> <em>Dasvandh</em> (donner un dixième du revenu) encourage les sikhs à partager leurs ressources avec ceux qui sont dans le besoin. Ces contributions soutiennent les initiatives communautaires, l'éducation, les soins de santé et les secours en cas de catastrophe.</p>
-        
-        <p><strong>CLCP :</strong> Les approches basées sur les atouts dans le CLCP se concentrent sur l'identification et la mobilisation des ressources communautaires existantes plutôt que sur l'accent mis sur les déficits. Cela inclut le partage des compétences, des connaissances, des espaces et des ressources financières.</p>
-        
-        <h4>3. Intendance Environnementale</h4>
-        <p><strong>Sikhisme :</strong> Le concept de <em>dharti mata</em> (Mère Terre) promeut le respect de l'environnement naturel. Les Gourous sikhs ont enseigné que les humains ont la responsabilité de prendre soin de la création en tant qu'intendants, non exploiteurs.</p>
-        
-        <p><strong>CLCP :</strong> Le développement durable est un principe clé du CLCP, reconnaissant que le bien-être de la communauté est lié à la santé environnementale. De nombreuses initiatives CLCP intègrent des considérations écologiques dans leur planification et leur mise en œuvre.</p>
-        
-        <h3>Exemple de Cas : Le Modèle Khalsa Aid</h3>
-        <p>Khalsa Aid, une ONG internationale basée sur les principes sikhs, illustre l'alignement entre le sikhisme et le CLCP. Fondée en 1999, l'organisation fournit une aide humanitaire dans les zones de catastrophe et de conflit dans le monde entier. Leur approche comprend :</p>
-        
-        <ul>
-          <li>Travailler directement avec les communautés affectées pour comprendre leurs besoins spécifiques</li>
-          <li>Mobiliser des bénévoles locaux aux côtés d'équipes internationales</li>
-          <li>Renforcer la capacité des communautés à relever les défis futurs</li>
-          <li>Fournir de l'aide sans distinction de race, de religion ou de politique</li>
-        </ul>
-        
-        <p>Ce modèle démontre comment les principes sikhs de seva et sarbat da bhala peuvent être appliqués dans un cadre qui s'aligne sur l'accent mis par le CLCP sur le leadership communautaire et l'action collaborative.</p>
-        
-        <h3>Défis et Opportunités</h3>
-        
-        <h4>Défis :</h4>
-        <ul>
-          <li>Équilibrer les hiérarchies traditionnelles au sein des institutions religieuses avec l'accent mis par le CLCP sur le leadership distribué</li>
-          <li>Assurer une véritable inclusion des voix marginalisées dans les contextes religieux et de développement communautaire</li>
-          <li>Maintenir la motivation spirituelle derrière le service tout en engageant diverses parties prenantes</li>
-        </ul>
-        
-        <h4>Opportunités :</h4>
-        <ul>
-          <li>Tirer parti des réseaux et institutions communautaires sikhs existants (gurdwaras) comme centres de développement communautaire collaboratif</li>
-          <li>S'appuyer sur les traditions sikhes de résilience et d'auto-organisation pour renforcer la capacité communautaire</li>
-          <li>Utiliser des valeurs partagées comme pont pour la collaboration interconfessionnelle sur les initiatives communautaires</li>
-        </ul>
-        
-        <h3>Conclusion</h3>
-        <p>L'alignement entre le sikhisme et la Pratique Collaborative Dirigée par la Communauté offre un cadre puissant pour le développement communautaire inclusif. En s'appuyant sur les principes sikhs d'égalité, de service et d'action communautaire, les praticiens du CLCP peuvent améliorer leurs approches tout en respectant et honorant les fondements spirituels qui motivent de nombreux membres de la communauté. De même, les communautés sikhes peuvent trouver dans le CLCP des méthodologies qui résonnent avec leurs valeurs tout en fournissant des approches structurées pour relever les défis contemporains.</p>
-      `,
-    },
-    "judaism-clcp": {
-      title: "Judaïsme et CLCP",
-      content: `<p>${STATIC_RESPONSES_FR["judaism-clcp"]}</p>
-<p>Les principes juifs de justice (tzedek), de responsabilité communautaire et de réparation du monde (tikkun olam) résonnent avec l'accent mis par le CLCP sur l'appropriation communautaire et l'action collective.</p>
-
-<h3>Valeurs Partagées</h3>
-<ul>
-  <li><strong>Justice et Responsabilité</strong>: Le judaïsme met l'accent sur tzedek (justice) et l'obligation communautaire, s'alignant avec l'accent du CLCP sur la responsabilité collective</li>
-  <li><strong>Tikkun Olam</strong>: Le concept juif de "réparer le monde" complète l'approche transformative du CLCP face aux défis communautaires</li>
-  <li><strong>Apprentissage et Dialogue</strong>: Les traditions juives d'étude et d'interprétation s'alignent avec l'accent du CLCP sur la réflexion et l'apprentissage partagé</li>
-  <li><strong>Communauté (Kehillah)</strong>: L'accent du judaïsme sur la communauté comme essentielle à la vie religieuse est parallèle à l'approche centrée sur la communauté du CLCP</li>
-</ul>
-
-<h3>Applications Pratiques</h3>
-<p>Les communautés juives mettant en œuvre le CLCP constatent souvent que:</p>
-<ul>
-  <li>Le CLCP fournit des outils pratiques pour vivre les valeurs juives de tzedek et chesed (bonté aimante)</li>
-  <li>L'approche SALT résonne avec les traditions juives de dialogue respectueux</li>
-  <li>L'apprentissage horizontal du CLCP complète l'accent juif sur la sagesse communautaire</li>
-  <li>Les principes d'appropriation locale s'alignent avec les traditions juives d'auto-gouvernance communautaire</li>
-</ul>
-
-<h3>Exemples de la Pratique</h3>
-<p>Les communautés juives mettant en œuvre le CLCP constatent souvent que:</p>
-<ul>
-  <li>Renforcer les connexions intergénérationnelles au sein des communautés synagogales</li>
-  <li>Aborder les questions de justice sociale par des initiatives menées par la communauté</li>
-  <li>Construire des ponts entre différentes dénominations juives et avec d'autres communautés religieuses</li>
-  <li>Engager les jeunes dans une action sociale juive significative</li>
-</ul>`,
-    },
-    "atheism-clcp": {
-      title: "Athéisme et CLCP",
-      content: `<p>${STATIC_RESPONSES_FR["atheism-clcp"]}</p>
-  <p>Les perspectives athées sur l'agence humaine, les approches fondées sur des preuves et l'autonomisation communautaire complètent l'accent mis par le CLCP sur les solutions locales et les résultats mesurables sans nécessiter de cadres religieux.</p>
-  
-  <h3>Valeurs et Approches Partagées</h3>
-  <p>L'athéisme et le Processus de Compétence de Vie Communautaire (CLCP) partagent plusieurs valeurs et approches importantes qui créent des synergies naturelles:</p>
-  
-  <h4>1. Agence Humaine et Autonomisation</h4>
-  <ul>
-    <li><strong>Autodétermination</strong>: L'athéisme met l'accent sur la capacité humaine à façonner nos propres vies sans intervention divine</li>
-    <li><strong>Action Collective</strong>: De nombreuses communautés athées valorisent le travail collectif pour relever les défis sociaux</li>
-    <li><strong>Approche CLCP</strong>: Le CLCP se concentre sur les communautés qui s'approprient leurs défis et leurs solutions</li>
-    <li><strong>Vision Partagée</strong>: Les deux reconnaissent que les humains ont la capacité d'améliorer leurs conditions par une action délibérée</li>
-  </ul>
-  
-  <h4>2. Pensée Fondée sur des Preuves</h4>
-  <ul>
-    <li><strong>Approche Empirique</strong>: L'athéisme met souvent l'accent sur les preuves et la raison comme base de compréhension de la réalité</li>
-    <li><strong>Pensée Critique</strong>: Remettre en question les hypothèses et tester les idées par rapport aux preuves</li>
-    <li><strong>Processus d'Apprentissage du CLCP</strong>: Le CLCP valorise la mesure des résultats et l'adaptation des approches en fonction de ce qui fonctionne</li>
-    <li><strong>Méthodologie Partagée</strong>: Les deux valorisent les résultats pratiques plutôt que l'adhésion dogmatique à des idées non testées</li>
-  </ul>
-  
-  <h4>3. Cadres Éthiques Basés sur le Bien-être Humain</h4>
-  <ul>
-    <li><strong>Éthique Humaniste</strong>: De nombreux athées fondent la moralité sur l'épanouissement humain et la réduction des préjudices</li>
-    <li><strong>Responsabilité Sociale</strong>: Accent mis sur nos obligations les uns envers les autres dans cette vie</li>
-    <li><strong>Valeurs du CLCP</strong>: Le CLCP se concentre sur l'amélioration du bien-être communautaire par des approches inclusives</li>
-    <li><strong>Fondement Commun</strong>: Les deux peuvent travailler à partir de cadres éthiques qui ne nécessitent pas de justification surnaturelle</li>
-  </ul>
-  
-  <h4>4. Communauté et Solidarité</h4>
-  <ul>
-    <li><strong>Connexion Sociale</strong>: De nombreuses communautés athées soulignent l'importance de la connexion humaine et du soutien mutuel</li>
-    <li><strong>Résolution Collective de Problèmes</strong>: Valoriser les approches collaboratives pour relever les défis</li>
-    <li><strong>Focus Communautaire du CLCP</strong>: Le CLCP est centré sur le renforcement des capacités communautaires et la responsabilité partagée</li>
-    <li><strong>Perspective Partagée</strong>: Les deux reconnaissent que les humains s'épanouissent grâce à la coopération et aux liens sociaux</li>
-  </ul>
-  
-  <h3>Applications Pratiques</h3>
-  <p>Les communautés athées mettant en œuvre le CLCP constatent souvent que:</p>
-  <ul>
-    <li>Le CLCP fournit des outils pratiques pour le développement communautaire sans nécessiter de cadres religieux</li>
-    <li>L'approche SALT résonne avec les valeurs humanistes de respect, d'appréciation et d'apprentissage</li>
-    <li>L'apprentissage horizontal du CLCP s'aligne sur les principes démocratiques et égalitaires valorisés dans de nombreuses communautés athées</li>
-    <li>L'accent mis sur les résultats mesurables complète les approches fondées sur des preuves du changement social</li>
-  </ul>
-  
-  <h3>Exemples de la Pratique</h3>
-  <p>Les communautés séculières et athées ont utilisé des approches similaires au CLCP pour:</p>
-    <ul>
-    <li>Développer des réseaux d'entraide pendant les crises basés sur des valeurs humaines partagées</li>
-    <li>Aborder les défis communautaires par une résolution de problèmes rationnelle et collaborative</li>
-    <li>Construire des espaces inclusifs qui accueillent les personnes indépendamment de leurs croyances ou non-croyances</li>
-    <li>Créer des cadres éthiques pour l'action communautaire basés sur des préoccupations humaines partagées</li>
-    <li>Mettre en œuvre des interventions fondées sur des preuves pour le bien-être communautaire</li>
-  </ul>
-  
-  <p>L'intégration des perspectives athées et du CLCP crée des opportunités pour les communautés d'aborder les défis par des approches rationnelles et fondées sur des preuves tout en respectant l'agence humaine et la diversité des visions du monde.</p>`,
-    },
-    "spirituality-clcp": {
-      title: "Spiritualité et CLCP",
-      content: `<p>${STATIC_RESPONSES_FR["spirituality-clcp"]}</p>
-  <p>Les approches spirituelles non religieuses du bien-être holistique, de la connexion et de la pleine conscience améliorent les méthodes du CLCP pour l'engagement communautaire et le développement durable.</p>
-  
-  <h3>Valeurs et Approches Partagées</h3>
-  <p>La spiritualité non religieuse et le Processus de Compétence de Vie Communautaire (CLCP) partagent plusieurs valeurs et approches importantes qui créent des synergies naturelles:</p>
-  
-  <h4>1. Bien-être Holistique</h4>
-  <ul>
-    <li><strong>Approche Globale de la Personne</strong>: De nombreuses pratiques spirituelles abordent les dimensions physiques, émotionnelles, mentales et sociales du bien-être</li>
-    <li><strong>Intégration</strong>: Accent mis sur l'intégration des différents aspects de la vie plutôt que leur compartimentage</li>
-    <li><strong>Vision Globale du CLCP</strong>: Le CLCP reconnaît que les défis communautaires nécessitent d'aborder plusieurs facteurs interconnectés</li>
-    <li><strong>Vision Partagée</strong>: Les deux reconnaissent que le bien-être émerge d'une attention équilibrée aux diverses dimensions de la vie</li>
-  </ul>
-  
-  <h4>2. Pleine Conscience et Présence</h4>
-  <ul>
-    <li><strong>Conscience du Moment Présent</strong>: De nombreuses pratiques spirituelles mettent l'accent sur la pleine présence à la réalité actuelle</li>
-    <li><strong>Écoute Profonde</strong>: Cultiver la capacité d'écouter profondément soi-même et les autres</li>
-    <li><strong>Approche SALT du CLCP</strong>: La méthodologie Stimuler, Apprécier, Apprendre, Transférer met l'accent sur une présence attentive</li>
-    <li><strong>Pratique Partagée</strong>: Les deux valorisent le ralentissement pour remarquer ce qui se passe réellement plutôt que de se précipiter vers des solutions</li>
-  </ul>
-  
-  <h4>3. Interconnexion et Communauté</h4>
-  <ul>
-    <li><strong>Vision Relationnelle du Monde</strong>: De nombreuses approches spirituelles soulignent que nous existons en relation avec les autres et le monde naturel</li>
-    <li><strong>Conscience Écologique</strong>: Reconnaissance de notre intégration dans les systèmes naturels</li>
-    <li><strong>Pensée Systémique du CLCP</strong>: Le CLCP aborde les communautés comme des systèmes interconnectés où les changements dans un domaine affectent les autres</li>
-    <li><strong>Perspective Partagée</strong>: Les deux reconnaissent que l'épanouissement individuel dépend de relations et de communautés saines</li>
-  </ul>
-  
-  <h4>4. Sens et But</h4>
-  <ul>
-    <li><strong>But de Vie</strong>: De nombreuses voies spirituelles mettent l'accent sur la découverte et la réalisation de son but profond</li>
-    <li><strong>Alignement des Valeurs</strong>: Mettre ses actions en accord avec ses valeurs fondamentales</li>
-    <li><strong>Construction de Rêve du CLCP</strong>: Le CLCP aide les communautés à articuler leur vision et leur but communs</li>
-    <li><strong>Approche Partagée</strong>: Les deux reconnaissent que l'action significative émerge de la connexion à des valeurs et à un but plus profonds</li>
-  </ul>
-  
-  <h3>Applications Pratiques</h3>
-  <p>Les communautés mettant en œuvre un CLCP à orientation spirituelle constatent souvent que:</p>
-  <ul>
-    <li>Les pratiques contemplatives améliorent la qualité des conversations communautaires et de la prise de décision</li>
-    <li>Les rituels et cérémonies peuvent marquer des transitions importantes et renforcer les liens communautaires</li>
-    <li>Les pratiques de connexion à la nature favorisent la conscience écologique et les approches durables</li>
-    <li>Les techniques de pleine conscience aident les facilitateurs et les membres de la communauté à rester présents lors de conversations difficiles</li>
-  </ul>
-  
-  <h3>Exemples de la Pratique</h3>
-  <p>Les communautés à orientation spirituelle ont utilisé des approches similaires au CLCP pour:</p>
-    <ul>
-    <li>Créer des communautés intentionnelles basées sur des valeurs et des pratiques partagées</li>
-    <li>Développer des éco-villages qui intègrent la vie durable avec le bien-être communautaire</li>
-    <li>Établir des cercles de guérison qui abordent les traumatismes par des approches à la fois personnelles et collectives</li>
-    <li>Concevoir des rituels communautaires qui honorent les transitions importantes et renforcent les liens sociaux</li>
-    <li>Mettre en œuvre des approches basées sur la pleine conscience pour la résolution des conflits et la prise de décision communautaire</li>
-  </ul>
-  
-  <p>L'intégration des pratiques spirituelles et du CLCP crée des opportunités pour les communautés d'aborder les défis d'une manière qui honore la personne entière, favorise une connexion profonde et s'aligne avec la sagesse écologique, sans nécessiter l'adhésion à des doctrines religieuses spécifiques.</p>`,
-    },
-    "being-humane": {
-      title: "Être Humain",
-      content: `<h2>Être Humain : Valeurs Universelles à Travers les Traditions et le CLCP</h2>
-    
-    <p>Le concept d'être humain - montrer de la compassion, de la dignité et du respect pour tous - est une valeur fondamentale partagée par les traditions religieuses et non religieuses, ainsi que par l'approche du CLCP en matière de développement communautaire.</p>
-    
-    <h3>Éléments Fondamentaux d'Être Humain</h3>
-    
-    <p>Être humain englobe plusieurs qualités interconnectées qui sont reconnues à travers diverses visions du monde :</p>
-    
-    <ul>
-      <li><strong>Compassion</strong> : La capacité à reconnaître la souffrance et à y répondre avec soin et bienveillance</li>
-      <li><strong>Dignité</strong> : Reconnaître la valeur inhérente de chaque personne indépendamment des circonstances</li>
-      <li><strong>Respect</strong> : Traiter les autres avec considération et honorer leur autonomie</li>
-      <li><strong>Empathie</strong> : La capacité à comprendre les expériences et les perspectives des autres</li>
-      <li><strong>Non-violence</strong> : Engagement à éviter de nuire en pensée, en parole et en action</li>
-      <li><strong>Justice</strong> : Assurer un traitement équitable et un accès équitable aux ressources et aux opportunités</li>
-    </ul>
-    
-    <h3>Perspectives à Travers les Traditions</h3>
-    
-    <h4>Traditions Religieuses</h4>
-    
-    <p>Les grandes traditions religieuses mettent l'accent sur l'importance d'être humain comme élément central de la pratique spirituelle :</p>
-    
-    <ul>
-      <li><strong>Islam</strong> : Le concept de <em>rahmah</em> (miséricorde/compassion) est central, le Coran décrivant Allah comme "le plus Compatissant, le plus Miséricordieux." Le Prophète Muhammad a enseigné que "Les miséricordieux reçoivent la miséricorde du Très Miséricordieux. Soyez miséricordieux envers ceux sur terre, et Celui qui est au ciel sera miséricordieux envers vous."</li>
-      
-      <li><strong>Christianisme</strong> : Jésus a enseigné la Règle d'Or—"Faites aux autres ce que vous voudriez qu'ils vous fassent" (Matthieu 7:12)—et a mis l'accent sur l'amour du prochain comme commandement fondamental. La parabole du Bon Samaritain illustre l'action compatissante au-delà des frontières sociales.</li>
-      
-      <li><strong>Bouddhisme</strong> : Les pratiques de <em>karuna</em> (compassion) et <em>metta</em> (bienveillance aimante) sont essentielles à la voie bouddhiste. Le Bouddha a enseigné que "La haine ne cesse jamais par la haine dans ce monde ; par l'amour seul elle cesse."</li>
-      
-      <li><strong>Hindouisme</strong> : Le concept d'<em>ahimsa</em> (non-violence) s'étend à tous les êtres vivants. Le principe de <em>vasudhaiva kutumbakam</em> ("le monde est une seule famille") souligne la parenté universelle.</li>
-      
-      <li><strong>Judaïsme</strong> : Le concept de <em>chesed</em> (bonté aimante) est fondamental, la Torah commandant d'"aimer ton prochain comme toi-même" (Lévitique 19:18). Le principe de <em>b'tzelem Elohim</em> (être créé à l'image de Dieu) établit la base de la dignité humaine.</li>
-      
-      <li><strong>Sikhisme</strong> : Le principe de <em>sarbat da bhala</em> (bien-être de tous) guide l'éthique sikhe, avec un accent sur l'égalité, le service et la compassion indépendamment des distinctions sociales.</li>
-    </ul>
-    
-    <h4>Perspectives Non Religieuses</h4>
-    
-    <p>Les approches humanistes et séculières soulignent également l'importance d'être humain :</p>
-    
-    <ul>
-      <li><strong>Humanisme</strong> : Met l'accent sur la dignité humaine, la compassion et la responsabilité éthique sans référence à des sources surnaturelles. La Déclaration d'Amsterdam de l'Humanisme International affirme "la valeur, la dignité et l'autonomie de l'individu et le droit de chaque être humain à la plus grande liberté possible compatible avec les droits des autres."</li>
-      
-      <li><strong>Éthique Séculière</strong> : Des cadres comme l'utilitarisme et l'éthique fondée sur les droits fournissent des justifications pour un traitement humain basé sur la minimisation de la souffrance et le respect de l'autonomie.</li>
-      
-      <li><strong>Psychologie Évolutionniste</strong> : Suggère que l'empathie et la coopération présentent des avantages évolutifs, expliquant pourquoi être humain est une valeur transculturelle.</li>
-    </ul>
-    
-    <h3>Être Humain dans le CLCP</h3>
-    
-    <p>Le Processus de Compétence de Vie Communautaire (CLCP) incarne et promeut l'être humain à travers ses principes et pratiques fondamentaux :</p>
-    
-    <ul>
-      <li><strong>Approche Basée sur les Forces</strong> : Le CLCP reconnaît et affirme la dignité, la capacité et l'agence de tous les membres de la communauté, les considérant comme des acteurs capables plutôt que comme des bénéficiaires passifs d'aide</li>
-      
-      <li><strong>Méthodologie SALT</strong> : Les pratiques de Stimuler, Apprécier, Apprendre et Transférer sont fondées sur le respect de la sagesse locale et l'engagement compatissant</li>
-      
-      <li><strong>Participation Inclusive</strong> : Le CLCP s'assure que toutes les voix sont entendues, en particulier celles traditionnellement marginalisées, reflétant la valeur universelle de la dignité humaine</li>
-      
-      <li><strong>Apprentissage Horizontal</strong> : En valorisant les connaissances et l'expérience de chaque personne, le CLCP crée des relations de respect mutuel plutôt que d'expertise hiérarchique</li>
-      
-      <li><strong>Facilitation vs. Intervention</strong> : Le CLCP soutient les communautés pour qu'elles abordent leurs propres défis plutôt que d'imposer des solutions externes, honorant leur autonomie et leur agence</li>
-    </ul>
-    
-    <h3>Connexions Spécifiques Entre le CLCP et Être Humain</h3>
-    
-    <p>L'alignement entre le CLCP et les valeurs humaines universelles se manifeste de plusieurs façons clés :</p>
-    
-    <ul>
-      <li><strong>Présence Compatissante</strong> : Les facilitateurs CLCP pratiquent l'écoute profonde et l'engagement empathique, créant un espace pour une voix communautaire authentique</li>
-      
-      <li><strong>Affirmation de la Dignité</strong> : En se concentrant sur les forces plutôt que sur les déficits, le CLCP affirme la valeur inhérente et la capacité de tous les membres de la communauté</li>
-      
-      <li><strong>Relations Respectueuses</strong> : Le CLCP construit des relations horizontales qui honorent la contribution de chaque personne, évitant les dynamiques de pouvoir qui diminuent la dignité humaine</li>
-      
-      <li><strong>Communication Non-violente</strong> : Le CLCP promeut un dialogue qui cherche la compréhension plutôt que la confrontation, incarnant le principe de non-violence</li>
-      
-      <li><strong>Orientation vers la Justice</strong> : En assurant une participation inclusive, le CLCP œuvre pour un développement communautaire équitable où tous peuvent contribuer et bénéficier</li>
-    </ul>
-    
-    <h3>Applications Pratiques</h3>
-    
-    <p>Les communautés peuvent cultiver l'être humain à travers des pratiques CLCP spécifiques :</p>
-    
-    <ul>
-      <li><strong>Enquête Appréciative</strong> : Se concentrer sur les forces et les possibilités plutôt que sur les déficits et les problèmes, affirmant la dignité humaine</li>
-      
-      <li><strong>Auto-évaluation Communautaire</strong> : Permettre aux communautés d'évaluer leur propre situation et de définir des priorités, honorant leur autonomie</li>
-      
-      <li><strong>Construction de Rêve</strong> : Créer des visions partagées pour l'avenir qui reflètent les aspirations et les valeurs collectives</li>
-      
-      <li><strong>Planification d'Action</strong> : Développer des étapes concrètes qui s'appuient sur les forces et les ressources existantes</li>
-      
-      <li><strong>Partage de Connaissances</strong> : Créer des opportunités pour que les communautés apprennent des expériences les unes des autres</li>
-    </ul>
-    
-    <h3>Exemples de Cas</h3>
-    
-    <p>L'intégration des valeurs humaines et du CLCP a produit des résultats puissants dans divers contextes :</p>
-    
-    <ul>
-      <li><strong>Collaboration Interreligieuse</strong> : Dans des contextes post-conflit, le CLCP a réuni des communautés de différentes religions pour travailler sur des préoccupations communes, construisant des ponts par l'action pratique</li>
-      
-      <li><strong>Réponse Sanitaire</strong> : Lors d'épidémies, le CLCP a permis aux communautés de répondre avec des mesures pratiques et des soins compatissants pour les membres affectés</li>
-      
-      <li><strong>Autonomisation des Jeunes</strong> : Les approches CLCP ont aidé les jeunes de différents milieux à découvrir leur capacité à contribuer de manière significative au bien-être communautaire</li>
-    </ul>
-    
-    <h3>Défis et Solutions</h3>
-    
-    <p>Les communautés font face à des défis pour être constamment humaines :</p>
-    
-    <ul>
-      <li><strong>Défi</strong> : Déshumanisation pendant les conflits<br>
-      <strong>Solution CLCP</strong> : Créer des espaces sûrs pour le dialogue qui maintiennent la reconnaissance de l'humanité partagée même au milieu des désaccords</li>
-      
-      <li><strong>Défi</strong> : Exclusion des groupes marginalisés<br>
-      <strong>Solution CLCP</strong> : Inclusion intentionnelle et amplification des voix diverses à travers des processus participatifs</li>
-      
-      <li><strong>Défi</strong> : Épuisement parmi les soignants et les aidants<br>
-      <strong>Solution CLCP</strong> : Promouvoir des pratiques de soins durables et des systèmes de soutien mutuel au sein des communautés</li>
-      
-      <li><strong>Défi</strong> : Barrières systémiques au traitement humain<br>
-      <strong>Solution CLCP</strong> : Soutenir l'action collective pour transformer les structures injustes tout en maintenant la compassion pour tous les impliqués</li>
-    </ul>
-    
-    <h3>Conclusion</h3>
-    
-    <p>Être humain représente une aspiration universelle à travers diverses traditions et approches. En cultivant la compassion, la dignité et le respect dans nos communautés, nous créons les conditions pour un épanouissement collectif. L'approche CLCP offre des méthodologies pratiques pour incarner ces valeurs dans le travail de développement communautaire, créant des espaces où être humain devient non seulement un idéal mais une réalité vécue.</p>
-    
-    <p>Grâce au CLCP, les communautés de différentes confessions et visions du monde peuvent trouver un terrain d'entente dans leur engagement commun envers la dignité humaine et l'action compatissante, construisant des ponts au-delà des différences tout en relevant ensemble des défis pratiques.</p>`,
-    },
-    "clcp-religions": {
-      title: "CLCP et Religions",
-      content: `<p>${STATIC_RESPONSES_FR["clcp-religions"]}</p>
-      <p>Le CLCP partage des valeurs communes avec de nombreuses traditions religieuses, notamment le service communautaire, la dignité humaine, la compassion et la responsabilité collective pour le bien-être.</p>`,
-    },
-    clcp: {
-      title: "CLCP",
-      content: `<p>${STATIC_RESPONSES_FR.clcp}</p>
-      <p>Le Processus de Compétence de Vie Communautaire (CLCP) permet aux communautés d'identifier leurs forces et de relever leurs défis grâce à l'appropriation, l'apprentissage partagé et l'action collective.</p>`,
-    },
-    salt: saltTopic.fr,
-    islam: {
-      title: "Islam",
-      content: `<p>${STATIC_RESPONSES_FR.islam}</p>
-      <p>L'Islam est une religion monothéiste fondée sur les enseignements du Prophète Muhammad et le Coran, mettant l'accent sur la soumission à Allah (Dieu), la compassion, la justice et le bien-être communautaire.</p>`,
-    },
-    christianity: {
-      title: "Christianisme",
-      content: `<p>Le christianisme est basé sur la vie et les enseignements de Jésus-Christ, mettant l'accent sur l'amour, le pardon, la rédemption par le Christ et le service aux autres comme expressions de la foi.</p>
-      <p>Le christianisme est une religion monothéiste centrée sur la vie, les enseignements, la mort et la résurrection de Jésus-Christ. Avec plus de 2 milliards d'adeptes dans le monde, c'est la plus grande religion du monde, englobant diverses dénominations, notamment les traditions catholique, orthodoxe et protestante.</p>
-      
-      <h3>Croyances Fondamentales</h3>
-      <ul>
-        <li><strong>Dieu</strong>: Les chrétiens croient en un seul Dieu qui existe en tant que Trinité: Père, Fils (Jésus-Christ) et Saint-Esprit.</li>
-        <li><strong>Jésus-Christ</strong>: Considéré comme le Fils de Dieu qui est devenu humain, a vécu une vie sans péché, est mort par crucifixion pour expier les péchés de l'humanité, et a été ressuscité.</li>
-        <li><strong>Salut</strong>: Obtenu par la foi en Jésus-Christ et sa mort sacrificielle, qui offre le pardon des péchés et la vie éternelle.</li>
-        <li><strong>Bible</strong>: Considérée comme la parole inspirée de Dieu, composée de l'Ancien et du Nouveau Testament.</li>
-        <li><strong>Église</strong>: La communauté des croyants qui se rassemblent pour le culte, l'apprentissage et le service.</li>
-      </ul>
-      
-      <h3>Valeurs et Pratiques Clés</h3>
-      <ul>
-        <li><strong>Amour</strong>: Jésus a enseigné que l'amour de Dieu et l'amour du prochain sont les plus grands commandements.</li>
-        <li><strong>Service</strong>: Suivre l'exemple du Christ en servant les autres, en particulier ceux dans le besoin.</li>
-        <li><strong>Communauté</strong>: Se rassembler pour le culte, la prière et le soutien mutuel.</li>
-        <li><strong>Prière</strong>: Communication régulière avec Dieu, à la fois individuelle et communautaire.</li>
-        <li><strong>Étude des Écritures</strong>: Lire et réfléchir sur la Bible pour obtenir des conseils et une croissance spirituelle.</li>
-      </ul>`,
-    },
-    buddhism: {
-      title: "Bouddhisme",
-      content: `<p>${STATIC_RESPONSES_FR.buddhism}</p>
-      <p>Le bouddhisme suit les enseignements de Bouddha, mettant l'accent sur la pleine conscience, la compassion, les Quatre Nobles Vérités et le Noble Chemin Octuple comme moyens de surmonter la souffrance et d'atteindre l'illumination.</p>
-      
-      <h3>Origines et Développement</h3>
-      <p>Le bouddhisme est né dans le nord de l'Inde au 5ème siècle avant J.-C. avec les enseignements de Siddhartha Gautama, qui est devenu connu sous le nom de Bouddha ("l'Éveillé"). Après son illumination sous l'arbre Bodhi, le Bouddha a passé 45 ans à enseigner une voie de libération de la souffrance. Le bouddhisme s'est répandu dans toute l'Asie et a plus récemment gagné des adeptes dans le monde entier, avec environ 500 millions d'adhérents aujourd'hui.</p>
-      
-      <h3>Enseignements Fondamentaux</h3>
-      
-      <h4>Les Quatre Nobles Vérités</h4>
-      <ul>
-        <li><strong>Dukkha</strong>: La vie implique souffrance, insatisfaction et stress</li>
-        <li><strong>Samudaya</strong>: La cause de la souffrance est le désir et l'attachement</li>
-        <li><strong>Nirodha</strong>: La souffrance peut cesser quand le désir cesse</li>
-        <li><strong>Magga</strong>: Le Noble Chemin Octuple mène à la cessation de la souffrance</li>
-      </ul>
-      
-      <h4>Le Noble Chemin Octuple</h4>
-      <ul>
-        <li><strong>Compréhension Juste</strong>: Voir la réalité telle qu'elle est, comprendre les Quatre Nobles Vérités</li>
-        <li><strong>Pensée Juste</strong>: Engagement envers l'amélioration éthique et mentale de soi</li>
-        <li><strong>Parole Juste</strong>: Parler avec vérité, éviter le langage dur et les commérages</li>
-        <li><strong>Action Juste</strong>: Se comporter pacifiquement et harmonieusement, éviter les actions nuisibles</li>
-        <li><strong>Moyens d'Existence Justes</strong>: Gagner sa vie d'une manière qui ne nuit pas aux autres</li>
-        <li><strong>Effort Juste</strong>: Cultiver des états d'esprit positifs et surmonter les négatifs</li>
-        <li><strong>Attention Juste</strong>: Développer la conscience du corps, des sentiments, des pensées et des phénomènes</li>
-        <li><strong>Concentration Juste</strong>: Pratiquer la méditation pour concentrer et unifier l'esprit</li>
-      </ul>
-      
-      <h3>Concepts Clés</h3>
-      <ul>
-        <li><strong>Karma</strong>: La loi de causalité morale; les actions ont des conséquences qui façonnent les expériences futures</li>
-        <li><strong>Renaissance</strong>: Le cycle de mort et de renaissance conduit par le karma et le désir</li>
-        <li><strong>Nirvana</strong>: Le but ultime de la pratique bouddhiste; libération de la souffrance et du cycle de renaissance</li>
-        <li><strong>Anatta (Non-soi)</strong>: L'enseignement qu'il n'y a pas de soi ou d'âme permanent et immuable</li>
-        <li><strong>Anicca (Impermanence)</strong>: La compréhension que tous les phénomènes sont transitoires et en constante évolution</li>
-        <li><strong>Pratityasamutpada (Origine Dépendante)</strong>: Tous les phénomènes surgissent en dépendance de multiples causes et conditions</li>
-      </ul>
-      
-      <h3>Traditions Majeures</h3>
-      <ul>
-        <li><strong>Theravada</strong>: "La Voie des Anciens", répandue au Sri Lanka, en Thaïlande, au Myanmar, au Cambodge et au Laos, mettant l'accent sur les enseignements originaux du Bouddha et la libération individuelle</li>
-        <li><strong>Mahayana</strong>: "Le Grand Véhicule", présent en Chine, au Japon, en Corée et au Vietnam, mettant l'accent sur la compassion pour tous les êtres et l'idéal du bodhisattva</li>
-        <li><strong>Vajrayana</strong>: "Le Véhicule de Diamant", pratiqué au Tibet, au Népal, en Mongolie et dans certaines parties de l'Inde, incorporant des pratiques tantriques et des techniques de visualisation</li>
-      </ul>
-      
-      <h3>Pratiques</h3>
-      <ul>
-        <li><strong>Méditation</strong>: Développer la concentration, la pleine conscience et la perspicacité</li>
-        <li><strong>Conduite Éthique</strong>: Suivre des préceptes qui guident le comportement moral</li>
-        <li><strong>Générosité</strong>: Pratiquer dana (don) pour développer le non-attachement</li>
-        <li><strong>Chant et Dévotion</strong>: Réciter des sutras et exprimer la révérence</li>
-        <li><strong>Étude</strong>: Apprendre les enseignements du Bouddha (dharma)</li>
-      </ul>`,
-    },
-    hinduism: {
-      title: "Hindouisme",
-      content: `<h2>Hindouisme: Une Tradition Diverse et Ancienne</h2>
-      
-      <p>L'hindouisme est l'une des plus anciennes traditions religieuses et philosophiques du monde, originaire du sous-continent indien. Plutôt qu'une religion unifiée unique, l'hindouisme englobe une grande variété de croyances, pratiques et traditions qui ont évolué sur des milliers d'années. Avec environ 1,2 milliard d'adeptes dans le monde, c'est la troisième plus grande religion au niveau mondial et la foi prédominante en Inde et au Népal.</p>
-      
-      <h3>Concepts et Croyances Fondamentaux</h3>
-      
-      <h4>Brahman et Atman</h4>
-      <ul>
-        <li><strong>Brahman</strong>: La réalité ultime, l'âme universelle ou la conscience absolue qui sous-tend toute existence</li>
-        <li><strong>Atman</strong>: L'âme ou le soi individuel, qui dans de nombreuses traditions hindoues est considéré comme identique à ou faisant partie de Brahman</li>
-        <li><strong>Relation</strong>: Différentes écoles de pensée hindoue comprennent différemment la relation entre Brahman et Atman, de l'identité complète (Advaita Vedanta) au non-dualisme qualifié (Vishishtadvaita) au dualisme (Dvaita)</li>
-      </ul>
-      
-      <h4>Dharma, Karma et Samsara</h4>
-      <ul>
-        <li><strong>Dharma</strong>: Ordre cosmique, devoir éthique et vie juste selon sa nature et son stade de vie</li>
-        <li><strong>Karma</strong>: La loi de cause à effet, où les actions génèrent des conséquences qui affectent la vie actuelle et future</li>
-        <li><strong>Samsara</strong>: Le cycle de naissance, mort et renaissance (réincarnation) déterminé par le karma de chacun</li>
-        <li><strong>Moksha</strong>: Libération du cycle du samsara, l'objectif spirituel ultime dans l'hindouisme</li>
-      </ul>
-      
-      <h4>Manifestations Divines</h4>
-      <ul>
-        <li><strong>Éléments Polythéistes</strong>: L'hindouisme reconnaît de nombreuses divinités, souvent comprises comme des manifestations du divin</li>
-        <li><strong>Divinités Majeures</strong>: Incluent Brahma (créateur), Vishnu (préservateur), Shiva (transformateur), Devi (la déesse sous diverses formes comme Durga, Kali, Lakshmi, Saraswati), et Ganesha (celui qui élimine les obstacles)</li>
-        <li><strong>Ishta Devata</strong>: Le concept d'une divinité personnelle choisie pour l'adoration</li>
-        <li><strong>Avatars</strong>: Incarnations divines, particulièrement de Vishnu (comme Rama et Krishna)</li>
-      </ul>
-      
-      <h3>Sacred Texts</h3>
-      
-      <h4>Shruti ("What is Heard")</h4>
-      <ul>
-        <li><strong>Vedas</strong>: The oldest sacred texts, including the Rig Veda, Sama Veda, Yajur Veda, and Atharva Veda</li>
-        <li><strong>Upanishads</strong>: Philosophical texts exploring the nature of reality, consciousness, and liberation</li>
-        <li><strong>Status</strong>: Considered revealed knowledge, eternal truths "heard" by ancient sages</li>
-      </ul>
-      
-      <h4>Smriti ("What is Remembered")</h4>
-      <ul>
-        <li><strong>Bhagavad Gita</strong>: Part of the epic Mahabharata, a dialogue between Krishna and Arjuna on duty, devotion, and spiritual knowledge</li>
-        <li><strong>Ramayana</strong>: Epic story of Rama, an avatar of Vishnu, embodying dharmic ideals</li>
-        <li><strong>Puranas</strong>: Ancient texts containing stories of deities, cosmology, and philosophy</li>
-        <li><strong>Dharma Shastras</strong>: Texts on law, ethics, and social conduct, including the Laws of Manu</li>
-      </ul>`,
-    },
-    judaism: {
-      title: "Judaïsme",
-      content: `<p>Le judaïsme est centré sur l'alliance entre Dieu et le peuple juif, mettant l'accent sur la justice, la droiture, la responsabilité communautaire et le monothéisme éthique.</p>`,
-    },
-    sikhism: {
-      title: "Sikhisme",
-      content: `<p>Le sikhisme a été fondé par Guru Nanak et promeut l'égalité, le service à l'humanité, la dévotion à un seul Dieu et l'importance de vivre une vie honnête et compatissante.</p>`,
-    },
-    atheism: {
-      title: "Athéisme",
-      content: `<p>L'athéisme est l'absence de croyance en des divinités, mettant souvent l'accent sur l'agence humaine, le raisonnement fondé sur des preuves et des cadres éthiques basés sur le bien-être humain plutôt que sur le commandement divin.</p>`,
-    },
-    spirituality: {
-      title: "Spiritualité Sans Religion",
-      content: `<p>La spiritualité non religieuse se concentre sur le sens personnel, la connexion, la transcendance et le bien-être en dehors des cadres religieux organisés, incorporant souvent la pleine conscience, la connexion avec la nature et les pratiques contemplatives.</p>`,
-    },
-    comparison: {
-      title: "Religion Comparée",
-      content: `<h2>Religion Comparée: Comprendre les Diverses Traditions Religieuses</h2>
-      
-      <p>La religion comparée est l'étude systématique des similitudes et des différences entre les traditions religieuses et les systèmes de croyance. Ce domaine examine les thèmes communs, les perspectives uniques, et les contextes historiques et culturels qui façonnent l'expression religieuse à travers le monde.</p>
-      
-      <h3>Dimensions Majeures de Comparaison</h3>
-      
-      <h4>1. Concepts de Réalité Ultime</h4>
-      <ul>
-        <li><strong>Monothéisme</strong>: L'islam, le christianisme et le judaïsme mettent l'accent sur une divinité suprême qui a créé et gouverne l'univers.</li>
-        <li><strong>Polythéisme</strong>: Certaines traditions hindoues reconnaissent plusieurs divinités comme manifestations de la réalité ultime.</li>
-        <li><strong>Non-théisme</strong>: Le bouddhisme ne se concentre généralement pas sur une divinité créatrice mais sur la nature de l'esprit et de la réalité.</li>
-        <li><strong>Monisme</strong>: L'Advaita Vedanta dans l'hindouisme voit toute la réalité comme étant ultimement une (Brahman).</li>
-        <li><strong>Naturalisme</strong>: Les perspectives athées considèrent le monde naturel comme tout ce qui existe, sans dimensions surnaturelles.</li>
-      </ul>
-      
-      <h4>2. Textes Sacrés et Autorité</h4>
-      <ul>
-        <li><strong>Textes Révélés</strong>: Le Coran (Islam), la Bible (Christianisme) et la Torah (Judaïsme) sont considérés comme des révélations divines.</li>
-        <li><strong>Littérature de Sagesse</strong>: Les sutras bouddhistes et les Upanishads hindous offrent des aperçus philosophiques plutôt que des commandements divins.</li>
-        <li><strong>Traditions Orales</strong>: De nombreuses traditions spirituelles indigènes transmettent les enseignements par la narration orale et le rituel.</li>
-        <li><strong>Autorité Interprétative</strong>: Les religions diffèrent quant à qui peut interpréter les textes avec autorité—clergé, érudits, individus ou consensus communautaire.</li>
-      </ul>`,
-    },
-    salvation: {
-      title: "Salut et Libération",
-      content: `<h2>Salut et Libération: Perspectives à Travers les Traditions</h2>
-      
-      <p>Les concepts de salut, de libération et d'accomplissement ultime sont centraux dans de nombreuses traditions religieuses et philosophiques, bien qu'ils prennent des formes remarquablement différentes. Ces concepts abordent des préoccupations humaines fondamentales concernant la souffrance, le sens et ce qui constitue le bien suprême ou le but ultime de l'existence humaine.</p>
-      
-      <h3>Traditions Abrahamiques</h3>
-      
-      <h4>Islam</h4>
-      <p>Dans l'Islam, le salut (najat) implique:</p>
       <ul>
         <li><strong>Soumission à Allah</strong>: Suivre la volonté de Dieu telle que révélée dans le Coran et exemplifiée par le Prophète Muhammad</li>
         <li><strong>Foi et Actions Justes</strong>: Croyance en l'unicité de Dieu (tawhid) combinée avec de bonnes actions</li>
