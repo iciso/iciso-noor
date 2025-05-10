@@ -12,13 +12,14 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Noor - Comparative Religion Resource",
   description:
-    "Noor (Neutral Open Objective Resource) provides factual, non-biased information about faith and non-faiths, as well as the Community Life Competence Process (CLCP) and the relationships between them. Noor is freeware and open source, made by v0 following the principles of Community Led Development (CLD) as reflected in The Constellation website on CLCP.",
+    "Noor (Neutral Open Objective Resource) explores the commonalities between CLCP (Community Life Competence Process) and various faiths and non-faiths. It provides factual, non-biased information about religious and non-religious worldviews and their relationship with community-led development principles. Noor is freeware and open source, following the principles of Community Led Development (CLD) as reflected in The Constellation's approach to CLCP.",
   keywords:
-    "comparative religion, CLCP, Community Life Competence Process, Islam, Christianity, Buddhism, Hinduism, Judaism, Sikhism, interfaith, community development",
+    "CLCP, Community Life Competence Process, comparative religion, Islam, Christianity, Buddhism, Hinduism, Judaism, Sikhism, interfaith, community development, faith traditions",
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.png", type: "image/svg+xml" },
       { url: "/favicon.png", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
     ],
     apple: [{ url: "/apple-touch-icon.png" }],
   },
