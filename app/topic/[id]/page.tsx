@@ -7,10 +7,12 @@ import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
 import { staticResponses } from "@/data/static-responses"
 import { useLanguage } from "@/contexts/language-context"
+import { useEffect, useState } from "react"
 
 export default function TopicPage() {
   const { id } = useParams()
-  const { language, t } = useLanguage()
+  const { language } = useLanguage()
+  const [isLoading, setIsLoading] = useState(true)
 
   // Ensure id is a string
   const topicId = Array.isArray(id) ? id[0] : id
@@ -24,6 +26,21 @@ export default function TopicPage() {
   }
 
   const topic = responses[topicId as keyof typeof responses]
+
+  // Simulate content loading to prevent timeouts
+  useEffect(() => {
+    let timer: NodeJS.Timeout
+
+    timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 100)
+
+    return () => clearTimeout(timer)
+  }, [])
+
+  useEffect(() => {
+    setIsLoading(true)
+  }, [topicId, language])
 
   return (
     <div className="container mx-auto py-8 px-4">
@@ -40,7 +57,15 @@ export default function TopicPage() {
           <CardDescription>{language === "en" ? "Comparative topic" : "Sujet comparatif"}</CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: topic.content }} />
+          {isLoading ? (
+            <div className="flex justify-center py-8">
+              <div className="animate-pulse text-center">
+                <p className="text-gray-500">{language === "en" ? "Loading content..." : "Chargement du contenu..."}</p>
+              </div>
+            </div>
+          ) : (
+            <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: topic.content }} />
+          )}
         </CardContent>
       </Card>
     </div>

@@ -536,8 +536,138 @@ export const staticResponses = {
     },
     "being-humane": {
       title: "Being Humane",
-      content: `<p>${STATIC_RESPONSES_EN["being-humane"]}</p>
-      <p>The concept of being humane—showing compassion, dignity, and respect for all—is a foundational value shared across religious and non-religious traditions, as well as CLCP's approach to community development.</p>`,
+      content: `<h2>Being Humane: Universal Values Across Traditions and CLCP</h2>
+    
+    <p>The concept of being humane—showing compassion, dignity, and respect for all—is a foundational value shared across religious and non-religious traditions, as well as CLCP's approach to community development.</p>
+    
+    <h3>Core Elements of Being Humane</h3>
+    
+    <p>Being humane encompasses several interconnected qualities that are recognized across diverse worldviews:</p>
+    
+    <ul>
+      <li><strong>Compassion</strong>: The capacity to recognize suffering and respond with care and kindness</li>
+      <li><strong>Dignity</strong>: Acknowledging the inherent worth of every person regardless of circumstances</li>
+      <li><strong>Respect</strong>: Treating others with consideration and honoring their autonomy</li>
+      <li><strong>Empathy</strong>: The ability to understand others' experiences and perspectives</li>
+      <li><strong>Non-violence</strong>: Commitment to avoiding harm in thought, word, and action</li>
+      <li><strong>Justice</strong>: Ensuring fair treatment and equitable access to resources and opportunities</li>
+    </ul>
+    
+    <h3>Perspectives Across Traditions</h3>
+    
+    <h4>Religious Traditions</h4>
+    
+    <p>Major religious traditions emphasize being humane as central to spiritual practice:</p>
+    
+    <ul>
+      <li><strong>Islam</strong>: The concept of <em>rahmah</em> (mercy/compassion) is central, with the Quran describing Allah as "the most Compassionate, the most Merciful." The Prophet Muhammad taught that "The merciful are shown mercy by the Most Merciful. Be merciful to those on earth, and the One in heaven will be merciful to you."</li>
+      
+      <li><strong>Christianity</strong>: Jesus taught the Golden Rule—"Do unto others as you would have them do unto you" (Matthew 7:12)—and emphasized love of neighbor as a core commandment. The parable of the Good Samaritan illustrates compassionate action across social boundaries.</li>
+      
+      <li><strong>Buddhism</strong>: The practices of <em>karuna</em> (compassion) and <em>metta</em> (loving-kindness) are essential to the Buddhist path. The Buddha taught that "Hatred never ceases through hatred in this world; through love alone they cease."</li>
+      
+      <li><strong>Hinduism</strong>: The concept of <em>ahimsa</em> (non-violence) extends to all living beings. The principle of <em>vasudhaiva kutumbakam</em> ("the world is one family") emphasizes universal kinship.</li>
+      
+      <li><strong>Judaism</strong>: The concept of <em>chesed</em> (loving-kindness) is fundamental, with the Torah commanding to "love your neighbor as yourself" (Leviticus 19:18). The principle of <em>b'tzelem Elohim</em> (being created in God's image) establishes the basis for human dignity.</li>
+      
+      <li><strong>Sikhism</strong>: The principle of <em>sarbat da bhala</em> (welfare of all) guides Sikh ethics, with an emphasis on equality, service, and compassion regardless of social distinctions.</li>
+    </ul>
+    
+    <h4>Non-Religious Perspectives</h4>
+    
+    <p>Humanistic and secular approaches also emphasize the importance of being humane:</p>
+    
+    <ul>
+      <li><strong>Humanism</strong>: Emphasizes human dignity, compassion, and ethical responsibility without reference to supernatural sources. The Amsterdam Declaration of Humanist International affirms "the worth, dignity and autonomy of the individual and the right of every human being to the greatest possible freedom compatible with the rights of others."</li>
+      
+      <li><strong>Secular Ethics</strong>: Frameworks like utilitarianism and rights-based ethics provide rationales for humane treatment based on minimizing suffering and respecting autonomy.</li>
+      
+      <li><strong>Evolutionary Psychology</strong>: Suggests that empathy and cooperation have evolutionary advantages, explaining why being humane is a cross-cultural value.</li>
+    </ul>
+    
+    <h3>Being Humane in CLCP</h3>
+    
+    <p>The Community Life Competence Process (CLCP) embodies and promotes being humane through its core principles and practices:</p>
+    
+    <ul>
+      <li><strong>Strength-Based Approach</strong>: CLCP recognizes and affirms the dignity, capacity, and agency of all community members, seeing them as capable actors rather than passive recipients of aid</li>
+      
+      <li><strong>SALT Methodology</strong>: The practices of Stimulate, Appreciate, Learn, and Transfer are grounded in respect for local wisdom and compassionate engagement</li>
+      
+      <li><strong>Inclusive Participation</strong>: CLCP ensures all voices are heard, especially those traditionally marginalized, reflecting the universal value of human dignity</li>
+      
+      <li><strong>Horizontal Learning</strong>: By valuing each person's knowledge and experience, CLCP creates relationships of mutual respect rather than hierarchical expertise</li>
+      
+      <li><strong>Facilitation vs. Intervention</strong>: CLCP supports communities to address their own challenges rather than imposing external solutions, honoring their autonomy and agency</li>
+    </ul>
+    
+    <h3>Specific Connections Between CLCP and Being Humane</h3>
+    
+    <p>The alignment between CLCP and universal humane values manifests in several key ways:</p>
+    
+    <ul>
+      <li><strong>Compassionate Presence</strong>: CLCP facilitators practice deep listening and empathetic engagement, creating space for authentic community voice</li>
+      
+      <li><strong>Dignity Affirmation</strong>: By focusing on strengths rather than deficits, CLCP affirms the inherent worth and capability of all community members</li>
+      
+      <li><strong>Respectful Relationships</strong>: CLCP builds horizontal relationships that honor each person's contribution, avoiding power dynamics that diminish human dignity</li>
+      
+      <li><strong>Non-violent Communication</strong>: CLCP promotes dialogue that seeks understanding rather than confrontation, embodying the principle of non-violence</li>
+      
+      <li><strong>Justice Orientation</strong>: By ensuring inclusive participation, CLCP works toward equitable community development where all can contribute and benefit</li>
+    </ul>
+    
+    <h3>Practical Applications</h3>
+    
+    <p>Communities can cultivate being humane through specific CLCP practices:</p>
+    
+    <ul>
+      <li><strong>Appreciative Inquiry</strong>: Focusing on strengths and possibilities rather than deficits and problems, affirming human dignity</li>
+      
+      <li><strong>Community Self-Assessment</strong>: Enabling communities to evaluate their own situation and set priorities, honoring their autonomy</li>
+      
+      <li><strong>Dream Building</strong>: Creating shared visions for the future that reflect collective aspirations and values</li>
+      
+      <li><strong>Action Planning</strong>: Developing concrete steps that build on existing strengths and resources</li>
+      
+      <li><strong>Knowledge Sharing</strong>: Creating opportunities for communities to learn from each other's experiences</li>
+    </ul>
+    
+    <h3>Case Examples</h3>
+    
+    <p>The integration of humane values and CLCP has produced powerful results in diverse contexts:</p>
+    
+    <ul>
+      <li><strong>Interfaith Collaboration</strong>: In post-conflict settings, CLCP has brought together communities across religious divides to work on shared concerns, building bridges through practical action</li>
+      
+      <li><strong>Health Response</strong>: During disease outbreaks, CLCP has enabled communities to respond with both practical measures and compassionate care for affected members</li>
+      
+      <li><strong>Youth Empowerment</strong>: CLCP approaches have helped young people across different backgrounds discover their capacity to contribute meaningfully to community well-being</li>
+    </ul>
+    
+    <h3>Challenges and Solutions</h3>
+    
+    <p>Communities face challenges in consistently being humane:</p>
+    
+    <ul>
+      <li><strong>Challenge</strong>: Dehumanization during conflict<br>
+      <strong>CLCP Solution</strong>: Creating safe spaces for dialogue that maintain recognition of shared humanity even amid disagreement</li>
+      
+      <li><strong>Challenge</strong>: Exclusion of marginalized groups<br>
+      <strong>CLCP Solution</strong>: Intentional inclusion and amplification of diverse voices through participatory processes</li>
+      
+      <li><strong>Challenge</strong>: Burnout among caregivers and helpers<br>
+      <strong>CLCP Solution</strong>: Promoting sustainable care practices and mutual support systems within communities</li>
+      
+      <li><strong>Challenge</strong>: Systemic barriers to humane treatment<br>
+      <strong>CLCP Solution</strong>: Supporting collective action to transform unjust structures while maintaining compassion for all involved</li>
+    </ul>
+    
+    <h3>Conclusion</h3>
+    
+    <p>Being humane represents a universal aspiration across diverse traditions and approaches. By cultivating compassion, dignity, and respect in our communities, we create the conditions for collective flourishing. The CLCP approach offers practical methodologies for embodying these values in community development work, creating spaces where being humane becomes not just an ideal but a lived reality.</p>
+    
+    <p>Through CLCP, communities of different faiths and worldviews can find common ground in their shared commitment to human dignity and compassionate action, building bridges across differences while addressing practical challenges together.</p>`,
     },
     "clcp-religions": {
       title: "CLCP and Religions",
@@ -716,126 +846,126 @@ export const staticResponses = {
       
       <h4>2. Sacred Texts and Authority</h4>
       <ul>
-        <li><strong>Revealed Texts</strong>: The Quran (Islam), Bible (Christianity), and Torah (Judaism) are considered divine revelations.</li>
+        <li><strong>Revealed Texts</strong>: The Quran (Islam), the Bible (Christianity) and the Torah (Judaism) are considered divine revelations.</li>
         <li><strong>Wisdom Literature</strong>: Buddhist sutras and Hindu Upanishads offer philosophical insights rather than divine commandments.</li>
         <li><strong>Oral Traditions</strong>: Many indigenous spiritual traditions transmit teachings through oral storytelling and ritual.</li>
-        <li><strong>Interpretive Authority</strong>: Religions differ in who can authoritatively interpret texts—clergy, scholars, individuals, or community consensus.</li>
+        <li><strong>Interpretive Authority</strong>: Religions differ in who can interpret the texts with authority—clergé, érudits, individus ou consensus communautaire.</li>
       </ul>`,
     },
     salvation: {
       title: "Salvation and Liberation",
       content: `<h2>Salvation and Liberation: Perspectives Across Traditions</h2>
       
-      <p>The concepts of salvation, liberation, and ultimate fulfillment are central to many religious and philosophical traditions, though they take remarkably different forms. These concepts address fundamental human concerns about suffering, meaning, and what constitutes the highest good or ultimate goal of human existence.</p>
+      <p>The concepts of salvation, liberation and ultimate fulfillment are central to many religious and philosophical traditions, though they take remarkably different forms. These concepts address fundamental human concerns about suffering, meaning and what constitutes the highest good or ultimate goal of human existence.</p>
       
       <h3>Abrahamic Traditions</h3>
       
       <h4>Islam</h4>
       <p>In Islam, salvation (najat) involves:</p>
       <ul>
-        <li><strong>Submission to Allah</strong>: Following God's will as revealed in the Quran and exemplified by Prophet Muhammad</li>
-        <li><strong>Faith and Righteous Deeds</strong>: Belief in the oneness of God (tawhid) combined with good actions</li>
-        <li><strong>Divine Mercy</strong>: Ultimate salvation depends on Allah's mercy and forgiveness</li>
-        <li><strong>Judgment</strong>: On the Day of Judgment, one's deeds will be weighed to determine eternal destiny</li>
-        <li><strong>Paradise (Jannah)</strong>: The ultimate reward for the faithful, described as gardens of bliss</li>
+        <li><strong>Soumission à Allah</strong>: Suivre la volonté de Dieu telle que révélée dans le Coran et exemplifiée par le Prophète Muhammad</li>
+        <li><strong>Foi et Actions Justes</strong>: Croyance en l'unicité de Dieu (tawhid) combinée avec de bonnes actions</li>
+        <li><strong>Miséricorde Divine</strong>: Le salut ultime dépend de la miséricorde et du pardon d'Allah</li>
+        <li><strong>Jugement</strong>: Au Jour du Jugement, les actions de chacun seront pesées pour déterminer sa destinée éternelle</li>
+        <li><strong>Paradis (Jannah)</strong>: La récompense ultime pour les fidèles, décrite comme des jardins de félicité</li>
       </ul>
-      <p>The Quran states: "Indeed, those who have believed and done righteous deeds - they will have the Gardens of Paradise as a lodging" (18:107).</p>
+      <p>Le Coran déclare: "Certes, ceux qui ont cru et accompli de bonnes œuvres auront pour résidence les Jardins du Paradis" (18:107).</p>
       
       <h4>Christianity</h4>
-      <p>Christian understanding of salvation includes:</p>
+      <p>La compréhension chrétienne du salut comprend:</p>
       <ul>
-        <li><strong>Sin and Redemption</strong>: Humanity is separated from God by sin but redeemed through Christ</li>
-        <li><strong>Grace</strong>: Salvation is a gift from God, not earned through works (though traditions differ on the role of works)</li>
-        <li><strong>Faith in Christ</strong>: Belief in Jesus as savior is central to most Christian understandings</li>
-        <li><strong>Atonement</strong>: Christ's death provides forgiveness of sins (with various theological interpretations)</li>
-        <li><strong>Eternal Life</strong>: Communion with God now and in the hereafter</li>
+        <li><strong>Péché et Rédemption</strong>: L'humanité est séparée de Dieu par le péché mais rachetée par le Christ</li>
+        <li><strong>Grâce</strong>: Le salut est un don de Dieu, non mérité par les œuvres (bien que les traditions diffèrent sur le rôle des œuvres)</li>
+        <li><strong>Foi en Christ</strong>: La croyance en Jésus comme sauveur est centrale dans la plupart des compréhensions chrétiennes</li>
+        <li><strong>Atonement</strong>: La mort du Christ offre le pardon des péchés (avec diverses interprétations théologiques)</li>
+        <li><strong>Vie Éternelle</strong>: Communion avec Dieu maintenant et dans l'au-delà</li>
       </ul>
-      <p>As expressed in Ephesians 2:8-9: "For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God—not by works, so that no one can boast."</p>`,
+      <p>Comme exprimé dans Éphésiens 2:8-9: "Car c'est par la grâce que vous êtes sauvés, par le moyen de la foi. Et cela ne vient pas de vous, c'est le don de Dieu. Ce n'est point par les œuvres, afin que personne ne se glorifie."</p>`,
     },
     afterlife: {
-      title: "Afterlife",
-      content: `<h2>Afterlife: Perspectives Across Religious and Philosophical Traditions</h2>
+      title: "Au-delà",
+      content: `<h2>Au-delà: Perspectives à Travers les Traditions Religieuses et Philosophiques</h2>
       
-      <p>Beliefs about what happens after death vary widely across religious and philosophical traditions, reflecting diverse understandings of human nature, cosmic order, and ultimate reality. These conceptions of the afterlife address fundamental human questions about mortality, justice, meaning, and the possibility of continued existence beyond physical death.</p>
+      <p>Les croyances sur ce qui se passe après la mort varient considérablement selon les traditions religieuses et philosophiques, reflétant diverses compréhensions de la nature humaine, de l'ordre cosmique et de la réalité ultime. Ces conceptions de l'au-delà abordent des questions humaines fondamentales sur la mortalité, la justice, le sens et la possibilité d'une existence continue au-delà de la mort physique.</p>
       
-      <h3>Abrahamic Traditions</h3>
+      <h3>Traditions Abrahamiques</h3>
       
       <h4>Islam</h4>
-      <p>Islamic afterlife beliefs include:</p>
+      <p>Les croyances islamiques sur l'au-delà comprennent:</p>
       <ul>
-        <li><strong>Barzakh</strong>: An intermediate state between death and resurrection where the soul remains in a state of sleep or consciousness</li>
-        <li><strong>Yawm al-Qiyamah</strong>: The Day of Resurrection when all souls will be reunited with their bodies</li>
-        <li><strong>Divine Judgment</strong>: Each person's deeds will be weighed, with the record of deeds presented in the right hand (for the righteous) or left hand (for the unrighteous)</li>
-        <li><strong>Jannah (Paradise)</strong>: A realm of eternal bliss described as gardens with flowing rivers, abundant food, and companionship</li>
-        <li><strong>Jahannam (Hell)</strong>: A place of punishment for unbelievers and sinners, with various levels corresponding to different sins</li>
+        <li><strong>Barzakh</strong>: Un état intermédiaire entre la mort et la résurrection où l'âme reste dans un état de sommeil ou de conscience</li>
+        <li><strong>Yawm al-Qiyamah</strong>: Le Jour de la Résurrection quand toutes les âmes seront réunies avec leurs corps</li>
+        <li><strong>Jugement Divin</strong>: Les actions de chaque personne seront pesées, avec le registre des actions présenté dans la main droite (pour les justes) ou la main gauche (pour les injustes)</li>
+        <li><strong>Jannah (Paradis)</strong>: Un royaume de félicité éternelle décrit comme des jardins avec des rivières qui coulent, de la nourriture abondante et de la compagnie</li>
+        <li><strong>Jahannam (Enfer)</strong>: Un lieu de punition pour les incroyants et les pécheurs, avec différents niveaux correspondant à différents péchés</li>
       </ul>
-      <p>The Quran states: "Every soul will taste death. Then to Us will you be returned" (29:57).</p>
+      <p>Le Coran déclare: "Toute âme goûtera la mort. Puis, c'est vers Nous que vous serez ramenés" (29:57).</p>
       
       <h4>Christianity</h4>
-      <p>Christian conceptions of the afterlife (with denominational variations) include:</p>
+      <p>Les conceptions chrétiennes de l'au-delà (avec des variations confessionnelles) comprennent:</p>
       <ul>
-        <li><strong>Heaven</strong>: Eternal communion with God and the saints, often described as a state of perfect joy and peace</li>
-        <li><strong>Hell</strong>: Separation from God, variously understood as a place of punishment or a state of self-chosen alienation</li>
-        <li><strong>Purgatory</strong>: In Catholic and some other traditions, a state of purification before entering heaven</li>
-        <li><strong>Resurrection</strong>: The belief that believers will receive glorified bodies at Christ's return</li>
-        <li><strong>New Creation</strong>: The ultimate renewal of heaven and earth where God will dwell with humanity</li>
+        <li><strong>Ciel</strong>: Communion éternelle avec Dieu et les saints, souvent décrite comme un état de joie et de paix parfaites</li>
+        <li><strong>Enfer</strong>: Séparation de Dieu, diversement comprise comme un lieu de punition ou un état d'aliénation choisie par soi-même</li>
+        <li><strong>Purgatoire</strong>: Dans la tradition catholique et certaines autres, un état de purification avant d'entrer au ciel</li>
+        <li><strong>Résurrection</strong>: La croyance que les croyants recevront des corps glorifiés au retour du Christ</li>
+        <li><strong>Nouvelle Création</strong>: Le renouvellement ultime du ciel et de la terre où Dieu habitera avec l'humanité</li>
       </ul>
-      <p>Jesus taught: "In my Father's house are many rooms... I go to prepare a place for you" (John 14:2).</p>
+      <p>Jésus a enseigné: "Il y a plusieurs demeures dans la maison de mon Père... Je vais vous préparer une place" (Jean 14:2).</p>
       
       <h4>Judaism</h4>
-      <p>Jewish perspectives on the afterlife have evolved and vary widely:</p>
+      <p>Les perspectives juives sur l'au-delà ont évolué et varient largement:</p>
       <ul>
-        <li><strong>Sheol</strong>: In early biblical texts, a shadowy underworld where the dead exist in a diminished state</li>
-        <li><strong>Olam Ha-Ba</strong>: "The World to Come," variously understood as a messianic age on earth or a spiritual realm</li>
-        <li><strong>Gan Eden</strong>: Paradise or the Garden of Eden as a place for the righteous</li>
-        <li><strong>Gehinnom</strong>: A place of purification, typically limited to twelve months</li>
-        <li><strong>Resurrection</strong>: Belief in bodily resurrection appears in later Jewish texts and remains important in Orthodox Judaism</li>
+        <li><strong>Sheol</strong>: Dans les premiers textes bibliques, un monde souterrain obscur où les morts existent dans un état diminué</li>
+        <li><strong>Olam Ha-Ba</strong>: "Le Monde à Venir", diversement compris comme un âge messianique sur terre ou un royaume spirituel</li>
+        <li><strong>Gan Eden</strong>: Le Paradis ou le Jardin d'Eden comme lieu pour les justes</li>
+        <li><strong>Gehinnom</strong>: Un lieu de purification, typiquement limité à douze mois</li>
+        <li><strong>Résurrection</strong>: La croyance en la résurrection corporelle apparaît dans des textes juifs ultérieurs et reste importante dans le judaïsme orthodoxe</li>
       </ul>
-      <p>The focus often remains on the continuation of the Jewish people and the coming of the messianic age rather than individual afterlife.</p>
+      <p>L'accent reste souvent mis sur la continuation du peuple juif et la venue de l'ère messianique plutôt que sur l'au-delà individuel.</p>
       
-      <h3>Dharmic Traditions</h3>
+      <h3>Traditions Dharmiques</h3>
       
       <h4>Hinduism</h4>
-      <p>Hindu conceptions of what happens after death include:</p>
+      <p>Les conceptions hindoues de ce qui se passe après la mort comprennent:</p>
       <ul>
-        <li><strong>Samsara</strong>: The cycle of death and rebirth (reincarnation) determined by karma</li>
-        <li><strong>Karma</strong>: The law of cause and effect that determines one's future births</li>
-        <li><strong>Svarga and Naraka</strong>: Temporary heavens and hells where souls experience the results of good or bad karma before rebirth</li>
-        <li><strong>Moksha</strong>: Liberation from the cycle of rebirth, the ultimate goal</li>
+        <li><strong>Samsara</strong>: Le cycle de mort et de renaissance (réincarnation) déterminé par le karma</li>
+        <li><strong>Karma</strong>: La loi de cause à effet qui détermine les futures naissances</li>
+        <li><strong>Svarga et Naraka</strong>: Cieux et enfers temporaires où les âmes expérimentent les résultats du bon ou mauvais karma avant la renaissance</li>
+        <li><strong>Moksha</strong>: Libération du cycle de renaissance, le but ultime</li>
       </ul>
       
       <h4>Buddhism</h4>
       <p>Buddhist understandings of what happens after death include:</p>
       <ul>
         <li><strong>Rebirth</strong>: Continuation of the stream of consciousness in a new form, distinguished from reincarnation as no permanent self transfers</li>
-        <li><strong>Six Realms</strong>: Possible realms of rebirth including gods, demi-gods, humans, animals, hungry ghosts, and hell beings</li>
-        <li><strong>Karma</strong>: Actions that shape future rebirths based on intention rather than divine judgment</li>
-        <li><strong>Nirvana</strong>: The cessation of suffering and the cycle of rebirth, not a place but a state beyond conceptualization</li>
+        <li><strong>Six Royaumes</strong>: Royaumes possibles de renaissance incluant dieux, demi-dieux, humains, animaux, esprits affamés et êtres infernaux</li>
+        <li><strong>Karma</strong>: Actions that shape future rebirths based on intention plutôt que sur le jugement divin</li>
+        <li><strong>Nirvana</strong>: La cessation de la souffrance et du cycle de renaissance, non pas un lieu mais un état au-delà de la conceptualisation</li>
       </ul>
       
-      <h3>Non-Religious Perspectives</h3>
+      <h3>Perspectives Non Religieuses</h3>
       
-      <p>Those who do not adhere to religious beliefs typically view death as the end of personal existence:</p>
+      <p>Ceux qui n'adhèrent pas aux croyances religieuses considèrent généralement la mort comme la fin de l'existence personnelle:</p>
       <ul>
-        <li><strong>Naturalism</strong>: The view that consciousness ends with brain death, with no continuation of personal identity</li>
-        <li><strong>Legacy</strong>: Many secular individuals find meaning in the impact they leave behind through their actions, relationships, and contributions to society</li>
-        <li><strong>Material Continuation</strong>: The understanding that the matter that makes up our bodies returns to the ecosystem in a form of physical continuity</li>
+        <li><strong>Naturalisme</strong>: La vision que la conscience se termine avec la mort cérébrale, sans continuation de l'identité personnelle</li>
+        <li><strong>Héritage</strong>: De nombreux individus séculiers trouvent un sens dans l'impact qu'ils laissent derrière eux à travers leurs actions, relations et contributions à la société</li>
+        <li><strong>Continuation Matérielle</strong>: La compréhension que la matière qui compose nos corps retourne à l'écosystème sous une forme de continuité physique</li>
       </ul>
       
-      <h3>Comparative Insights</h3>
+      <h3>Aperçus Comparatifs</h3>
       
-      <p>Despite their differences, many religious traditions share certain themes in their afterlife concepts:</p>
+      <p>Malgré leurs différences, de nombreuses traditions religieuses partagent certains thèmes dans leurs concepts d'au-delà:</p>
       
         many religious traditions share certain themes in their afterlife concepts:</p>
       
       <ul>
-        <li><strong>Continuity</strong>: Most traditions affirm that something of the human person continues beyond death</li>
-        <li><strong>Moral Accountability</strong>: Many traditions teach that one's actions in this life have consequences in the next</li>
-        <li><strong>Ultimate Justice</strong>: The idea that injustices in this world will eventually be addressed</li>
-        <li><strong>Transformation</strong>: Death as a transition rather than an absolute end</li>
+        <li><strong>Continuité</strong>: La plupart des traditions affirment que quelque chose de la personne humaine continue au-delà de la mort</li>
+        <li><strong>Responsabilité Morale</strong>: De nombreuses traditions enseignent que les actions dans cette vie ont des conséquences dans la suivante</li>
+        <li><strong>Justice Ultime</strong>: L'idée que les injustices dans ce monde seront éventuellement traitées</li>
+        <li><strong>Transformation</strong>: La mort comme une transition plutôt qu'une fin absolue</li>
       </ul>
       
-      <p>These diverse conceptions of the afterlife reflect humanity's ongoing engagement with mortality, meaning, and the possibility of transcendence.</p>`,
+      <p>Ces conceptions diverses de l'au-delà reflètent l'engagement continu de l'humanité avec la mortalité, le sens et la possibilité de transcendance.</p>`,
     },
     default: {
       title: "Noor",
@@ -1313,8 +1443,138 @@ export const staticResponses = {
     },
     "being-humane": {
       title: "Être Humain",
-      content: `<p>${STATIC_RESPONSES_FR["being-humane"]}</p>
-      <p>Le concept d'être humain - montrer de la compassion, de la dignité et du respect pour tous - est une valeur fondamentale partagée par les traditions religieuses et non religieuses, ainsi que par l'approche du CLCP en matière de développement communautaire.</p>`,
+      content: `<h2>Être Humain : Valeurs Universelles à Travers les Traditions et le CLCP</h2>
+    
+    <p>Le concept d'être humain - montrer de la compassion, de la dignité et du respect pour tous - est une valeur fondamentale partagée par les traditions religieuses et non religieuses, ainsi que par l'approche du CLCP en matière de développement communautaire.</p>
+    
+    <h3>Éléments Fondamentaux d'Être Humain</h3>
+    
+    <p>Être humain englobe plusieurs qualités interconnectées qui sont reconnues à travers diverses visions du monde :</p>
+    
+    <ul>
+      <li><strong>Compassion</strong> : La capacité à reconnaître la souffrance et à y répondre avec soin et bienveillance</li>
+      <li><strong>Dignité</strong> : Reconnaître la valeur inhérente de chaque personne indépendamment des circonstances</li>
+      <li><strong>Respect</strong> : Traiter les autres avec considération et honorer leur autonomie</li>
+      <li><strong>Empathie</strong> : La capacité à comprendre les expériences et les perspectives des autres</li>
+      <li><strong>Non-violence</strong> : Engagement à éviter de nuire en pensée, en parole et en action</li>
+      <li><strong>Justice</strong> : Assurer un traitement équitable et un accès équitable aux ressources et aux opportunités</li>
+    </ul>
+    
+    <h3>Perspectives à Travers les Traditions</h3>
+    
+    <h4>Traditions Religieuses</h4>
+    
+    <p>Les grandes traditions religieuses mettent l'accent sur l'importance d'être humain comme élément central de la pratique spirituelle :</p>
+    
+    <ul>
+      <li><strong>Islam</strong> : Le concept de <em>rahmah</em> (miséricorde/compassion) est central, le Coran décrivant Allah comme "le plus Compatissant, le plus Miséricordieux." Le Prophète Muhammad a enseigné que "Les miséricordieux reçoivent la miséricorde du Très Miséricordieux. Soyez miséricordieux envers ceux sur terre, et Celui qui est au ciel sera miséricordieux envers vous."</li>
+      
+      <li><strong>Christianisme</strong> : Jésus a enseigné la Règle d'Or—"Faites aux autres ce que vous voudriez qu'ils vous fassent" (Matthieu 7:12)—et a mis l'accent sur l'amour du prochain comme commandement fondamental. La parabole du Bon Samaritain illustre l'action compatissante au-delà des frontières sociales.</li>
+      
+      <li><strong>Bouddhisme</strong> : Les pratiques de <em>karuna</em> (compassion) et <em>metta</em> (bienveillance aimante) sont essentielles à la voie bouddhiste. Le Bouddha a enseigné que "La haine ne cesse jamais par la haine dans ce monde ; par l'amour seul elle cesse."</li>
+      
+      <li><strong>Hindouisme</strong> : Le concept d'<em>ahimsa</em> (non-violence) s'étend à tous les êtres vivants. Le principe de <em>vasudhaiva kutumbakam</em> ("le monde est une seule famille") souligne la parenté universelle.</li>
+      
+      <li><strong>Judaïsme</strong> : Le concept de <em>chesed</em> (bonté aimante) est fondamental, la Torah commandant d'"aimer ton prochain comme toi-même" (Lévitique 19:18). Le principe de <em>b'tzelem Elohim</em> (être créé à l'image de Dieu) établit la base de la dignité humaine.</li>
+      
+      <li><strong>Sikhisme</strong> : Le principe de <em>sarbat da bhala</em> (bien-être de tous) guide l'éthique sikhe, avec un accent sur l'égalité, le service et la compassion indépendamment des distinctions sociales.</li>
+    </ul>
+    
+    <h4>Perspectives Non Religieuses</h4>
+    
+    <p>Les approches humanistes et séculières soulignent également l'importance d'être humain :</p>
+    
+    <ul>
+      <li><strong>Humanisme</strong> : Met l'accent sur la dignité humaine, la compassion et la responsabilité éthique sans référence à des sources surnaturelles. La Déclaration d'Amsterdam de l'Humanisme International affirme "la valeur, la dignité et l'autonomie de l'individu et le droit de chaque être humain à la plus grande liberté possible compatible avec les droits des autres."</li>
+      
+      <li><strong>Éthique Séculière</strong> : Des cadres comme l'utilitarisme et l'éthique fondée sur les droits fournissent des justifications pour un traitement humain basé sur la minimisation de la souffrance et le respect de l'autonomie.</li>
+      
+      <li><strong>Psychologie Évolutionniste</strong> : Suggère que l'empathie et la coopération présentent des avantages évolutifs, expliquant pourquoi être humain est une valeur transculturelle.</li>
+    </ul>
+    
+    <h3>Être Humain dans le CLCP</h3>
+    
+    <p>Le Processus de Compétence de Vie Communautaire (CLCP) incarne et promeut l'être humain à travers ses principes et pratiques fondamentaux :</p>
+    
+    <ul>
+      <li><strong>Approche Basée sur les Forces</strong> : Le CLCP reconnaît et affirme la dignité, la capacité et l'agence de tous les membres de la communauté, les considérant comme des acteurs capables plutôt que comme des bénéficiaires passifs d'aide</li>
+      
+      <li><strong>Méthodologie SALT</strong> : Les pratiques de Stimuler, Apprécier, Apprendre et Transférer sont fondées sur le respect de la sagesse locale et l'engagement compatissant</li>
+      
+      <li><strong>Participation Inclusive</strong> : Le CLCP s'assure que toutes les voix sont entendues, en particulier celles traditionnellement marginalisées, reflétant la valeur universelle de la dignité humaine</li>
+      
+      <li><strong>Apprentissage Horizontal</strong> : En valorisant les connaissances et l'expérience de chaque personne, le CLCP crée des relations de respect mutuel plutôt que d'expertise hiérarchique</li>
+      
+      <li><strong>Facilitation vs. Intervention</strong> : Le CLCP soutient les communautés pour qu'elles abordent leurs propres défis plutôt que d'imposer des solutions externes, honorant leur autonomie et leur agence</li>
+    </ul>
+    
+    <h3>Connexions Spécifiques Entre le CLCP et Être Humain</h3>
+    
+    <p>L'alignement entre le CLCP et les valeurs humaines universelles se manifeste de plusieurs façons clés :</p>
+    
+    <ul>
+      <li><strong>Présence Compatissante</strong> : Les facilitateurs CLCP pratiquent l'écoute profonde et l'engagement empathique, créant un espace pour une voix communautaire authentique</li>
+      
+      <li><strong>Affirmation de la Dignité</strong> : En se concentrant sur les forces plutôt que sur les déficits, le CLCP affirme la valeur inhérente et la capacité de tous les membres de la communauté</li>
+      
+      <li><strong>Relations Respectueuses</strong> : Le CLCP construit des relations horizontales qui honorent la contribution de chaque personne, évitant les dynamiques de pouvoir qui diminuent la dignité humaine</li>
+      
+      <li><strong>Communication Non-violente</strong> : Le CLCP promeut un dialogue qui cherche la compréhension plutôt que la confrontation, incarnant le principe de non-violence</li>
+      
+      <li><strong>Orientation vers la Justice</strong> : En assurant une participation inclusive, le CLCP œuvre pour un développement communautaire équitable où tous peuvent contribuer et bénéficier</li>
+    </ul>
+    
+    <h3>Applications Pratiques</h3>
+    
+    <p>Les communautés peuvent cultiver l'être humain à travers des pratiques CLCP spécifiques :</p>
+    
+    <ul>
+      <li><strong>Enquête Appréciative</strong> : Se concentrer sur les forces et les possibilités plutôt que sur les déficits et les problèmes, affirmant la dignité humaine</li>
+      
+      <li><strong>Auto-évaluation Communautaire</strong> : Permettre aux communautés d'évaluer leur propre situation et de définir des priorités, honorant leur autonomie</li>
+      
+      <li><strong>Construction de Rêve</strong> : Créer des visions partagées pour l'avenir qui reflètent les aspirations et les valeurs collectives</li>
+      
+      <li><strong>Planification d'Action</strong> : Développer des étapes concrètes qui s'appuient sur les forces et les ressources existantes</li>
+      
+      <li><strong>Partage de Connaissances</strong> : Créer des opportunités pour que les communautés apprennent des expériences les unes des autres</li>
+    </ul>
+    
+    <h3>Exemples de Cas</h3>
+    
+    <p>L'intégration des valeurs humaines et du CLCP a produit des résultats puissants dans divers contextes :</p>
+    
+    <ul>
+      <li><strong>Collaboration Interreligieuse</strong> : Dans des contextes post-conflit, le CLCP a réuni des communautés de différentes religions pour travailler sur des préoccupations communes, construisant des ponts par l'action pratique</li>
+      
+      <li><strong>Réponse Sanitaire</strong> : Lors d'épidémies, le CLCP a permis aux communautés de répondre avec des mesures pratiques et des soins compatissants pour les membres affectés</li>
+      
+      <li><strong>Autonomisation des Jeunes</strong> : Les approches CLCP ont aidé les jeunes de différents milieux à découvrir leur capacité à contribuer de manière significative au bien-être communautaire</li>
+    </ul>
+    
+    <h3>Défis et Solutions</h3>
+    
+    <p>Les communautés font face à des défis pour être constamment humaines :</p>
+    
+    <ul>
+      <li><strong>Défi</strong> : Déshumanisation pendant les conflits<br>
+      <strong>Solution CLCP</strong> : Créer des espaces sûrs pour le dialogue qui maintiennent la reconnaissance de l'humanité partagée même au milieu des désaccords</li>
+      
+      <li><strong>Défi</strong> : Exclusion des groupes marginalisés<br>
+      <strong>Solution CLCP</strong> : Inclusion intentionnelle et amplification des voix diverses à travers des processus participatifs</li>
+      
+      <li><strong>Défi</strong> : Épuisement parmi les soignants et les aidants<br>
+      <strong>Solution CLCP</strong> : Promouvoir des pratiques de soins durables et des systèmes de soutien mutuel au sein des communautés</li>
+      
+      <li><strong>Défi</strong> : Barrières systémiques au traitement humain<br>
+      <strong>Solution CLCP</strong> : Soutenir l'action collective pour transformer les structures injustes tout en maintenant la compassion pour tous les impliqués</li>
+    </ul>
+    
+    <h3>Conclusion</h3>
+    
+    <p>Être humain représente une aspiration universelle à travers diverses traditions et approches. En cultivant la compassion, la dignité et le respect dans nos communautés, nous créons les conditions pour un épanouissement collectif. L'approche CLCP offre des méthodologies pratiques pour incarner ces valeurs dans le travail de développement communautaire, créant des espaces où être humain devient non seulement un idéal mais une réalité vécue.</p>
+    
+    <p>Grâce au CLCP, les communautés de différentes confessions et visions du monde peuvent trouver un terrain d'entente dans leur engagement commun envers la dignité humaine et l'action compatissante, construisant des ponts au-delà des différences tout en relevant ensemble des défis pratiques.</p>`,
     },
     "clcp-religions": {
       title: "CLCP et Religions",
