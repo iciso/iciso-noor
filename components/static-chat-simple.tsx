@@ -8,7 +8,7 @@ import { NoorLogo } from "./noor-logo"
 import { CCLicenseBadge } from "./cc-license-badge"
 import { Send } from "lucide-react"
 
-export function StaticChatBasic() {
+export function StaticChatSimple() {
   const [messages, setMessages] = useState<{ role: string; content: string }[]>([
     {
       role: "assistant",
@@ -31,40 +31,34 @@ export function StaticChatBasic() {
 
     // Find matching response or use default
     setTimeout(() => {
-      let responseContent =
-        STATIC_RESPONSES_EN.default ||
-        "I don't have specific information about that topic yet. Please try asking about major world religions, non-faith perspectives, or CLCP principles."
+      let responseContent = STATIC_RESPONSES_EN.default
 
-      // Check for keyword matches in static responses
+      // Clean the input
       const lowercaseInput = input.toLowerCase().trim()
 
-      // First check for exact matches
-      if (STATIC_RESPONSES_EN[lowercaseInput]) {
-        responseContent = STATIC_RESPONSES_EN[lowercaseInput]
+      // Check for exact matches first
+      const exactKeys = Object.keys(STATIC_RESPONSES_EN).filter((key) => lowercaseInput === key.toLowerCase())
+
+      if (exactKeys.length > 0) {
+        responseContent = STATIC_RESPONSES_EN[exactKeys[0]]
       } else {
-        // Then check for partial matches
-        for (const [key, value] of Object.entries(STATIC_RESPONSES_EN)) {
-          if (lowercaseInput.includes(key.toLowerCase())) {
-            responseContent = value
-            break
+        // Check for partial matches
+        const partialKeys = Object.keys(STATIC_RESPONSES_EN).filter((key) => lowercaseInput.includes(key.toLowerCase()))
+
+        if (partialKeys.length > 0) {
+          // Use the longest matching key (most specific)
+          const longestKey = partialKeys.reduce((a, b) => (a.length > b.length ? a : b))
+          responseContent = STATIC_RESPONSES_EN[longestKey]
+        } else {
+          // Check for compound keys (e.g., "islam-clcp")
+          const compoundKeys = Object.keys(STATIC_RESPONSES_EN).filter(
+            (key) => key.includes("-") && key.split("-").every((part) => lowercaseInput.includes(part.toLowerCase())),
+          )
+
+          if (compoundKeys.length > 0) {
+            responseContent = STATIC_RESPONSES_EN[compoundKeys[0]]
           }
         }
-
-        // Check for compound keys like "islam-clcp"
-        for (const [key, value] of Object.entries(STATIC_RESPONSES_EN)) {
-          if (key.includes("-") && key.split("-").every((part) => lowercaseInput.includes(part.toLowerCase()))) {
-            responseContent = value
-            break
-          }
-        }
-      }
-
-      // If we have a match in the nested structure, use the content
-      if (typeof responseContent === "object" && responseContent.content) {
-        responseContent = responseContent.content
-      } else if (typeof responseContent === "object" && responseContent.title) {
-        // If it has a title but no content field, create a simple response
-        responseContent = `<h2>${responseContent.title}</h2>\n\n${responseContent.content || ""}`
       }
 
       // For debugging
