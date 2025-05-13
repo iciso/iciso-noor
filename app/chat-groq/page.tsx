@@ -2,7 +2,6 @@
 
 import type React from "react"
 
-import { useChat } from "ai/react"
 import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -12,25 +11,45 @@ import { ArrowLeft, Loader2, Send, AlertCircle } from "lucide-react"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { useLanguage, LanguageProvider } from "@/contexts/language-context"
 
+// Define message type
+interface Message {
+  id: string
+  role: "user" | "assistant"
+  content: string
+}
+
 function ChatGroqContent() {
-  const { t, language } = useLanguage()
-  const [error, setError] = useState<string | null>(null)
-  const [isQuotaError, setIsQuotaError] = useState(false)
+  const { t } = useLanguage()
   const messagesEndRef = useRef<HTMLDivElement>(null)
+  const [apiAvailable, setApiAvailable] = useState<boolean | null>(null)
+  const [isCheckingApi, setIsCheckingApi] = useState(true)
+  const [errorMessage, setErrorMessage] = useState<string | null>(null)
+  const [messages, setMessages] = useState<Message[]>([])
+  const [input, setInput] = useState("")
+  const [isLoading, setIsLoading] = useState(false)
 
-  // Use the useChat hook from the AI SDK
-  const { messages, input, handleInputChange, handleSubmit, isLoading, setMessages } = useChat({
-    api: "/api/chat-groq",
-    onError: (error) => {
-      console.error("Chat error:", error)
-      setError(error.message)
-
-      // Check if it's a quota error
-      if (error.message.includes("quota") || error.message.includes("billing")) {
-        setIsQuotaError(true)
+  // Check if Groq API is available
+  useEffect(() => {
+    const checkGroqApi = async () => {
+      try {
+        setIsCheckingApi(true)
+        const response = await fetch("/api/groq-status")
+        if (response.ok) {
+          const data = await response.json()
+          setApiAvailable(data.available)
+        } else {
+          setApiAvailable(false)
+        }
+      } catch (error) {
+        console.error("Error checking Groq API:", error)
+        setApiAvailable(false)
+      } finally {
+        setIsCheckingApi(false)
       }
-    },
-  })
+    }
+
+    checkGroqApi()
+  }, [])
 
   // Auto-scroll to bottom when new messages arrive
   useEffect(() => {
@@ -39,16 +58,69 @@ function ChatGroqContent() {
     }
   }, [messages])
 
-  // Handle form submission with error handling
-  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  // Reset error when input changes
+  useEffect(() => {
+    if (errorMessage && input.trim()) {
+      setErrorMessage(null)
+    }
+  }, [input, errorMessage])
+
+  // Handle form submission
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setError(null)
-    setIsQuotaError(false)
+
+    if (!input.trim() || isLoading || apiAvailable === false) return
+
+    // Clear any previous errors
+    setErrorMessage(null)
+
+    // Add user message to the chat
+    const userMessage: Message = {
+      id: Date.now().toString(),
+      role: "user",
+      content: input.trim(),
+    }
+
+    setMessages((prev) => [...prev, userMessage])
+    setInput("")
+    setIsLoading(true)
 
     try {
-      await handleSubmit(e)
-    } catch (err) {
-      // Error is handled by onError callback
+      // Send the message to the API
+      const response = await fetch("/api/chat-groq", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          messages: messages.concat(userMessage).map(({ role, content }) => ({ role, content })),
+        }),
+      })
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}))
+        throw new Error(errorData.error || errorData.details || response.statusText)
+      }
+
+      const data = await response.json()
+
+      // Add assistant message to the chat
+      if (data.message) {
+        const assistantMessage: Message = {
+          id: (Date.now() + 1).toString(),
+          role: "assistant",
+          content: data.message,
+        }
+
+        setMessages((prev) => [...prev, assistantMessage])
+      } else if (data.error) {
+        throw new Error(data.error)
+      }
+    } catch (error) {
+      console.error("Chat error:", error)
+      setErrorMessage(error instanceof Error ? error.message : String(error))
+    } finally {
+      setIsLoading(false)
     }
   }
 
@@ -76,67 +148,51 @@ function ChatGroqContent() {
       </header>
 
       <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-4xl mx-auto w-full">
-        <Card className="w-full h-[calc(100vh-12rem)] flex flex-col">
-          <CardHeader>
-            <CardTitle>{t("chat.title")}</CardTitle>
-            <CardDescription>
-              {t("chat.subtitle")} <span className="text-emerald-600 font-medium">(Powered by Groq)</span>
-            </CardDescription>
+        <Card className="w-full h-[calc(100vh-12rem)] flex flex-col bg-white shadow-lg">
+          <CardHeader className="border-b">
+            <CardTitle className="text-emerald-700">{t("chat.title")}</CardTitle>
+            <CardDescription>{t("chat.subtitle")}</CardDescription>
           </CardHeader>
 
-          <CardContent className="flex-grow overflow-y-auto">
-            {error && (
-              <div className="p-4 mb-4 text-sm bg-red-100 rounded-lg flex items-start">
+          <CardContent className="flex-grow overflow-y-auto p-0">
+            {isCheckingApi ? (
+              <div className="flex flex-col items-center justify-center h-full">
+                <Loader2 className="h-8 w-8 animate-spin text-emerald-600 mb-4" />
+                <p>Checking API availability...</p>
+              </div>
+            ) : apiAvailable === false ? (
+              <div className="p-4 m-4 text-sm bg-red-100 rounded-lg flex items-start">
                 <AlertCircle className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-red-700" />
                 <div className="text-red-700">
-                  {isQuotaError ? (
-                    <>
-                      <p className="font-bold">API Quota Exceeded</p>
-                      <p className="mt-1">The API key has exceeded its quota or has billing issues.</p>
-                      <div className="mt-3 space-y-2">
-                        <p className="font-semibold">Options:</p>
-                        <ul className="list-disc pl-5 space-y-1">
-                          <li>
-                            <Link href="/static-chat-basic" className="text-blue-700 hover:underline">
-                              Try our static chat (no API key needed)
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/browse" className="text-blue-700 hover:underline">
-                              Browse pre-written topics
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </>
-                  ) : (
-                    <>
-                      <p className="font-bold">Error: {error}</p>
-                      <div className="mt-2 flex space-x-2">
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="text-xs"
-                          onClick={() => window.open("/debug", "_blank")}
-                        >
-                          Debug Info
-                        </Button>
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="text-xs"
-                          onClick={() => window.open("/static-chat-basic", "_blank")}
-                        >
-                          Try Static Chat
-                        </Button>
-                      </div>
-                    </>
-                  )}
+                  <p className="font-bold">Groq API Unavailable</p>
+                  <p className="mt-1">
+                    The Groq API is currently unavailable. Please try again later or use the static chat.
+                  </p>
+                  <div className="mt-3">
+                    <Link href="/static-chat-basic">
+                      <Button variant="outline" size="sm" className="text-xs">
+                        Try Static Chat
+                      </Button>
+                    </Link>
+                  </div>
                 </div>
               </div>
-            )}
-
-            {messages.length === 0 ? (
+            ) : errorMessage ? (
+              <div className="p-4 m-4 text-sm bg-red-100 rounded-lg flex items-start">
+                <AlertCircle className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0 text-red-700" />
+                <div className="text-red-700">
+                  <p className="font-bold">Error: {errorMessage}</p>
+                  <p className="mt-1">Please try again or use the static chat.</p>
+                  <div className="mt-3">
+                    <Link href="/static-chat-basic">
+                      <Button variant="outline" size="sm" className="text-xs">
+                        Try Static Chat
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            ) : messages.length === 0 ? (
               <div className="flex flex-col items-center justify-center h-full text-center space-y-4">
                 <div className="w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center">
                   <svg
@@ -155,17 +211,19 @@ function ChatGroqContent() {
                   </svg>
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-lg font-medium">{t("chat.start")}</h3>
-                  <p className="text-sm text-gray-500 max-w-md">{t("chat.placeholder")}</p>
+                  <h3 className="text-lg font-medium text-emerald-800">{t("chat.start")}</h3>
+                  <p className="text-sm text-emerald-600 max-w-md">{t("chat.placeholder")}</p>
                 </div>
               </div>
             ) : (
-              <div className="space-y-4 p-4">
+              <div className="space-y-4 p-6">
                 {messages.map((m) => (
                   <div key={m.id} className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}>
                     <div
                       className={`max-w-[80%] rounded-lg p-4 ${
-                        m.role === "user" ? "bg-emerald-600 text-white" : "bg-gray-100 text-gray-900"
+                        m.role === "user"
+                          ? "bg-emerald-600 text-white"
+                          : "bg-emerald-50 text-emerald-900 border border-emerald-200"
                       }`}
                     >
                       <div className="whitespace-pre-wrap">{m.content}</div>
@@ -177,22 +235,26 @@ function ChatGroqContent() {
             )}
           </CardContent>
 
-          <CardFooter className="border-t p-4">
-            <form onSubmit={handleFormSubmit} className="flex w-full space-x-2">
+          <CardFooter className="border-t p-4 bg-white">
+            <form onSubmit={handleSubmit} className="flex w-full space-x-2">
               <Input
                 value={input}
-                onChange={handleInputChange}
+                onChange={(e) => setInput(e.target.value)}
                 placeholder={t("chat.input.placeholder")}
-                className="flex-grow"
-                disabled={isLoading || isQuotaError}
+                className="flex-grow border-emerald-200 focus-visible:ring-emerald-500"
+                disabled={isLoading || apiAvailable === false}
               />
-              <Button type="submit" disabled={isLoading || !input.trim() || isQuotaError}>
+              <Button
+                type="submit"
+                disabled={isLoading || !input.trim() || apiAvailable === false}
+                className="bg-emerald-600 hover:bg-emerald-700 text-white"
+              >
                 {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
               </Button>
             </form>
-            {isQuotaError && (
+            {apiAvailable === false && (
               <div className="w-full mt-2 text-xs text-center text-red-600">
-                Chat is disabled due to API quota issues. Please try the static chat or browse topics.
+                Chat is disabled because the Groq API is unavailable. Please try the static chat.
               </div>
             )}
           </CardFooter>
@@ -202,8 +264,7 @@ function ChatGroqContent() {
   )
 }
 
-// Main component that wraps the content with the LanguageProvider
-export default function ChatGroqPage() {
+export default function ChatGroq() {
   return (
     <LanguageProvider>
       <ChatGroqContent />

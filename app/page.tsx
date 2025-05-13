@@ -4,43 +4,38 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { LanguageSwitcher } from "@/components/language-switcher"
-import { useLanguage } from "@/contexts/language-context"
-import { AlertCircle, BookOpen, MessageSquare, Info, Zap } from "lucide-react"
+import { useLanguage, LanguageProvider } from "@/contexts/language-context"
+import { BookOpen, MessageSquare, Info, AlertCircle } from "lucide-react"
 import { useState, useEffect } from "react"
 
-export default function Home() {
+// Create a client component that uses the language context
+function HomeContent() {
   const { t } = useLanguage()
-  const [apiStatus, setApiStatus] = useState<"loading" | "available" | "unavailable">("loading")
   const [groqStatus, setGroqStatus] = useState<"loading" | "available" | "unavailable">("loading")
+  const [statusMessage, setStatusMessage] = useState<string | null>(null)
 
-  // Check API status on component mount
+  // Check Groq API status on component mount
   useEffect(() => {
-    const checkApiStatus = async () => {
-      try {
-        // Use the status API endpoint instead of directly checking environment variables
-        const response = await fetch("/api/status")
-        const data = await response.json()
-        setApiStatus(data.status === "available" ? "available" : "unavailable")
-      } catch (error) {
-        setApiStatus("unavailable")
-      }
-    }
-
     const checkGroqStatus = async () => {
       try {
         const response = await fetch("/api/groq-status")
         if (response.ok) {
           const data = await response.json()
           setGroqStatus(data.available ? "available" : "unavailable")
+          if (!data.available && data.message) {
+            setStatusMessage(data.message)
+          }
         } else {
           setGroqStatus("unavailable")
+          setStatusMessage("Could not check Groq API status")
         }
       } catch (error) {
+        console.error("Error checking Groq status:", error)
         setGroqStatus("unavailable")
+        setStatusMessage("Error checking Groq API status")
       }
     }
 
-    checkApiStatus()
     checkGroqStatus()
   }, [])
 
@@ -62,14 +57,13 @@ export default function Home() {
       </header>
 
       <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-4xl mx-auto w-full">
-        {apiStatus === "unavailable" && (
+        {groqStatus === "unavailable" && (
           <div className="mb-6 p-4 border border-yellow-300 bg-yellow-50 rounded-lg flex items-start">
             <AlertCircle className="h-5 w-5 text-yellow-600 mr-3 mt-0.5 flex-shrink-0" />
             <div>
-              <h3 className="font-medium text-yellow-800">OpenAI API Unavailable</h3>
+              <h3 className="font-medium text-yellow-800">Groq API Unavailable</h3>
               <p className="text-sm text-yellow-700 mt-1">
-                The OpenAI API is currently unavailable or has exceeded its quota. You can try our Groq-powered chat or
-                use the static chat.
+                {statusMessage || "The Groq API is currently unavailable. You can use the static chat instead."}
               </p>
             </div>
           </div>
@@ -84,19 +78,21 @@ export default function Home() {
             <p>{t("home.description")}</p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-              <Link href="/chat" className="w-full">
+              <Link href="/chat-groq" className="w-full">
                 <Button
                   className={`w-full h-full py-6 ${
-                    apiStatus === "unavailable" ? "bg-gray-400 hover:bg-gray-400 cursor-not-allowed" : ""
+                    groqStatus === "unavailable"
+                      ? "bg-gray-400 hover:bg-gray-400 cursor-not-allowed"
+                      : "bg-emerald-600 hover:bg-emerald-700"
                   }`}
                   variant="default"
-                  disabled={apiStatus === "unavailable"}
+                  disabled={groqStatus === "unavailable"}
                 >
                   <div className="flex flex-col items-center">
                     <MessageSquare className="mb-2 h-6 w-6" />
                     <span className="text-lg font-medium">{t("home.chat")}</span>
-                    {apiStatus === "loading" && <span className="text-xs mt-1">Checking availability...</span>}
-                    {apiStatus === "unavailable" && <span className="text-xs mt-1">Currently unavailable</span>}
+                    {groqStatus === "loading" && <span className="text-xs mt-1">Checking availability...</span>}
+                    {groqStatus === "unavailable" && <span className="text-xs mt-1">Currently unavailable</span>}
                   </div>
                 </Button>
               </Link>
@@ -120,33 +116,10 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* New Groq-powered chat button */}
-            <div className="mt-6">
-              <Link href="/chat-groq">
-                <Button
-                  className={`w-full py-4 ${
-                    groqStatus === "unavailable"
-                      ? "bg-gray-400 hover:bg-gray-400 cursor-not-allowed"
-                      : "bg-purple-600 hover:bg-purple-700"
-                  }`}
-                  variant="default"
-                  disabled={groqStatus === "unavailable"}
-                >
-                  <div className="flex flex-col items-center">
-                    <Zap className="mb-2 h-6 w-6" />
-                    <span className="text-lg font-medium">Try Groq-Powered Chat</span>
-                    {groqStatus === "loading" && <span className="text-xs mt-1">Checking availability...</span>}
-                    {groqStatus === "unavailable" && <span className="text-xs mt-1">Currently unavailable</span>}
-                    {groqStatus === "available" && <span className="text-xs mt-1">Fast responses with Llama 3</span>}
-                  </div>
-                </Button>
-              </Link>
-            </div>
-
-            {apiStatus === "unavailable" && groqStatus === "unavailable" && (
+            {groqStatus === "unavailable" && (
               <div className="mt-4">
                 <Link href="/static-chat-basic">
-                  <Button className="w-full py-4" variant="default">
+                  <Button className="w-full py-4 bg-emerald-600 hover:bg-emerald-700" variant="default">
                     <div className="flex flex-col items-center">
                       <MessageSquare className="mb-2 h-6 w-6" />
                       <span className="text-lg font-medium">Try Static Chat (No API Required)</span>
@@ -193,5 +166,14 @@ export default function Home() {
         </div>
       </main>
     </div>
+  )
+}
+
+// Wrap the HomeContent with LanguageProvider
+export default function Home() {
+  return (
+    <LanguageProvider>
+      <HomeContent />
+    </LanguageProvider>
   )
 }

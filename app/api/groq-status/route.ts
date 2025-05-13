@@ -1,12 +1,10 @@
 import { NextResponse } from "next/server"
-import { groq } from "@ai-sdk/groq"
-import { generateText } from "ai"
 
 export const runtime = "nodejs"
 
 export async function GET() {
   try {
-    // Check if Groq API key is configured
+    // Check if GROQ_API_KEY is set
     const apiKey = process.env.GROQ_API_KEY
     if (!apiKey) {
       return NextResponse.json({
@@ -15,25 +13,41 @@ export async function GET() {
       })
     }
 
-    // Test the Groq API with a simple request
-    const { text } = await generateText({
-      model: groq("llama3-8b-8192"),
-      prompt: "Hello, are you working?",
-      maxTokens: 5,
-    })
+    // Simple check to see if we can access the Groq API
+    try {
+      const response = await fetch("https://api.groq.com/openai/v1/models", {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+        },
+      })
 
-    // If we get here, the API is working
-    return NextResponse.json({
-      available: true,
-      message: "Groq API is available and working",
-    })
+      if (response.ok) {
+        return NextResponse.json({
+          available: true,
+          message: "Groq API is available",
+        })
+      } else {
+        const errorData = await response.json().catch(() => ({}))
+        return NextResponse.json({
+          available: false,
+          message: "Groq API returned an error",
+          error: errorData.error?.message || response.statusText,
+        })
+      }
+    } catch (apiError) {
+      console.error("Groq API error:", apiError)
+      return NextResponse.json({
+        available: false,
+        message: "Groq API returned an error",
+        error: apiError instanceof Error ? apiError.message : String(apiError),
+      })
+    }
   } catch (error) {
-    console.error("Groq API status check failed:", error)
-
-    // Return detailed error message
+    console.error("Error checking Groq status:", error)
     return NextResponse.json({
       available: false,
-      message: error instanceof Error ? error.message : "Unknown error checking Groq API status",
+      message: "Error checking Groq API status",
       error: error instanceof Error ? error.message : String(error),
     })
   }

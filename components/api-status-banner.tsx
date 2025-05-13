@@ -12,10 +12,14 @@ export function ApiStatusBanner() {
   useEffect(() => {
     const checkApiStatus = async () => {
       try {
-        // Use the openai-status API endpoint instead of directly checking environment variables
-        const response = await fetch("/api/openai-status")
-        const data = await response.json()
-        setApiStatus(data.status === "available" ? "available" : "unavailable")
+        // Use the groq-status API endpoint
+        const response = await fetch("/api/groq-status")
+        if (response.ok) {
+          const data = await response.json()
+          setApiStatus(data.available ? "available" : "unavailable")
+        } else {
+          setApiStatus("unavailable")
+        }
       } catch (error) {
         setApiStatus("unavailable")
       }
@@ -34,9 +38,9 @@ export function ApiStatusBanner() {
         <div className="flex items-start">
           <AlertCircle className="h-5 w-5 text-yellow-600 mr-3 mt-0.5 flex-shrink-0" />
           <div>
-            <h3 className="font-medium text-yellow-800">OpenAI API Unavailable</h3>
+            <h3 className="font-medium text-yellow-800">Groq API Unavailable</h3>
             <p className="text-sm text-yellow-700 mt-1">
-              The OpenAI API is currently unavailable or has exceeded its quota. You can still use the{" "}
+              The Groq API is currently unavailable. You can still use the{" "}
               <Link href="/static-chat-basic" className="text-yellow-800 font-medium hover:underline">
                 static chat
               </Link>{" "}
