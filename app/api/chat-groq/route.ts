@@ -6,14 +6,14 @@ export const runtime = "nodejs"
 export async function POST(req: Request) {
   try {
     // Parse the request body
-    const { messages } = await req.json()
+    const { messages, language = "en" } = await req.json()
 
     // Validate messages
     if (!messages || !Array.isArray(messages)) {
       return NextResponse.json({ error: "Invalid messages format" }, { status: 400 })
     }
 
-    // Add system message if not present
+    // Add system message if not present, including language instruction
     const systemMessage = {
       role: "system",
       content: `You are Noor (Neutral Open Objective Resource), an assistant specializing in comparative religion and the Community Life Competence Process (CLCP).
@@ -29,7 +29,11 @@ Answer in a balanced, informative style, citing primary sources when possible. W
 
 If you don't know something, admit it rather than speculating. Your purpose is to foster understanding, not to proselytize any particular viewpoint.
 
-IMPORTANT: Keep your responses concise and focused on the question. Avoid lengthy explanations unless specifically requested. Aim for 2-3 paragraphs maximum for most responses.`,
+IMPORTANT: Keep your responses concise and focused on the question. Avoid lengthy explanations unless specifically requested. Aim for 2-3 paragraphs maximum for most responses.
+
+CRITICAL: The user's selected language is ${language === "fr" ? "French" : "English"}. You MUST respond in ${
+        language === "fr" ? "French" : "English"
+      }. If the user asks a question in French, respond in French. If the user asks in English, respond in English.`,
     }
 
     // Ensure system message is included

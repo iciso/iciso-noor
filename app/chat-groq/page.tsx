@@ -19,7 +19,7 @@ interface Message {
 }
 
 function ChatGroqContent() {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const [apiAvailable, setApiAvailable] = useState<boolean | null>(null)
   const [isCheckingApi, setIsCheckingApi] = useState(true)
@@ -86,7 +86,7 @@ function ChatGroqContent() {
     setIsLoading(true)
 
     try {
-      // Send the message to the API
+      // Send the message to the API with the current language
       const response = await fetch("/api/chat-groq", {
         method: "POST",
         headers: {
@@ -94,6 +94,7 @@ function ChatGroqContent() {
         },
         body: JSON.stringify({
           messages: messages.concat(userMessage).map(({ role, content }) => ({ role, content })),
+          language, // Pass the current language to the API
         }),
       })
 
